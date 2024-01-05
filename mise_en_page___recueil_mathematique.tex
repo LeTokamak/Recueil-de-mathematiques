@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gestion du Français et des accents %
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[greek, french]{babel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gestion des Sections et de la Table des matières %
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+\usepackage[]{titletoc}
+%\titlecontents
+%		{section}
+%		[left]
+%		{au-dessus}
+%		{avant (si label)}
+%		{avant (sans label)}
+%		{replissage et n°page}
+%		[après]
+
+
+
+%%%   Section   %%%
+
+\titlecontents
+	{section}
+	[25pt]
+	{\addvspace{0.75pc}}
+	{\normalfont\scshape\contentslabel{25pt}}
+	{}
+	{\normalsize\hfill\bfseries ~\thecontentspage\vspace{-3pt}\hrule}
+	[\addvspace{0.5pc}]
+	
+
+
+%%%   Sous-Section   %%%
+
+\titlecontents
+	{subsection}
+	[75pt]
+	{\addvspace{-0.5pc}}
+	{\normalfont\small\contentslabel{30pt}}
+	{}
+	{\normalsize\dotfill\small\thecontentspage}
+	[]
+
+
+
+%%%   Sous-sous-Section   %%%
+
+\titlecontents
+	{subsubsection}
+	[125pt]
+	{}
+	{\normalfont\footnotesize\contentslabel{30pt}\itshape}
+	{}
+	{\normalsize\dotfill\footnotesize\itshape\thecontentspage}
+	[]
+	
+\contentsfinish
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gestion des marges du document %
+
+\usepackage{geometry}
+
+\geometry{
+paperwidth=21cm,
+%width=15.5cm,
+left=3cm,
+right=3cm,
+paperheight=29.7cm,
+%height=26.5cm,
+top=3cm,
+bottom=3cm,
+headheight=0cm,
+headsep=0cm,
+footskip=1cm
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gestion des numéros de page et des titres de section %
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % Efface tous les en-têtes et pieds de page
+\fancyfoot[RO]{\thepage}
+\fancyfoot[LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{rotating}
+\usepackage{multirow}
+
+%\usepackage[mathletters]{ucs}
+
+\DeclareFontEncoding{LS1}{}{}
+\DeclareFontSubstitution{LS1}{stix}{m}{n}
+\DeclareSymbolFont{symbols4}{LS1}{stixbb}{m}{it}
+\DeclareMathSymbol{\varhexagonblack}{\mathord}{symbols4}{"DD}
+\DeclareMathSymbol{\hexagonblack}   {\mathord}{symbols4}{"DE}
+
+
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{numprint}
+
+\def\nbR{\ensuremath{\mathrm{I\! R}}}
+
+
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsubsection}{\roman{subsubsection}}
+
+\usepackage{xlop}
+\usepackage{ulem}
+
+\parindent=1cm
+
+\usepackage[bottom]{footmisc}
