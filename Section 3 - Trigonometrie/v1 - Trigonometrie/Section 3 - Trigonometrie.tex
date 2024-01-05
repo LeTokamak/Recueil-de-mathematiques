@@ -1,0 +1,400 @@
+\documentclass[a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gestion du français et des accents %
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[greek, french]{babel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gestion des Sections et de la Table des matières %
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+\usepackage[]{titletoc}
+%\titlecontents
+%		{section}
+%		[left]
+%		{au-dessus}
+%		{avant (si label)}
+%		{avant (sans label)}
+%		{replissage et n°page}
+%		[après]
+
+
+
+%%%   Section   %%%
+
+\titlecontents
+	{section}
+	[25pt]
+	{\addvspace{0.75pc}}
+	{\normalfont\scshape\contentslabel{25pt}}
+	{}
+	{\normalsize\hfill\bfseries ~\thecontentspage\vspace{-3pt}\hrule}
+	[\addvspace{0.5pc}]
+	
+
+
+%%%   Sous-Section   %%%
+
+\titlecontents
+	{subsection}
+	[75pt]
+	{\addvspace{-0.5pc}}
+	{\normalfont\small\contentslabel{30pt}}
+	{}
+	{\normalsize\dotfill\small\thecontentspage}
+	[]
+
+
+
+%%%   Sous-sous-Section   %%%
+
+\titlecontents
+	{subsubsection}
+	[125pt]
+	{}
+	{\normalfont\footnotesize\contentslabel{30pt}\itshape}
+	{}
+	{\normalsize\dotfill\footnotesize\itshape\thecontentspage}
+	[]
+	
+\contentsfinish
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gestion des marges du document %
+
+\usepackage{geometry}
+
+\geometry{
+paperwidth=21cm,
+%width=15.5cm,
+left=3cm,
+right=3cm,
+paperheight=29.7cm,
+%height=26.5cm,
+top=3cm,
+bottom=3cm,
+headheight=0cm,
+headsep=0cm,
+footskip=1cm
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{rotating}
+\usepackage{multirow}
+
+%\usepackage[mathletters]{ucs}
+
+\DeclareFontEncoding{LS1}{}{}
+\DeclareFontSubstitution{LS1}{stix}{m}{n}
+\DeclareSymbolFont{symbols4}{LS1}{stixbb}{m}{it}
+\DeclareMathSymbol{\varhexagonblack}{\mathord}{symbols4}{"DD}
+\DeclareMathSymbol{\hexagonblack}   {\mathord}{symbols4}{"DE}
+
+
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{numprint}
+
+\def\nbR{\ensuremath{\mathrm{I\! R}}}
+
+
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsubsection}{\roman{subsubsection}}
+
+\usepackage{xlop}
+\usepackage{ulem}
+
+\parindent=1cm
+
+\usepackage[bottom]{footmisc}
+
+
+
+
+
+\begin{document}
+
+	\begin{titlepage}
+		\begin{center}
+		
+			\Huge	 \textbf{Mathématiques}\\
+			\bigskip \smallskip
+		
+			\Large	 \textbf{$\varhexagonblack$ Section 3 - Trigonométrie $\varhexagonblack$}\\
+			\bigskip
+		
+			\large	 Clément \sc{Campana}  \\ 
+			\smallskip
+		
+			\normalfont	Juillet 2022\\
+		
+		\end{center}
+		
+		%\onehalfspacing
+		\doublespacing
+		\tableofcontents
+		\singlespacing
+
+	\end{titlepage}
+
+
+
+
+% -------------------------------------------------------------
+
+	\section{Premier pas en Trigonométrie}
+
+		La Trigonométrie est, comme son nom l'indique, une discipline mathématique qui a comme objectif de “mesurer” les triangles.
+
+		Plus clairement, son but est de pouvoir déduire l'ensemble des informations disponibles dans un triangle à partir du minimum d'information sur ce triangle.
+		Comme vu précédemment, un triangle est un polygone à 3 côtés, et la somme des 3 angles d'un triangle vaut 180°, $\pi$ rad ou 200 gr.
+
+		En général, en Trigonométrie, on se focalise dans un premier sur les triangles rectangles, puis on généralise les théorèmes que nous avons démontré à tous les triangles.
+
+		\subsection{Théorème de Pythagore}
+
+			Dans un triangle rectangles, la somme des longueurs mises aux carrées des côtés adjacent à l'angle droit, est égal au carrée de la longueur de l'hypoténuse.
+
+			Reformulons mathématiquement pour être plus claire, on nomme les longueurs des cathètes $a$ et $b$ et celle de l'hypoténuse $c$, on obtient : $$a^2 + b^2 = c^2 $$
+
+			Cette formule nous permet, si l'on connaît la longueur de deux côtés du triangle rectangle, d'obtenir la longueur du troisième côté. Pour cela il faut remanier un peu le théorème de Pythagore :
+
+			- $a = \sqrt{c^2 - b^2}$
+			- $b = \sqrt{c^2 - a^2}$
+			- $c = \sqrt{a^2 + b^2}$
+
+			Ce théorème est l'un des plus élémentaires et incontournable du monde des mathématiques, c'est pour cela qu'il en existe plusieurs centaines de démonstrations différentes, je ne m'attarderais ici que sur deux d'entres elles :
+
+			\subsubsection{Démonstration n°1 : *Par soustraction d'aires*}
+
+				Conçue par Maurice Laisnez, en 1876.
+
+				[Pythagorean Theorem and its many proofs](https://www.cut-the-knot.org/pythagoras/)
+
+				[Deux minutes pour... le théorème de Pythagore](https://youtu.be/9Oa6TRY3H1g)
+
+				[Le théorème du produit des cathètes](https://youtu.be/SFSEpFbz6YM)
+
+				[Théorème](https://fr.wikipedia.org/wiki/Théorème)
+
+				%[Théorème de Pythagore](https://fr.wikipedia.org/wiki/Théorème_de_Pythagore#/media/Fichier:Pythagorean_proof.svg)
+
+			\subsubsection{Généralisation : Théorème d'*Al-kashi*}
+
+		\subsection{Construction d'un triangle}
+	
+			Dans un triangle, tous les côtés sont liés entre eux, 
+			et pour définir n'importe quel triangle, 
+			il suffit d'avoir la longueur des 3 côtés du polygone.
+			C'est une caractéristique unique aux triangles, 
+			qui ne s'applique par exemple pas aux carrés, car en l'écrasant, 
+			ses côtés ne changent pas de longueur, 
+			mais les angles formés par ceux-ci changent. 
+			A partir d'un losange, il est possible de créer un carré, 
+			en fonction des angles choisis entre les côtés.
+
+			Mais revenons à nos triangles ! 
+			Pour tracer un triangle à l'aide de trois longueurs, 
+			il faut tracer un segment mesurant une des trois longueurs choisies, 
+			puis tracer deux cercle ayant comme centre les extrémités du segment 
+			et comme rayons les deux autres longueurs voulues pour le triangle. 
+			Les cercles se croisent en deux points, 
+			avec lesquelles ont peut construire deux triangles symétriques.
+
+			Mais l'on peut aussi remplacer un des cercles ou les deux 
+			cercles par une ou des demi-droites, 
+			ayant un angle interne d'une valeur choisie. 
+			Cette demi-droite et le cercle ou ces deux demi-droites 
+			vont se croiser en un point, le troisième sommet du triangle.
+
+			Nous pouvons en conclure qu'un triangle en particulier, 
+			est traçable à l'aide d'une longueur et de deux autres mesures 
+			(des angles ou des longueurs).
+
+			De plus, si deux triangles ont deux de leurs angles commun alors, 
+			ces deux triangles sont semblables, 
+			c'est-à-dire que l'un en l'agrandissement ou la réduction de l'autre.
+			Cette ressemblance entre deux triangles implique 
+			que les rapports entre deux longueurs sera toujours le même 
+			(si un côté est 2 fois plus grand qu'un autre, 
+			si le triangle est rétréci ou agrandi, 
+			le rapport entre les deux côtés restera le même).
+		\subsection{Fonctions trigonométriques}
+
+		\subsubsection{Principe des fonctions trigonométriques}
+
+			Prenons un triangle rectangle, dont (par définition) nous connaissons un des angles, son angle droit (qui vaut 90°, $\frac{\pi}{2}$ rad ou 100 gr). Prenons un autre de ces angles, que nous appellerons $\alpha$. Notre triangle a donc un angle droit et cet angle $\alpha$, on peut ainsi en déduire la taille du troisième angle, car dans un triangle, la somme des trois angles vaut 180° ($\pi$ rad ou 200 gr).
+
+			Notre dernier angle (que nous nommerons $\beta^\circ$) vaut donc en degré : % $\beta = 180° - (90° + \alpha) = 90° - \alpha$
+
+			On connais donc la valeur des trois angles du triangle, ainsi, tous les triangles constructibles seront tous semblables. Comme dit précédemment, tous ces triangles sont similaires, a un agrandissement ou une réduction près.
+
+			Cela signifie que les rapports des longueurs entre les côtés ne dépend que des angles du triangle, et comme ceux-ci sont soit fixé à l'avance (l'angle droit) ou dépendent de l'angle $\alpha$. 
+
+			On en conclue donc que les rapports entre tous les côtés d'un triangle rectangle dépendent uniquement de l'angle $\alpha$.
+
+		\subsubsection{Définition concrète des fonctions trigonométriques}
+
+			En revanche, ce rapport entre longueurs n'est pas simplement constant, il est variable. Pour prendre en compte ces variations, et donc pouvoir obtenir une relation véritablement chiffrée, les mathématiciens ont construits un grand arsenal de fonctions trigonométriques, même si beaucoup d'entres-elles sont rarement utiles, pour en savoir plus sur ces fonctions délaissées, rendez-vous en Annexe.
+
+			Les fonctions trigonométriques les plus utiles sont : le **sinus**, le **cosinus** et la **tangente**.
+
+			Dans ces relations, on utilise : 
+
+			- L'angle $\alpha$, définit précédemment.
+			- La cathète opposée à l'angle $\alpha$ (noté $O$ et généralement appelée “côté opposé”).
+			- La cathète adjacente à l'angle $\alpha$ (noté $A$ et généralement appelée “côté adjacent”).
+			- L'hypoténuse du triangle (noté $H$).
+
+			Voici les relations en questions, qui sont les définitions respectives de la fonction cosinus, sinus et tangente :
+
+			- $\sin(\alpha) = \frac{\text{Cathète Opposée}}{\text{Hypoténuse}} = \frac{\text{O}}{\text{H}} \Longrightarrow \text{S = O / H} $
+			- $\cos(\alpha) = \frac{\text{Cathète Adjacente}}{\text{Hypoténuse}} = \frac{\text{A}}{\text{H}} \Longrightarrow \text{C = A / H} $
+			- $\tan(\alpha) = \frac{\text{Cathète Opposée}}{\text{Cathète Adjacente}} = \frac{\text{O}}{\text{A}} \Longrightarrow \text{T = O / A} $
+
+			Un bon moyen mnémotechnique est l'expression “Casse-toi !” (CAH || SOH || TOA)
+
+			A l'aide de ces relations, il est possible de connaitre toutes les longueurs de tous les côtés d'un triangle rectangle à l'aide uniquement d'un angle et d'une longueur d'un des côtés : 
+
+			Exemple :
+
+			…..
+
+		\subsubsection{Lien entre ces trois fonctions}
+
+			De plus, en réutilisant la définition de la tangente, il est possible d'établir un lien entre ces fonctions !
+
+			En retravaillant les définitions des fonctions sinus et cosinus, on obtient ces relations :
+
+			- $\text{Cathète Opposée} = \sin(\alpha) \times \text{Hypoténuse}$
+			- $\text{Cathète Adjacente} = \cos(\alpha) \times \text{Hypoténuse}$
+
+			Puis, à l'aide de la définition de la fonction tangente, on établie notre relation :
+
+			$\tan(\alpha) = \frac{\text{Cathète Opposée}}{\text{Cathète Adjacente}} = \frac{\sin(\alpha) \times \text{Hypoténuse}}{\cos(\alpha) \times \text{Hypoténuse}} \Longrightarrow \tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)}$
+
+	\section{Cercle trigonométrique et radian}
+
+		Le degré (unité largement utilisé) n'est pas très adaptée en mathématique, où l'on préfère utiliser le radian.
+
+		\subsection{Définitions des unités}
+
+			\subsubsection{Définition du degré}
+
+				Un degré est définit comme étant l'angle formé par un arc de cercle 360 fois plus petit qu'un cercle ayant le même rayon que cet arc. Ce choix de découpe en 360 parts est très pratique (car 360 est un nombre divisible par beaucoup d'autres). 
+
+				Cependant, le choix de nombre de part étant arbitraire, il n'est pas agréable à utiliser dans des mathématiques poussées**(Nombre complexe : $e^{ix}=\cos(x)+i \times \sin(x)$), la construction artificielle de cette unité pose problème, n'étant pas compatible avec d'autres propriétés mathématiques. 
+
+				C'est pour cela que l'on a inventé le radian, une unité cohérente avec le reste des mathématiques.
+
+			\subsubsection{Définition du grade}
+
+				????
+
+			\subsubsection{Définition du radian}
+
+				Le radian est une unité d'angle définit, à l'aide de la longueur de l'arc de cercle, ayant un rayon égal 1, délimité par l'angle mesuré.
+
+				Cette définition semble au premier abord plus naturelle que la définition précédente, comme elle est directement basée sur la longueur de l'arc de cercle formé. De plus, grâce à cette définition, certaines formules deviennent fonctionnelles.**
+
+				Cependant, le périmètre d'un cercle étant égal à $2 \pi$, on retrouve la constante $\pi$ un peu partout dans les mesures d'angles usuels. Cette constante peut rendre l'utilisation de cette constante peu intuitive, ce qui explique certainement pourquoi cette unité, mathématiquement meilleure que le degré, ne s'est pas imposée au plus grand nombre comme remplaçante de cette vielle unité.
+
+			\subsubsection{Conversion d'une unité à une autre}
+
+				$x \text{ degré} \Rightarrow y \text{ radian : }	y = x \times \frac{2 \pi}{360} = x \times \frac{\pi}{180}$
+
+				$x \text{ radian} \Rightarrow y \text{ degré : }	y = x \times \frac{360}{2 \pi} = x \times \frac{180}{\pi}$
+
+				$x \text{ degré} \Rightarrow y \text{ grade : }	y = x \times \frac{400}{360} = x \times \frac{10}{9}$
+
+				$x \text{ radian} \Rightarrow y \text{ grade : }	y = x \times \frac{400}{2 \pi} = x \times \frac{200}{\pi}$
+
+				$x \text{ grade} \Rightarrow y \text{ degré : }	y = x \times \frac{360}{400} = x \times \frac{9}{10}$
+
+				$x \text{ grade} \Rightarrow y \text{ radian : }	y = x \times \frac{2 \pi}{400} = x \times \frac{\pi}{200}$
+
+				Valeurs approchées et Logarithmes des constantes : …
+
+		\subsection{Cercle trigonométrique}
+
+			En mathématique (et en science plus globalement), l'unité reine est le radian, c'est donc cette dernière que nous allons utiliser ici, à partir de maintenant.
+
+			Pour représenter des angles et bien comprendre leur lien avec les fonctions trigonométriques, on utilise généralement le cercle trigonométrique. Ce cercle est centré autour de l'origine du repère et à un rayon égal à 1, ce cercle est représenté ci-dessous. 
+
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+			Un angle représenté sur ce cercle est “orienté”, c'est-à-dire qu'il commence et qu'il termine aux extrémités le définissant.
+
+			L'axe de départ de tous les angles représentables sur le cercle est l'axe des abscisses (plus précisément, l'axe des abscisses positives). L'angle est mesuré entre deux demi-droites, celui des abscisses positives et une autre servant à terminer l'angle, ces deux demi-droites partent de l'origine du repère.
+
+			L'orientation des angles correspond au sens indiqué par la flèche en haut à droite du cercle, ce sens, inverse au sens horaire (celui dans lequel tournent les aiguilles d'une montre), est appelé sens trigonométrique (ou sans antihoraire).
+
+			Cette orientation donne un signe aux angles, ainsi les angles $\alpha$ et $\beta$ sont des angles positif et les angles $\gamma$ et $\theta$ sont négatifs. En tournant autour du cercle, on retrouve ainsi n'importe quelle angle possible. 
+
+		\subsection{Lien avec les fonctions trigonométriques}
+
+			Sur le cercle trigonométrique, il est possible de retrouver simplement le sinus et le cosinus d'un angle représenté sur le cercle. Appelons cet angle $\theta$. En effet, en projetant le point A (celui étant à l'intersection entre le cercle et la demi-droite terminant l'angle étudié) sur l'axe des abscisses, alors on forme le point $X_A$, et à l'aide des calculs vus précédemment, on trouve que la longueur du segment [O$X_A$] est égal à $\cos(\theta)$. En effet, le triangle OA$X_A$ est un triangle rectangle, il est donc possible d'utiliser la formule définissant le cosinus, soit :
+
+			$\cos(\theta) = \frac{\text{Cathète Adjacente}}{\text{Hypoténuse}} = \frac{\text{A}}{\text{H}}$
+
+			Dans notre cas, on a donc :
+
+			$\cos(\theta) = \frac{\text{O}X_A}{\text{OA}} = \frac{\text{O}X_A}{1}$
+
+			Ainsi $\text{O}X_A = \cos(\theta)$
+
+			Il est également possible de projeter le point A sur l'axe des ordonnées, pour former le point $Y_A$. Et de manière analogue, on démontre aisément que $\text{O}Y_A = \sin(\theta)$.
+
+			J'ai trouvé un moyen mnémotechnique pour retenir quel axe est celui où l'on retrouve le sinus de l'angle. L'abréviation de sinus c'est sin, ce qui correspond au début du mot “singe”, les singes montent dans les arbres, alors l'axe des sinus est l'axe verticale de notre repère.
+
+			De plus, on peut aussi retrouver graphiquement la tangente, pour un angle $\theta$, c'est la longueur du segment perpendiculaire à la droite (OA) tangente (géométrique) au cercle trigonométrique qui intercepte l'axe des abscisses.
+
+		\subsection{Arithmétique modulaire}
+
+			L'arithmétique modulaire est une branche de l'arithmétique étudiant le reste dans la division euclidienne d'un nombre, en fonction d'un autre, qu'on appellera module. 
+
+			L'etude se fait uniquement sur les restes de cette division euclidienne, ainsi les valeurs étudiées pouvant 
+
+		\subsection{Mesure principale}
+
+	\section{Propriété des fonctions sin / cos / tan}
+
+		\subsection{Valeurs remarquables}
+
+			Annexe autres valeurs remarquables 
+
+		\subsection{Propriétés de ces fonctions}
+
+		\subsection{Représentation graphique}
+
+		\subsection{Étude de fonction (Variation, …)}
+
+	\section{Fonctions inverses arcsin / arccos / arctan}
+
+		\subsection{Propriétés de ces fonctions}
+
+		\subsection{Représentation graphique}
+
+	\section{Formules trigonométriques}
+
+		normalesup.org/~dconduche/prepas/PT/cours/ChapitreFicheTrigo.pdf)
+
+	\section{Lecture de la table}
+
+	\section{Annexe}
+
+		\subsection*{Fonctions trigonométriques chelous} \label{fonction_trigo_chelous}
+
+
+
+
+
+\end{document}

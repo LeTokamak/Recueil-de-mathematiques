@@ -1,0 +1,228 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+%\usepackage[mathletters]{ucs}
+%\usepackage[french]{babel}
+
+\DeclareFontEncoding{LS1}{}{}
+\DeclareFontSubstitution{LS1}{stix}{m}{n}
+\DeclareSymbolFont{symbols4}{LS1}{stixbb}{m}{it}
+\DeclareMathSymbol{\varhexagonblack}{\mathord}{symbols4}{"DD}
+\DeclareMathSymbol{\hexagonblack}   {\mathord}{symbols4}{"DE}
+
+\usepackage{amssymb}
+\def\nbR{\ensuremath{\mathrm{I\! R}}}
+
+
+\parindent=1cm
+
+\begin{document}
+
+	\begin{titlepage}
+		\begin{center}
+		
+\Huge  		\textbf{Mathématiques}\\
+		\bigskip \smallskip
+		
+\Large		\textbf{$\varhexagonblack$ Logarithmes $\varhexagonblack$}\\
+		\bigskip
+		
+\large		Clément \sc{Campana}  \\ 
+		\smallskip 
+		
+\normalfont	Octobre 2021\\
+		\bigskip \bigskip \bigskip
+		
+		\end{center}
+Sommaire\\
+
+	\end{titlepage}
+
+\section*{Origine des Logarithmes}
+
+	Les logarithmes ont d'abord été utilisé pour transformer les multiplications et les divisions qui sont difficiles à calculer, en additions et soustraction. Avec l'arrivée des ordinateurs, ils ont perdus cette utilité...\\
+	
+	Mais depuis leur création en 1614 par John Napier (ou Neper), ils ont acquis beaucoup d'autres utilités en science.\\
+	
+	%% Explication du passage du monde des addition au monde des multiplications
+
+\pagebreak
+
+\section*{Types de Logarithme}
+
+	Il existe plusieurs types de logarithme en fonction de la \textbf{base} dans laquelle ils sont exprimés, ils sont notés :
+	
+	{\huge $$ \log_{a}(x) $$}
+	\begin{center}
+	\textit{Logarithme de x exprimé dans la base a.}\\
+	\end{center}
+	
+\bigskip	
+	
+Il est définit de manière à respecter cette égalité :
+	{\LARGE $$ a ^{ \log_{a} (x)}= x $$\\}
+
+\subsection*{Logarithme décimal}
+
+	Le logarithme en base 10 est appelé \textbf{logarithme décimale}, et cette base est très pratique car c'est la même que celle dans laquelle on compte, grâce à ça on a des propriétés intéressantes :	
+	
+	\begin{center}
+\begin{Large}
+	\begin{tabular}{c|c|c}
+	$ \log_{10} (10) = 1 $ &
+	$ \log_{10} (100) = 2 $ &
+	$ \log_{10} (10^{n}) = n $ \\
+	\end{tabular}
+\end{Large}
+	\end{center}
+
+	Par simplification, on préfèrera noter le logarithme décimal :	{\Large $ \log (x) $}\\
+	
+	C'est dans cette base là que les logarithmes de la table sont exprimés, car leurs propriétés que nous verrons plus loin simplifie beaucoup les gros calculs.\\
+
+\subsection*{Logarithme népérien}
+
+	Le logarithme népérien est exprimé en base \textbf{e}. Ce \textbf{e} est un nombre irrationnel (il n'a pas de valeur exact) mais celui-ci occupe une place très importante dans les mathématiques.  Il a pour certain la même place que le nombre $ \pi $.\\
+	
+	Ce logarithme est considéré comme étant celui le plus important, car on le retrouve dans beaucoup d'équation. Mais on préfère le remplacer par le logarithme décimale ($ \log (x) $) qui est plus intuitif à utiliser.\\
+	
+	On note ce logarithme : {\Large $ \ln (x) $}\\
+	
+	De plus, à partir de $ \ln (x) $, on peut retrouver tous les logarithmes des autres bases grâce à cette égalité : $$ \log_a (x) = \frac{\ln (x)}{\ln (a)} $$
+
+\pagebreak
+
+\section*{Propriétés des Logarithmes}
+
+	{\Huge $$ \log_a ( x \times y ) = \log_a (x) + \log_a (y) $$}
+	
+	{\large $$ \log_a \left( \frac{x}{y} \right)       = \log_a (x) - \log_a (y) $$ }
+
+\begin{center}
+\begin{large}
+	\begin{tabular}{c|c}
+	$ \log_a ( x^n )               =   n \log_a (x) $ &
+	$ \log_a \left( \frac{1}{x^{n}} \right) = - n \log_a (x) $ \\
+	\end{tabular}
+\end{large}
+	\end{center}
+	
+	Ces propriétés (et surtout la première) sont extrêmement utiles pour simplifier des multiplications et des divisions, car elles transforment celle-ci en simple addition et soustraction !\\
+	
+	\textit{cf. Démonstration en Annexe}
+	
+	
+	
+	
+
+\pagebreak
+
+\section*{Changement de base de Logarithme}
+
+\pagebreak
+
+\section*{Lecture de la table}
+
+	Cette partie détaille les critères de divisibilité des nombres, inférieurs à 100 qui sont premiers ou qui sont des puissances de nombre premier.\\
+
+	\par On rappel que : $ \forall n \in \mathbb{N}: n = p_{1}^{\lambda_1} \times \ldots \times p_{r}^{\lambda_r}$ avec $\{p_1,\cdots, p_r\}$ des nombres premiers et $\{\lambda_1,\cdots, \lambda_r\}$ des entiers.\\
+	Par exemple : $12 = 3^1 \times 4^1$ donc un nombre est divisible par $12$ si et seulement s'il est divisible par $3$ et $4$.\\
+
+	\par On représentera un entier naturel de $k + 1$ chiffres par $\overline{a_k \cdots a_1 a_0}$, où $a_0$ est le chiffre des unités, $a_1$ des dizaines, $a_2$ des centaines, etc.\\
+
+	\par On appellera $n$ le nombre dont on cherche à trouver les diviseurs.\\
+
+	\par $n$ est divisible par $2 \Leftrightarrow 2$ divise $n \Leftrightarrow$ \Large $^2|_n$
+
+	\bigskip \bigskip \bigskip
+
+\subsection{Critères de divisibilité des nombres jusqu'à 10}
+
+	\huge
+	\bigskip
+
+	\begin{tabular}{l|l}
+
+
+		$^2|_n \Leftrightarrow$ $a_0 \in \{ 0,2,4,6,8 \}$ &
+		$^3|_n \Leftrightarrow$ $^3|_{a_0 + \ldots + a_k}$ \\
+	
+	\tabularnewline
+
+		$^4|_n \Leftrightarrow$ $^4|_{2a_1 + a_0}$ &
+		$^5|_n \Leftrightarrow$ $a_0 \in \{ 0,5 \}$ \\
+	
+	\tabularnewline	
+	
+		$^6|_n \Leftrightarrow$ $^2|_n$ et $^3|_n$ &
+		$^7|_n \Leftrightarrow$ $^7|_{\overline{a_k \cdots a_2 a_1} - 2 a_0}$ \\
+	
+	\tabularnewline	
+	
+		$^8|_n \Leftrightarrow$ $^2|_{4a_2 + 2a_1 + a_0}$ &
+		$^9|_n \Leftrightarrow$ $^9|_{a_0 + \ldots + a_k}$ \\
+
+	\end{tabular}
+
+\pagebreak
+\normalsize
+\subsection{Critères de divisibilité des puissances de 2,3 et 5}
+
+$\alpha \in \mathbb{N}$
+
+\subsubsection*{Critère de divisibilité par $2^\alpha$}
+
+$^{2^{\alpha}}|_n \Leftrightarrow$ $a_0 \in \{ 0,2,4,6,8 \}$
+
+	Un nombre est divisible par 2n si et seulement si ses n derniers chiffres forment un nombre divisible par 2n.
+
+Exemples
+	Un nombre est divisible par 16 = 24 si et seulement si le nombre formé par ses 4 derniers chiffres est divisible par 16.
+	Un nombre est divisible par 32 = 25 si et seulement si le nombre formé par ses 5 derniers chiffres est divisible par 32. 
+Par exemple : 87 753 216 864 est divisible par 32 car 16 864 est divisible par 32.
+
+
+\subsubsection*{Critère de divisibilité par $3^n$}
+
+	On regroupe les chiffres d'un nombre en partant de la droite n par n.
+	Le nombre est alors divisible par 3n si la somme de ces groupes est divisible par 3n.
+
+Exemples
+	2079108 est divisible par 33 = 27 car  		2 + 079 + 108 = 189 	= 7 × 27
+	2079108 est aussi divisible par 34 = 81 car		207 + 9108 = 9315 	= 115 × 81
+
+
+
+
+
+
+
+
+\subsubsection*{Critère de divisibilité par $5^n$}
+
+	Un nombre est divisible par 5n si et seulement si ses n derniers chiffres forment un nombre divisible par 5n.
+
+
+Exemples
+	Un nombre est divisible par 25 = 52 si et seulement si le nombre formé par ses deux derniers chiffres est divisible par 25, c'est-à-dire si son écriture se termine par 00, 25, 50 ou 75.
+
+Par exemple : 258 975 est divisible par 25 car il se termine par 75.
+		 257 543 625 est divisible par 53 = 125 car 625 est divisible par 125.
+
+
+\pagebreak
+
+\section{Plus Grand Diviseur Commun (PGCD)}
+
+\pagebreak
+
+\section{Théorème de Bézout}
+
+\pagebreak
+
+\section{Théorème de Gauss}
+
+\pagebreak
+
+\end{document}

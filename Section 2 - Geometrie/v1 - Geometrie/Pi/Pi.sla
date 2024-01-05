@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.4.6">
+    <DOCUMENT ANZPAGES="4" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="0" DFONT="Arial Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="2" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="sRGB IEC61966-2.1" DPPr="Fogra27L CMYK Coated Press" DPIn="sRGB IEC61966-2.1" DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="sRGB IEC61966-2.1" DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="French" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="1" SnapToGrid="0" MINGRID="20" MAJGRID="100" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707" POLYR="0" POLYCUR="0" POLYFD="0" POLYS="0" AutoSave="1" AutoSaveTime="600000" ScratchBottom="20" ScratchLeft="100" ScratchRight="100" ScratchTop="20" GapHorizontal="0" GapVertical="40" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10" dispY="10" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" GuideZ="10" BACKG="1" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF/X-1a" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <COLOR NAME="Black" CMYK="#000000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Blue" RGB="#0000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Cool Black" CMYK="#990000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Cyan" CMYK="#ff000000" Spot="0" Register="0"/>
+        <COLOR NAME="Green" RGB="#00ff00" Spot="0" Register="0"/>
+        <COLOR NAME="Magenta" CMYK="#00ff0000" Spot="0" Register="0"/>
+        <COLOR NAME="Red" RGB="#ff0000" Spot="0" Register="0"/>
+        <COLOR NAME="Registration" CMYK="#ffffffff" Spot="0" Register="1"/>
+        <COLOR NAME="Rich Black" CMYK="#996666ff" Spot="0" Register="0"/>
+        <COLOR NAME="Warm Black" CMYK="#00994cff" Spot="0" Register="0"/>
+        <COLOR NAME="White" CMYK="#00000000" Spot="0" Register="0"/>
+        <COLOR NAME="Yellow" CMYK="#0000ff00" Spot="0" Register="0"/>
+        <HYPHEN/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0"/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Arial Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" FSHADE="100" SCOLOR="Black" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="French"/>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Fond de page" SICHTBAR="1" DRUCKEN="1" EDIT="1" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="1" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PDLanguage="3" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="Fax" filename="D:/Projet bis_17 01 20/Cahier de calculs/Pi.ps" separationName="Tout" printerCommand=""/>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" RotateDeg="0" PresentMode="0" RecalcPic="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB IEC61966-2.1" ImageP="sRGB IEC61966-2.1" PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" PageLayout="0" openAction="">
+            <Subset Name="Arial Regular"/>
+            <Subset Name="Calibri Bold"/>
+            <Subset Name="Calibri Regular"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Double Sided" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="0" From="0" To="3" Type="Type_1_2_3" Start="1" Reversed="0" Active="1"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100" PAGEYPOS="20" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="Normal" MNAM="" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="20" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="35" BORDERRIGHT="35" BORDERTOP="35" BORDERBOTTOM="35" NUM="0" NAM="" MNAM="Normal" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="0 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="3" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="901.89" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="30" BORDERRIGHT="30" BORDERTOP="30" BORDERBOTTOM="30" NUM="1" NAM="" MNAM="Normal" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="1783.78" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="2" NAM="" MNAM="Normal" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="2665.67" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="3" NAM="" MNAM="Normal" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="135" YPOS="263.368421052632" WIDTH="525.28" HEIGHT="563.521578947369" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 525.28 0 525.28 0 525.28 0 525.28 0 525.28 563.522 525.28 563.522 525.28 563.522 525.28 563.522 0 563.522 0 563.522 0 563.522 0 563.522 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 525.28 0 525.28 0 525.28 0 525.28 0 525.28 563.522 525.28 563.522 525.28 563.522 525.28 563.522 0 563.522 0 563.522 0 563.522 0 563.522 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <tab FONT="Calibri Regular" FONTSIZE="18"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="18" CH="Ce nombre est défini comme étant la longueur de la circonférence d'un cercle de diamètre 1."/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <tab FONT="Calibri Regular" FONTSIZE="18"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="18" CH="Dans l'exemple en haut à droite, on peut imaginer le cercle vert rouler sur le segment rouge, ce cercle aura fait un tour complet une fois qu'il aura atteint le bout du segment. On peut aussi imaginer que le segment rouge s'enroule autour du cercle vert."/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <tab FONT="Calibri Regular" FONTSIZE="18"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="18" CH="π vaut environ 3,14, c'est un nombre dit irrationnel, c'est-à-dire qu'il ne peut être écrit sous forme d'une fraction de deux entiers,          il possède donc une infinité de nombres après la virgule. Il y a, à la page suivante les 3 250 premières décimales de π."/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <tab FONT="Calibri Regular" FONTSIZE="17"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="17" CH="Mais l'on peut quand même approcher π avec des fractions :"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <tab FONT="Calibri Regular" FONTSIZE="17"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="17" CH="Ce nombre est évidemment utile dans tou"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="18" CH="s les calculs liés aux cercles, pour déterminer son périmètre, son aire, et ceux d'autres formes géométriques créées à partir d'un cercle (cylindre, cône, sphère...)."/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <tab FONT="Calibri Regular" FONTSIZE="18"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="18" CH="Mais ce nombre a plein d'autres utilités en maths et dans les sciences en général."/>
+            <trail ALIGN="3" LINESPMode="1"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="343.631578947368" YPOS="112.421052631579" WIDTH="310.368421052632" HEIGHT="140" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.39" LOCALSCY="0.39" LOCALX="-45.6153846153846" LOCALY="-74.4871794871795" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="Annotation 2020-01-17 211118.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 310.368 0 310.368 0 310.368 0 310.368 0 310.368 140 310.368 140 310.368 140 310.368 140 0 140 0 140 0 140 0 140 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 310.368 0 310.368 0 310.368 0 310.368 0 310.368 140 310.368 140 310.368 140 310.368 140 0 140 0 140 0 140 0 140 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="310.368421052632" gHeight="140" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="478.15789474" YPOS="162.631578947368" WIDTH="16" HEIGHT="15.6315789473684" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.0484848484848485" LOCALSCY="0.0484848484848485" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="330px-Pi-symbol.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 16 0 16 0 16 0 16 0 16 15.6316 16 15.6316 16 15.6316 16 15.6316 0 15.6316 0 15.6316 0 15.6316 0 15.6316 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 16 0 16 0 16 0 16 0 16 15.6316 16 15.6316 16 15.6316 16 15.6316 0 15.6316 0 15.6316 0 15.6316 0 15.6316 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="134.526315792632" gYpos="50.2105263157895" gWidth="310.368421052632" gHeight="140" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <ImageEffect Code="2" Param="Red&#10;100"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="141.964210526316" YPOS="933.89" WIDTH="523.315789473684" HEIGHT="781.89" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LINESP="15.6" LINESPMode="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Calibri Regular" ISIZE="13.5" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 523.316 0 523.316 0 523.316 0 523.316 0 523.316 781.89 523.316 781.89 523.316 781.89 523.316 781.89 0 781.89 0 781.89 0 781.89 0 781.89 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 523.316 0 523.316 0 523.316 0 523.316 0 523.316 781.89 523.316 781.89 523.316 781.89 523.316 781.89 0 781.89 0 781.89 0 781.89 0 781.89 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Calibri Regular" FONTSIZE="13.5" CH="14159 26535 89793 23846 26433 83279 50288 41971 69399 37510 58209 74944 59230 78164 06286 20899 86280 34825 34211 70679 82148 08651 32823 06647 09384 46095 50582 23172 53594 08128 48111 74502 84102 70193 85211 05559 64462 29489 54930 38196 44288 10975 66593 34461 28475 64823 37867 83165 27120 19091 45648 56692 34603 48610 45432 66482 13393 60726 02491 41273 72458 70066 06315 58817 48815 20920 96282 92540 91715 36436 78925 90360 01133 05305 48820 46652 13841 46951 94151 16094 33057 27036 57595 91953 09218 61173 81932 61179 31051 18548 07446 23799 62749 56735 18857 52724 89122 79381 83011 94912 98336 73362 44065 66430 86021 39494 63952 24737 19070 21798 60943 70277 05392 17176 29317 67523 84674 81846 76694 05132 00056 81271 45263 56082 77857 71342 75778 96091 73637 17872 14684 40901 22495 34301 46549 58537 10507 92279 68925 89235 42019 95611 21290 21960 86403 44181 59813 62977 47713 09960 51870 72113 49999 99837 29780 49951 05973 17328 16096 31859 50244 59455 34690 83026 42522 30825 33446 85035 26193 11881 71010 00313 78387 52886 58753 32083 81420 61717 76691 47303 59825 34904 28755 46873 11595 62863 88235 37875 93751 95778 18577 80532 17122 68066 13001 92787 66111 95909 21642 01989 38095 25720 10654 85863 27886 59361 53381 82796 82303 01952 03530 18529 68995 77362 25994 13891 24972 17752 83479 13151 55748 57242 45415 06959 50829 53311 68617 27855 88907 50983 81754 63746 49393 19255 06040 09277 01671 13900 98488 24012 85836 16035 63707 66010 47101 81942 95559 61989 46767 83744 94482 55379 77472 68471 04047 53464 62080 46684 25906 94912 93313 67702 89891 52104 75216 20569 66024 05803 81501 93511 25338 24300 35587 64024 74964 73263 91419 92726 04269 92279 67823 54781 63600 93417 21641 21992 45863 15030 28618 29745 55706 74983 85054 94588 58692 69956 90927 21079 75093 02955 32116 53449 87202 75596 02364 80665 49911 98818 34797 75356 63698 07426 54252 78625 51818 41757 46728 90977 77279 38000 81647 06001 61452 49192 17321 72147 72350 14144 19735 68548 16136 11573 52552 13347 57418 49468 43852 33239 07394 14333 45477 62416 86251 89835 69485 56209 92192 22184 27255 02542 56887 67179 04946 01653 46680 49886 27232 79178 60857 84383 82796 79766 81454 10095 38837 86360 95068 00642 25125 20511 73929 84896 08412 84886 26945 60424 19652 85022 21066 11863 06744 27862 20391 94945 04712 37137 86960 95636 43719 17287 46776 46575 73962 41389 08658 32645 99581 33904 78027 59009 94657 64078 95126 94683 98352 59570 98258 22620 52248 94077 26719 47826 84826 01476 99090 26401 36394 43745 53050 68203 49625 24517 49399 65143 14298 09190 65925 09372 21696 46151 57098 58387 41059 78859 59772 97549 89301 61753 92846 81382 68683 86894 27741 55991 85592 52459 53959 43104 99725 24680 84598 72736 44695 84865 38367 36222 62609 91246 08051 24388 43904 51244 13654 97627 80797 71569 14359 97700 12961 60894 41694 86855 58484 06353 42207 22258 28488 64815 84560 28506 01684 27394 52267 46767 88952 52138 52254 99546 66727 82398 64565 96116 35488 62305 77456 49803 55936 34568 17432 41125 15076 06947 94510 96596 09402 52288 79710 89314 56691 36867 22874 89405 60101 50330 86179 28680 92087 47609 17824 93858 90097 14909 67598 52613 65549 78189 31297 84821 68299 89487 22658 80485 75640 14270 47755 51323 79641 45152 37462 34364 54285 84447 95265 86782 10511 41354 73573 95231 13427 16610 21359 69536 23144 29524 84937 18711 01457 65403 59027 99344 03742 00731 05785 39062 19838 74478 08478 48968 33214 45713 86875 19435 06430 21845 31910 48481 00537 06146 80674 91927 81911 97939 95206 14196 63428 75444 06437 45123 71819 21799 98391 01591 95618 14675 14269 12397 48940 90718 64942 31961 56794 52080 95146 55022 52316 03881 93014 20937 62137 85595 66389 37787 08303 90697 92077 34672 21825 62599 66150 14215 03068 03844 77345 49202 60541 46659 25201 49744 28507 32518 66600 21324 34088 19071 04863 31734 64965 14539 05796 26856 10055 08106 65879 69981 63574 73638 40525 71459 10371 20628 04390 39759 51567 71577 00420 33786 99360 07230 55876 31763 59421 87312 51471 20532 92819 18261 86125 86732 15791 98414 84882 91644 70609 57527 06957 22091 75671 16722 91098 16909 15280 17350 67127 48583 22287 18352 09353 96572 51210 83579 15136 98820 91444 21006 75103 34671 10314 12671 11369 90865 "/>
+            <trail LINESPMode="0" LINESP="15.6"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="130" YPOS="933.89" WIDTH="22.1052631578947" HEIGHT="22.7368421052632" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Calibri Regular" ISIZE="13.3" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 22.1053 0 22.1053 0 22.1053 0 22.1053 0 22.1053 22.7368 22.1053 22.7368 22.1053 22.7368 22.1053 22.7368 0 22.7368 0 22.7368 0 22.7368 0 22.7368 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 22.1053 0 22.1053 0 22.1053 0 22.1053 0 22.1053 22.7368 22.1053 22.7368 22.1053 22.7368 22.1053 22.7368 0 22.7368 0 22.7368 0 22.7368 0 22.7368 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Calibri Regular" FONTSIZE="13.3" CH="3,"/>
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="147.157894736842" YPOS="68" WIDTH="173" HEIGHT="162.421052631579" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.509156904801188" LOCALSCY="0.509156904801188" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="330px-Pi-symbol.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 173 0 173 0 173 0 173 0 173 162.421 173 162.421 173 162.421 173 162.421 0 162.421 0 162.421 0 162.421 0 162.421 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 173 0 173 0 173 0 173 0 173 162.421 173 162.421 173 162.421 173 162.421 0 162.421 0 162.421 0 162.421 0 162.421 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="397.64" YPOS="64.9473684210526" WIDTH="215.14947368421" HEIGHT="37.3684210526316" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" ISIZE="31" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 215.149 0 215.149 0 215.149 0 215.149 0 215.149 37.3684 215.149 37.3684 215.149 37.3684 215.149 37.3684 0 37.3684 0 37.3684 0 37.3684 0 37.3684 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 215.149 0 215.149 0 215.149 0 215.149 0 215.149 37.3684 215.149 37.3684 215.149 37.3684 215.149 37.3684 0 37.3684 0 37.3684 0 37.3684 0 37.3684 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Calibri Bold" FONTSIZE="31" CH="Le nombre π (pi)"/>
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="176" YPOS="607" WIDTH="443.315789473684" HEIGHT="63.7999999999999" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.51" LOCALSCY="0.51" LOCALX="-774.470588235294" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="FRACTION PI.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 443.316 0 443.316 0 443.316 0 443.316 0 443.316 63.8 443.316 63.8 443.316 63.8 443.316 63.8 0 63.8 0 63.8 0 63.8 0 63.8 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 443.316 0 443.316 0 443.316 0 443.316 0 443.316 63.8 443.316 63.8 443.316 63.8 443.316 63.8 0 63.8 0 63.8 0 63.8 0 63.8 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="197.8421053" YPOS="532" WIDTH="400.6178947" HEIGHT="69.7368421052632" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.51" LOCALSCY="0.51" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="FRACTION PI.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 400.618 0 400.618 0 400.618 0 400.618 0 400.618 69.7368 400.618 69.7368 400.618 69.7368 400.618 69.7368 0 69.7368 0 69.7368 0 69.7368 0 69.7368 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 400.618 0 400.618 0 400.618 0 400.618 0 400.618 69.7368 400.618 69.7368 400.618 69.7368 400.618 69.7368 0 69.7368 0 69.7368 0 69.7368 0 69.7368 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="2" XPOS="140" YPOS="1987.15789473684" WIDTH="515.28" HEIGHT="374.622105263157" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.53532" LOCALSCY="0.53532" LOCALX="-1.86804154524397" LOCALY="-1" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="appro pi.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 374.622 515.28 374.622 515.28 374.622 515.28 374.622 0 374.622 0 374.622 0 374.622 0 374.622 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 374.622 515.28 374.622 515.28 374.622 515.28 374.622 0 374.622 0 374.622 0 374.622 0 374.622 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="140" YPOS="1823.78" WIDTH="515.28" HEIGHT="161.47" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 161.47 515.28 161.47 515.28 161.47 515.28 161.47 0 161.47 0 161.47 0 161.47 0 161.47 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 161.47 515.28 161.47 515.28 161.47 515.28 161.47 0 161.47 0 161.47 0 161.47 0 161.47 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <tab FONT="Calibri Regular" FONTSIZE="18"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="18" CH="Ici, j'ai calculé la qualité de différentes approximations de π (nommé p), je donne dans le tableau ceci : I (π-p)/π I × 100"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <tab FONT="Calibri Regular" FONTSIZE="16"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="16" CH="- A gauche, j'ai utilisé un certain nombre de décimales de π pour l'approximer (par exemple 0 décimales correspond à π ≈ 3)."/>
+            <para ALIGN="3" LINESPMode="1"/>
+            <tab FONT="Calibri Regular" FONTSIZE="16"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="16" CH="- A droite, j'ai utilisé pour approximer π une des fractions vu plus tôt : "/>
+            <trail ALIGN="3" LINESPMode="1"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="2" XPOS="140" YPOS="1940.78" WIDTH="515.28" HEIGHT="45.0621052631586" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.311912832929782" LOCALSCY="0.311912832929782" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="FRACTION PI.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 45.0621 515.28 45.0621 515.28 45.0621 515.28 45.0621 0 45.0621 0 45.0621 0 45.0621 0 45.0621 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 45.0621 515.28 45.0621 515.28 45.0621 515.28 45.0621 0 45.0621 0 45.0621 0 45.0621 0 45.0621 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="140" YPOS="2377.78" WIDTH="515.28" HEIGHT="74.2200000000003" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 74.22 515.28 74.22 515.28 74.22 515.28 74.22 0 74.22 0 74.22 0 74.22 0 74.22 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 74.22 515.28 74.22 515.28 74.22 515.28 74.22 0 74.22 0 74.22 0 74.22 0 74.22 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <tab FONT="Calibri Regular" FONTSIZE="18" FEATURES="inherit underline"/>
+            <ITEXT FONT="Calibri Bold" FONTSIZE="18" FEATURES="inherit underline" CH="Conclusion :"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="18" FEATURES="inherit" CH=" "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="16" FEATURES="inherit" CH="On voit que 3,14 et 22/7 sont d'excellentes approximations de π (0,05 % et 0,04 % d'écart avec π)."/>
+            <para ALIGN="3" LINESPMode="1" LINESP="23"/>
+            <para ALIGN="3" LINESPMode="1" LINESP="23"/>
+            <tab FONT="Calibri Regular" FONTSIZE="16" FEATURES="inherit"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="16" FEATURES="inherit" CH="Pour avoir une idée grossière, 3 est une bonne approximation."/>
+            <trail ALIGN="3" LINESPMode="1" LINESP="23"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="4" XPOS="140" YPOS="2705.67" WIDTH="515.28" HEIGHT="761.89" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Calibri Regular" ISIZE="18" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 761.89 515.28 761.89 515.28 761.89 515.28 761.89 0 761.89 0 761.89 0 761.89 0 761.89 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 515.28 0 515.28 0 515.28 0 515.28 0 515.28 761.89 515.28 761.89 515.28 761.89 515.28 761.89 0 761.89 0 761.89 0 761.89 0 761.89 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Calibri Bold" FONTSIZE="18" FEATURES="inherit underline" CH="Résultats Utiles :"/>
+            <para LINESPMode="0" LINESP="26"/>
+            <para LINESPMode="0" LINESP="4"/>
+            <ITEXT FONTSIZE="14" CH="- ln("/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π)"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 1.14472988584940017414342735135305871164729481291531157151362"/>
+            <para LINESPMode="0" LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- log"/>
+            <ITEXT FONTSIZE="14" FEATURES="inherit subscript" CH="10"/>
+            <ITEXT FONTSIZE="14" CH="("/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π)"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= "/>
+            <ITEXT FONTSIZE="14" CH="0.49714987269413385435126828829089887365167832438044244613405"/>
+            <para LINESPMode="0" LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- log"/>
+            <ITEXT FONTSIZE="14" FEATURES="inherit subscript" CH="2"/>
+            <ITEXT FONTSIZE="14" CH="("/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π)"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= "/>
+            <ITEXT FONTSIZE="14" CH="1.65149612947231879804327929510800733501847692676304152940679"/>
+            <para LINESPMode="0" LINESP="19"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- e"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="π"/>
+            <ITEXT FONTSIZE="14" CH=" "/>
+            <tab FONTSIZE="14"/>
+            <tab FONTSIZE="14"/>
+            <ITEXT FONTSIZE="14" CH="= 23.1406926327792690057290863679485473802661062426002119934450"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- 10"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="π"/>
+            <ITEXT FONTSIZE="14" CH=" "/>
+            <tab FONTSIZE="14"/>
+            <tab FONTSIZE="14"/>
+            <ITEXT FONTSIZE="14" CH="= 1385.45573136701108914091993687968806506656553944499821484180"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- 2"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="π"/>
+            <ITEXT FONTSIZE="14" CH=" "/>
+            <tab FONTSIZE="14"/>
+            <tab FONTSIZE="14"/>
+            <ITEXT FONTSIZE="14" CH="= 8.82497782707628762385642960420800158170441081527148492666896"/>
+            <para LINESP="19"/>
+            <para LINESP="19"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="2"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 9.86960440108935861883449099987615113531369940724079062641334"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="3"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 31.0062766802998201754763150671013952022252885658851076941445"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="4"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 97.4090910340024372364403326887051112497275856726854216914679"/>
+            <para LINESP="19"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" CH="√"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 1.77245385090551602729816748334114518279754945612238712821381"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="3"/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" CH="√"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 1.46459188756152326302014252726379039173859685562793717435726"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="4"/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" CH="√"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 1.33133536380038971279753491795028085330936622381810425845371"/>
+            <para LINESP="19"/>
+            <para LINESP="19"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="1 / π"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 0.31830988618379067153776752674502872406891929148091289749533"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="1 / π"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="2"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 0.10132118364233777144387946320972763890435877467224654884561"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="1 / π"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="3"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 0.03225153443319948918442205268856368859306333614747807673458"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="1 / π"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="4"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14" FEATURES="inherit superscript"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 0.01026598225468433518915278326711869414182780185363826271817"/>
+            <para LINESP="19"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="1 / "/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" CH="√"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 0.56418958354775628694807945156077258584405062932899885684409"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="1 / "/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="3"/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" CH="√"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 0.68278406325529568146702083315816459810836751563244880404268"/>
+            <para LINESP="19"/>
+            <ITEXT FONTSIZE="14" CH="- "/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="1 / "/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" FEATURES="inherit superscript" CH="4"/>
+            <ITEXT FONT="Cambria Math Regular" FONTSIZE="14" CH="√"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="π"/>
+            <tab FONT="Calibri Regular" FONTSIZE="14"/>
+            <ITEXT FONT="Calibri Regular" FONTSIZE="14" CH="= 0.75112554446494248285870300477622769305236506675605429576639"/>
+            <trail LINESP="19"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>
