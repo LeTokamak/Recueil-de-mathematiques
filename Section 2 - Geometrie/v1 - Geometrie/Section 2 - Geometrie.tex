@@ -877,17 +877,19 @@ on précise (si l'information est connue) dans la dénomination son sommet impor
 \paragraph*{Représentation des différents types de triangles}
 
 \begin{center}
-	\begin{tabular}{ccc|ccc}
-		\includegraphics[width=2cm]{Image/Triangles/triangle_equilateral_complet.png} &
-		\includegraphics[width=2cm]{Image/Triangles/triangle_isocele_complet.png}     &
-		\includegraphics[width=2cm]{Image/Triangles/triangle_scalene_complet.png}     &
-		\includegraphics[width=2cm]{Image/Triangles/triangle_rectangle_complet.png}   &
-		\includegraphics[width=2.5cm]{Image/Triangles/triangle_optusangle_complet.png}  &
-		\includegraphics[width=2cm]{Image/Triangles/triangle_actuangle_complet.png}   \\
+	\makebox[\textwidth][c]{
+		\begin{tabular}{ccc|ccc}
+			\includegraphics[width=2.2cm]{Image/Triangles/triangle_equilateral_complet.png} &
+			\includegraphics[width=2.2cm]{Image/Triangles/triangle_isocele_complet.png}     &
+			\includegraphics[width=2.5cm]{Image/Triangles/triangle_scalene_complet.png}     &
+			\includegraphics[width=2.5cm]{Image/Triangles/triangle_rectangle_complet.png}   &
+			\includegraphics[width=3cm]{Image/Triangles/triangle_optusangle_complet.png}  &
+			\includegraphics[width=2.5cm]{Image/Triangles/triangle_actuangle_complet.png}   \\
 
-		\textit{Triangle}    & \textit{Triangle}       & \textit{Triangle} & \textit{Triangle}         & \textit{Triangle}           & \textit{Triangle}  \\
-		\textit{équilatéral} & \textit{isocèle en $B$} & \textit{scalène}  & \textit{rectangle en $D$} & \textit{obtusangle en $G$}  & \textit{actuangle} \\
-	\end{tabular}
+			\textit{Triangle}    & \textit{Triangle}       & \textit{Triangle} & \textit{Triangle}         & \textit{Triangle}           & \textit{Triangle}  \\
+			\textit{équilatéral} & \textit{isocèle en $B$} & \textit{scalène}  & \textit{rectangle en $D$} & \textit{obtusangle en $G$}  & \textit{actuangle} \\
+		\end{tabular}
+	}
 \end{center}
 
 
@@ -1069,22 +1071,28 @@ est égal au carrée de la longueur de l'hypoténuse (le troisième côté du tr
 Mathématiquement, on nomme classiquement les longueurs des cathètes $a$ et $b$ et celle
 de l'hypoténuse $c$. En utilisant ces notations, on obtient :
 
-$$a^2 + b^2 = c^2 $$
+\begin{center}
+	$a^2 + b^2 = c^2$
+\end{center}
 
 Cette formule nous permet, si l'on connaît la longueur de deux côtés du triangle rectangle,
 d'obtenir la longueur du troisième côté. Pour cela il faut remanier un peu le théorème de Pythagore :
 
-\begin{itemize}
-	\item[•] $a = \sqrt{c^2 - b^2}$ \phantom{\huge{H}}
-	\item[•] $b = \sqrt{c^2 - a^2}$ \phantom{\huge{H}}
-	\item[•] $c = \sqrt{a^2 + b^2}$ \phantom{\huge{H}}
-\end{itemize}
+\begin{center}
+	\begin{tabular}{ccccc}
+		$a = \sqrt{c^2 - b^2}$ &
+		\phantom{text}         &
+		$b = \sqrt{c^2 - a^2}$ &
+		\phantom{text}         &
+		$c = \sqrt{a^2 + b^2}$ \\
+	\end{tabular}
+\end{center}
 
 \smallbreak
 
 Ce théorème est l'un des plus élémentaires et incontournables du monde des mathématiques. 
-Ainsi, il existe plusieurs centaines de démonstrations différentes de celui-ci, 
-en voici trois différentes :
+Cette importance a poussé les mathématiciens à réaliser plus d'une centaine de démonstrations différentes, 
+de ce théorème, en voici trois :
 
 \paragraph*{Démonstration n°1 : Construction de carrés}
 
@@ -1096,26 +1104,53 @@ on notera sa plus petite cathète $a$, la plus grande $b$ et l'hypoténuse $c$.
 Plaçons les de manière à former un carré avec les hypoténuses (comme sur la première illustration).
 Dans ce premier cas, calculons $A_{\text{Totale}}$, soit l'aire recouverte par toutes les figures.
 
-$A_{\text{Totale}} = 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }c}$
+Ainsi : $A_{\text{Totale cas 1}} = 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }c}$
+
+\medbreak
 
 Déplaçons maintenant nos triangles afin de former deux plus petits carrés ayant respectivement 
 comme longueur de côté $a$ et $b$. Ils ressemblent alors à la deuxième illustration. 
-Dans ce cas :
 
-$A_{\text{Totale}} = 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }a} + A_{\text{Carré de côté }a}$
+Dans ce cas : $A_{\text{Totale cas 2}} = 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }a} + A_{\text{Carré de côté }b}$
 
-Entre les deux cas, l'aire totale est la même, car elle correspond toujours à l'aire d'un carré
-de côté $a+b$, comme dans 
+\medbreak
+
+Dans les deux cas, l'aire totale est la même, 
+car elle correspond toujours à l'aire d'un carré
+de côté $a+b$.
+
+\smallbreak
+
+$\Longrightarrow A_{\text{Totale cas 1}} = A_{\text{Totale cas 2}}$
+
+\smallbreak
+
+$\Longrightarrow 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }c} = 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }a} + A_{\text{Carré de côté }b}$
+
+\smallbreak
+
+$\Longrightarrow A_{\text{Carré de côté }c} = A_{\text{Carré de côté }a} + A_{\text{Carré de côté }b}$
+
+\smallbreak
+
+$\Longrightarrow \mathbf{c^2 = a^2 + b^2}$
 
 
+\begin{center}
+	\begin{tabular}{cc}
+		\includegraphics[width=6cm]{Image/Pythagore/laisnez_cas_1.png} & \includegraphics[width=6cm]{Image/Pythagore/laisnez_cas_2.png} \\
+		\textit{Premier arrangement de triangles}                      & \textit{Second arrangement de triangles}                       \\
+	\end{tabular}
+\end{center}
 
-	[Pythagorean Theorem and its many proofs](https://www.cut-the-knot.org/pythagoras/)
 
-[Deux minutes pour... le théorème de Pythagore](https://youtu.be/9Oa6TRY3H1g)
+	%[Pythagorean Theorem and its many proofs](https://www.cut-the-knot.org/pythagoras/)
 
-[Le théorème du produit des cathètes](https://youtu.be/SFSEpFbz6YM)
+%[Deux minutes pour... le théorème de Pythagore](https://youtu.be/9Oa6TRY3H1g)
 
-[Théorème](https://fr.wikipedia.org/wiki/Théorème)
+%[Le théorème du produit des cathètes](https://youtu.be/SFSEpFbz6YM)
+
+%[Théorème](https://fr.wikipedia.org/wiki/Théorème)
 
 %[Théorème de Pythagore](https://fr.wikipedia.org/wiki/Théorème_de_Pythagore#/media/Fichier:Pythagorean_proof.svg)
 
