@@ -449,7 +449,7 @@ On nomme généralement sa longueur $p$.
 \vspace{-0.2cm}
 
 \subparagraph*{Aire} Valeur mesurant la portion de surface limitée par le périmètre d'une figure.
-On nomme généralement cette grandeur $A$. L'aire se mesure comme étant un multiple d'une surface
+On nomme généralement cette grandeur $\mathcal{A}$. L'aire se mesure comme étant un multiple d'une surface
 de référence, dans notre repère cartésien orthonormé, cette surface de référence correspond à l'aire
 d'un carré dont ses côtés mesurent 1.
 
@@ -513,7 +513,7 @@ et grâce la constante $\pi$ :
 	      \smallbreak
 	\item[•] Son \emph{périmètre} $p_{cercle} = d \times \pi = 2 \cdot r \times \pi = 2 \pi r$. (Moyen mnémotechnique : 2 pierres)
 	      \smallbreak
-	\item[•] Son \emph{aire} $A_{cercle} = \pi \times r^2$.
+	\item[•] Son \emph{aire} $\mathcal{A}_{cercle} = \pi \times r^2$.
 \end{itemize}
 
 \medbreak
@@ -913,15 +913,15 @@ Prenons un triangle rectangle.
 Dupliquons le, puis nous allons retourner
 son jumeau afin de former un rectangle en assemblant les deux triangles.
 
-L'aire d'un rectangle $A_{\text{Rectangle}}$ est très facile à calculer,
+L'aire d'un rectangle $\mathcal{A}_{\text{Rectangle}}$ est très facile à calculer,
 c'est le produit de la Longueur ($L$) et de la largeur ($l$) du rectangle,
-ainsi $A_{\text{Rectangle}} = L \times l$.
+ainsi $\mathcal{A}_{\text{Rectangle}} = L \times l$.
 Dans notre rectangle, qui est composé de deux triangles rectangles,
 son aire est égal au produit des longueurs des deux cathètes.
-On les nomme généralement $a$ et $b$, ainsi $2 \times A_{\text{Triangle rectangle}} = a \times b$.
+On les nomme généralement $a$ et $b$, ainsi $2 \times \mathcal{A}_{\text{Triangle rectangle}} = a \times b$.
 
 Nous nous intéressons à l'aire d'un seul triangle,
-réarrangeons l'expression : $$ A_{\text{Triangle rectangle}} = \frac{a \times b}{2} $$
+réarrangeons l'expression : $$ \mathcal{A}_{\text{Triangle rectangle}} = \frac{a \times b}{2} $$
 
 \paragraph*{Aire d'un triangle quelconque}
 
@@ -951,7 +951,7 @@ La hauteur (noté $h$),
 qui est la distance entre le troisième sommet du triangle (celui ne faisant pas parti de la base) et le point d'intersection entre la droite et la base.
 
 Ainsi, en combinant les deux triangles rectangles :
-$$ A_{\text{Triangle quelconque}} = \frac{b_1 \times h}{2} + \frac{b_2 \times h}{2} = \frac{(b_1+b_2) \times h}{2} = \frac{b \times h}{2} $$
+$$ \mathcal{A}_{\text{Triangle quelconque}} = \frac{b_1 \times h}{2} + \frac{b_2 \times h}{2} = \frac{(b_1+b_2) \times h}{2} = \frac{b \times h}{2} $$
 
 \begin{center}
 	\begin{tabular}{ccc}
@@ -966,7 +966,7 @@ $$ A_{\text{Triangle quelconque}} = \frac{b_1 \times h}{2} + \frac{b_2 \times h}
 triangle à l'aide de son périmètre, avec cette relation\footnote{
 	Cette relation est démontrée en Annexe, à la page n°\pageref{relation_aire_perim_triangle}.
 } :
-$$ A_{\text{Triangle}} \leq \frac{(p_{\text{Triangle}})^2 \sqrt {3}} {36} $$
+$$ \mathcal{A}_{\text{Triangle}} \leq \frac{(p_{\text{Triangle}})^2 \sqrt {3}} {36} $$
 
 \medbreak
 
@@ -1006,7 +1006,7 @@ Cette démonstration se fonde sur le fait que l'aire
 d'un triangle quelconque vaut,
 peu importe la base choisi :
 
-$$ A_{\text{Triangle quelconque}} = \frac{b \times h}{2} $$
+$$ \mathcal{A}_{\text{Triangle quelconque}} = \frac{b \times h}{2} $$
 
 Les hauteurs des autres triangles $DEA$ et $DEB$ par rapport à
 leur base commune $ED$ ont la même longueur,
@@ -1102,20 +1102,20 @@ de ce théorème, voici mes deux préférées :
 
 \textit{Conçue par Maurice Laisnez, en 1876.}
 
-Prenons 4 copies d'un triangle rectangle (d'aire $A_{\text{Triangle}}$), 
+Prenons 4 copies d'un triangle rectangle (d'aire $\mathcal{A}_{\text{Triangle}}$), 
 on notera sa plus petite cathète $a$, la plus grande $b$ et l'hypoténuse $c$.
 
 Plaçons les de manière à former un carré avec les hypoténuses (comme sur la première illustration).
-Dans ce premier cas, calculons $A_{\text{Totale}}$, soit l'aire recouverte par toutes les figures.
+Dans ce premier cas, calculons $\mathcal{A}_{\text{Totale}}$, soit l'aire recouverte par toutes les figures.
 
-Ainsi : $A_{\text{Totale cas 1}} = 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }c}$
+Ainsi : $\mathcal{A}_{\text{Totale cas 1}} = 4 \times \mathcal{A}_{\text{Triangle}} + \mathcal{A}_{\text{Carré de côté }c}$
 
 \medbreak
 
 Déplaçons maintenant nos triangles afin de former deux plus petits carrés ayant respectivement 
 comme longueur de côté $a$ et $b$. Ils ressemblent alors à la deuxième illustration. 
 
-Dans ce cas : $A_{\text{Totale cas 2}} = 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }a} + A_{\text{Carré de côté }b}$
+Dans ce cas : $\mathcal{A}_{\text{Totale cas 2}} = 4 \times \mathcal{A}_{\text{Triangle}} + \mathcal{A}_{\text{Carré de côté }a} + \mathcal{A}_{\text{Carré de côté }b}$
 
 \medbreak
 
@@ -1125,15 +1125,15 @@ de côté $a+b$.
 
 \smallbreak
 
-$\Longrightarrow A_{\text{Totale cas 1}} = A_{\text{Totale cas 2}}$
+$\Longrightarrow \mathcal{A}_{\text{Totale cas 1}} = \mathcal{A}_{\text{Totale cas 2}}$
 
 \smallbreak
 
-$\Longrightarrow 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }c} = 4 \times A_{\text{Triangle}} + A_{\text{Carré de côté }a} + A_{\text{Carré de côté }b}$
+$\Longrightarrow 4 \times \mathcal{A}_{\text{Triangle}} + \mathcal{A}_{\text{Carré de côté }c} = 4 \times \mathcal{A}_{\text{Triangle}} + \mathcal{A}_{\text{Carré de côté }a} + \mathcal{A}_{\text{Carré de côté }b}$
 
 \smallbreak
 
-$\Longrightarrow A_{\text{Carré de côté }c} = A_{\text{Carré de côté }a} + A_{\text{Carré de côté }b}$
+$\Longrightarrow \mathcal{A}_{\text{Carré de côté }c} = \mathcal{A}_{\text{Carré de côté }a} + \mathcal{A}_{\text{Carré de côté }b}$
 
 \smallbreak
 
@@ -1151,10 +1151,47 @@ $\Longrightarrow \mathbf{c^2 = a^2 + b^2}$
 
 \paragraph*{Démonstration n°2 : Figure de l'hypoténuse}
 
-\textit{Présentée dans le Zhoubi Suanjing\footnote{
-	Le Classique mathématique du Gnomon des Zhou, ou Zhoubi Suanjing 
-	%(周髀算經 / 周髀算经) en chinois,
-	a été rédigé entre 1046 av. J.-C. et 220 (entre 8 954 et 10 220 E.H.)}}
+\textit{Présentée dans le Zhoubi Suanjing}\footnote{
+	Le \textit{Classique mathématique du Gnomon des Zhou}, ou \textit{Zhoubi Suanjing} 
+	a été rédigé entre 1046 av. J.-C. et 220 (entre 8 954 et 10 220 E.H.),
+	c'est un des plus anciens textes mathématiques chinois connus.
+	C'est un recueil anonyme de problèmes mathématiques rencontrés 
+	par le premier duc de la dynastie Zhou, \textsc{Ji Dan} et 
+	son astronome et mathématicien \textsc{Shang Gao}.
+	
+	Ce recueil est le premier des \textit{Dix Canons du calcul}, 
+	une collection d'ouvrages considérée comme texte 
+	mathématique officiel pour les examens impériaux 
+(examens ayant existé de 605 à 1905).}.
+
+Prenons 2 copies d'un triangle rectangle, 
+on notera sa plus petite cathète $a$, la plus grande $b$ et l'hypoténuse $c$.
+
+Construisons un carré sur les hypoténuses de ces triangles, 
+un carré (en jaune sur la première illustration), d'aire est $c^2$.
+
+Découpons ce carré de manière à former deux autres copies des triangles initiaux,
+en suivant le tracé indiqué sur la deuxième illustration.
+
+En déplaçant ces deux nouvelles copies,
+il est possible d'obtenir deux carrés accolés, un de côté $a$, l'autre de côté $b$.
+Ainsi, leurs aires sont respectivement égales à $a^2$ et $b^2$.
+
+Et comme, lors d'un découpage, l'aire totale de toutes les pièces ne varie pas,
+alors, l'aire du premier carré est égale à la somme des aires des deux plus petits carrés.
+Et donc : $c^2 = a^2 + b^2$
+
+\begin{center}
+	\begin{tabular}{ccc}
+		\includegraphics[width=3cm]{Image/Pythagore/figure_hypo_cas_1.png} & \includegraphics[width=3cm]{Image/Pythagore/figure_hypo_cas_2.png} & \includegraphics[width=3cm]{Image/Pythagore/figure_hypo_cas_3.png} \\
+		\textit{Construction d'un}                       & \textit{Découpage du carré}                     & \textit{Formation de deux carrés}              \\
+		\textit{carré de côté $c$}                       & \textit{précédemment formé}                     & \textit{de côtés $a$ et $b$}              \\
+	\end{tabular}
+\end{center}
+
+% \includegraphics[width=3cm]{Image/Pythagore/Figure_hypothenuse_zhoubi_suanjing.jpg} & 
+% \textit{Illustration tirée de l'édition du}                                         &
+% \textit{Zhoubi Suanjing de \textsc{Bao Huanzhi} de 1213}                            & & & \\
 
 %https://fr.wikipedia.org/wiki/Zhoubi_Suanjing
 
@@ -1163,44 +1200,44 @@ $\Longrightarrow \mathbf{c^2 = a^2 + b^2}$
 %https://fr.wikipedia.org/wiki/Dix_Canons_du_calcul
 
 
-\paragraph*{Démonstration n°2 : Selon Euclide, livre I}
+%\paragraph*{Démonstration n°2 : Selon Euclide, livre I}
 
-\textit{Présentée par Euclide, vers 300 av. J.-C.}
-
-
+%\textit{Présentée par Euclide, vers 300 av. J.-C.}
 
 
 
 
-La démonstration présentée par Euclide dans le livre I des Éléments\footnote{
-	Les Éléments sont un traité de mathématiques écrit par le mathématicien grec Euclide, 
-	considéré comme la référence dans ce domaine pendant plus de 2000 ans.
-
-	Rendez-vous à la page n°\pageref*{euclide_element} pour en savoir plus sur ce traité. 
-} 
-s’appuie sur les précédentes propositions, en particulier la proposition 4 — en termes modernes deux triangles ayant un angle de même mesure entre deux côtés de mêmes longueurs sont isométriques, et la proposition 41 du livre I sur aire d'un triangle :
-
-    « Si un parallélogramme et un triangle ont une même base, et sont entre mêmes parallèles ; le parallélogramme sera [d’aire] double du triangle. »
-
-Sur les côtés d’un triangle ABC rectangle en A, sont construits extérieurement des carrés BCED, ABFG et ACIH. La hauteur de ABC issue de A coupe le côté opposé [BC] en J et le segment [DE] en K.
-
-Il s’agit de démontrer que l’aire du carré BCED est égale à la somme des aires des carrés ABFG et ACIH.
-
-Les triangles BCF et ABD ont même angle en B (c’est-à-dire l’angle du triangle ABC augmenté d’un angle droit) et par construction, BF = AB et BC = BD. Donc les triangles BCF et ABD ont même aire. Or d’après la proposition 41, l’aire du triangle BCF vaut la moitié de celle du carré ABFG et l’aire du triangle ABD vaut la moitié de celle du rectangle BDKJ. Donc le carré ABFG et le rectangle BDKJ ont même aire.
-
-De même, les triangles BCI et ACE ont même angle en C avec les égalités AC = CI et BC = CE donc ils ont même aire, donc d’après la proposition 41, le carré ACIH a même aire que le rectangle CEKJ.
-
-Finalement, le carré BCED se décompose en deux rectangles BDKJ et CEKJ, dont les aires sont celles de ABFG et ACIH respectivement, ce qui termine la démonstration.
-
-Pappus d'Alexandrie donne une démonstration de son théorème sur les aires, pour un triangle quelconque sur les côtés duquel sont construits des parallélogrammes, qui fournit en la particularisant au triangle rectangle sur les côtés duquel sont construits des carrés, une démonstration du théorème de Pythagore alternative à celle d'Euclide, qui utilise des parallélogrammes plutôt que des triangles, et qui pourrait s'insérer au même endroit de l'exposé euclidien55. 
-
-\smallbreak
 
 
+% La démonstration présentée par Euclide dans le livre I des Éléments\footnote{
+% 	Les Éléments sont un traité de mathématiques écrit par le mathématicien grec Euclide, 
+% 	considéré comme la référence dans ce domaine pendant plus de 2000 ans.
 
-\paragraph*{Démonstration n°3 : Construction de carrés}
+% 	Rendez-vous à la page n°\pageref*{euclide_element} pour en savoir plus sur ce traité. 
+% } 
+% s’appuie sur les précédentes propositions, en particulier la proposition 4 — en termes modernes deux triangles ayant un angle de même mesure entre deux côtés de mêmes longueurs sont isométriques, et la proposition 41 du livre I sur aire d'un triangle :
 
-\textit{Conçue par Maurice Laisnez, en 1876.}
+%     « Si un parallélogramme et un triangle ont une même base, et sont entre mêmes parallèles ; le parallélogramme sera [d’aire] double du triangle. »
+
+% Sur les côtés d’un triangle ABC rectangle en A, sont construits extérieurement des carrés BCED, ABFG et ACIH. La hauteur de ABC issue de A coupe le côté opposé [BC] en J et le segment [DE] en K.
+
+% Il s’agit de démontrer que l’aire du carré BCED est égale à la somme des aires des carrés ABFG et ACIH.
+
+% Les triangles BCF et ABD ont même angle en B (c’est-à-dire l’angle du triangle ABC augmenté d’un angle droit) et par construction, BF = AB et BC = BD. Donc les triangles BCF et ABD ont même aire. Or d’après la proposition 41, l’aire du triangle BCF vaut la moitié de celle du carré ABFG et l’aire du triangle ABD vaut la moitié de celle du rectangle BDKJ. Donc le carré ABFG et le rectangle BDKJ ont même aire.
+
+% De même, les triangles BCI et ACE ont même angle en C avec les égalités AC = CI et BC = CE donc ils ont même aire, donc d’après la proposition 41, le carré ACIH a même aire que le rectangle CEKJ.
+
+% Finalement, le carré BCED se décompose en deux rectangles BDKJ et CEKJ, dont les aires sont celles de ABFG et ACIH respectivement, ce qui termine la démonstration.
+
+% Pappus d'Alexandrie donne une démonstration de son théorème sur les aires, pour un triangle quelconque sur les côtés duquel sont construits des parallélogrammes, qui fournit en la particularisant au triangle rectangle sur les côtés duquel sont construits des carrés, une démonstration du théorème de Pythagore alternative à celle d'Euclide, qui utilise des parallélogrammes plutôt que des triangles, et qui pourrait s'insérer au même endroit de l'exposé euclidien55. 
+
+% \smallbreak
+
+
+
+% \paragraph*{Démonstration n°3 : Construction de carrés}
+
+% \textit{Conçue par Maurice Laisnez, en 1876.}
 
 %[Pythagorean Theorem and its many proofs](https://www.cut-the-knot.org/pythagoras/)
 
@@ -1374,7 +1411,7 @@ d'un quadrilatère quelconque. Cependant, il en existe pour certains quadrilatè
 L'aire d'un quadrilatère convexe inscriptible en fonction des longueurs a, b, c et d de ses
 côtés successifs est donnée par la \emph{formule de Brahmagupta}\footnote{Plus d'information en Annexe, page n°\pageref*{formule_de_Brahmagupta}} :
 
-$$ A_{\text{Quadrilatère cyclique}} = \sqrt{(p_{\frac{1}{2}}-a)(p_{\frac{1}{2}}-b)(p_{\frac{1}{2}}-c)(p_{\frac{1}{2}}-d)} $$
+$$ \mathcal{A}_{\text{Quadrilatère cyclique}} = \sqrt{(p_{\frac{1}{2}}-a)(p_{\frac{1}{2}}-b)(p_{\frac{1}{2}}-c)(p_{\frac{1}{2}}-d)} $$
 
 où $p_{\frac{1}{2}} = \frac{a + b + c + d}{2}$ est le demi-périmètre.
 
@@ -1388,7 +1425,7 @@ il est possible de construire un \textit{rectangle}.
 Ainsi, l'aire d'un cerf-volant est égal au produit des longueurs
 des diagonales ($d_{1}$ et $d_{2}$), divisé par deux.
 
-$$A_{\text{Cerf-volant}} = \frac{ d_{1} \times d_{2} }{ 2 }$$
+$$\mathcal{A}_{\text{Cerf-volant}} = \frac{ d_{1} \times d_{2} }{ 2 }$$
 
 \vspace*{-0.25cm}
 
@@ -1400,10 +1437,10 @@ deux bases ($B$ et $b$) multiplié par la hauteur ($h$) divisé par 2.\footnote{
 	On découpe le trapèze convexe en suivant une de ses diagonales,
 	puis l'on va sommer les aires des deux triangles formés.
 
-	Ainsi, $A_{\text{Trapèze}} = A_{\text{Premier triangle}} + A_{\text{Second triangle}} = \frac{B \times h}{2} + \frac{b \times h}{2} = \frac {(B+b) \times h}{2}$
+	Ainsi, $\mathcal{A}_{\text{Trapèze}} = \mathcal{A}_{\text{Premier triangle}} + \mathcal{A}_{\text{Second triangle}} = \frac{B \times h}{2} + \frac{b \times h}{2} = \frac {(B+b) \times h}{2}$
 }
 
-$$A_{\text{Trapèze}} = \frac {(B+b) \times h}{2}$$
+$$\mathcal{A}_{\text{Trapèze}} = \frac {(B+b) \times h}{2}$$
 
 \vspace*{-0.25cm}
 
@@ -1413,7 +1450,7 @@ En découpant un parallélogramme,
 il est possible d'obtenir un \textit{rectangle} de longueur égal à celle de ses bases ($b$),
 et de largeur égal à sa hauteur ($h$).
 
-$$A_{\text{Parallélogramme}} = b \times h$$
+$$\mathcal{A}_{\text{Parallélogramme}} = b \times h$$
 
 \vspace*{-0.25cm}
 
@@ -1422,7 +1459,7 @@ $$A_{\text{Parallélogramme}} = b \times h$$
 Les losanges sont des cas particulier de \textit{cerf-volant},
 ainsi, comme pour celui-ci :
 
-$$A_{\text{Losange}} = \frac{ d_{1} \times d_{2} }{ 2 }$$
+$$\mathcal{A}_{\text{Losange}} = \frac{ d_{1} \times d_{2} }{ 2 }$$
 
 \vspace*{-0.25cm}
 
@@ -1432,7 +1469,7 @@ L'aire d'un rectangle est égal au produit des longueurs de deux
 côtés adjacents. Cette aire vaut donc le produit de la
 longueur ($L$) et de la largeur ($l$) du rectangle.
 
-$$A_{\text{Rectangle}} = L \times l$$
+$$\mathcal{A}_{\text{Rectangle}} = L \times l$$
 
 \vspace*{-0.25cm}
 
@@ -1443,7 +1480,7 @@ L'aire d'un carré est égal au produit de la longueur d'un côté
 	par lui-même, on dit que l'on fait le “carré” de ce nombre.
 	Ainsi, le carré de $5$ va être égal à $5 \times 5 = 5^{2} = 25$.}
 
-$$A_{\text{Carré}} = c^{2}$$
+$$\mathcal{A}_{\text{Carré}} = c^{2}$$
 
 \newlength{\hauteurImage}
 \setlength{\hauteurImage}{3.5cm}
