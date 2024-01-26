@@ -12,7 +12,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Gestion des Sections et de la Table des matières %
 \setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 
 \usepackage[]{titletoc}
 %\titlecontents
@@ -57,10 +57,10 @@
 \titlecontents
 	{subsubsection}
 	[125pt]
-	{}
+	{\addvspace{-0.5pc}}
 	{\normalfont\footnotesize\contentslabel{30pt}\itshape}
 	{}
-	{\normalsize\dotfill\footnotesize\itshape\thecontentspage}
+	{\normalsize\hfill\footnotesize\itshape\thecontentspage}
 	[]
 	
 \contentsfinish
@@ -432,9 +432,10 @@ mais elle est très utile pour placer précisément les points nous étant utile
 
 % -------------------------------------------------------------
 
-\section{Les formes géométriques}
+\section{Les formes géométriques planes}
 
-Les formes géométriques les plus classiques que l'on retrouve dans cette discipline
+Les formes géométriques planes (constructibles dans un plan) 
+les plus classiques que l'on retrouve dans cette discipline
 sont les cercles et les polygones.
 
 \medbreak
@@ -518,7 +519,8 @@ et grâce la constante $\pi$ :
 
 \medbreak
 
-Les démonstrations de ces formules sont présentées en bas de page.\footnote{Tous les diamètres du cercle passent par son centre.
+Les démonstrations de ces formules sont présentées en bas de page.\footnote{
+	Tous les diamètres du cercle passent par son centre.
 	Ainsi, on peut découper chacun de ces diamètres en deux parties égales,
 	ces parties sont des segments liant le centre du cercle et les point le composant,
 	on remarque alors que ces parties sont des rayons du cercle.
@@ -960,20 +962,19 @@ $$ \mathcal{A}_{\text{Triangle quelconque}} = \frac{b_1 \times h}{2} + \frac{b_2
 	\end{tabular}
 \end{center}
 
-\subsubsection{Relations mathématique dans les triangles}
+\paragraph*{Relation Aire-Périmètre}
 
-\emph{Relation Aire-Périmètre} : Il est possible de majorer l'aire d'un
-triangle à l'aide de son périmètre, avec cette relation\footnote{
+\phantom{text}
+
+Il est possible de majorer l'aire d'un triangle à l'aide de son périmètre, 
+avec cette relation\footnote{
 	Cette relation est démontrée en Annexe, à la page n°\pageref{relation_aire_perim_triangle}.
 } :
 $$ \mathcal{A}_{\text{Triangle}} \leq \frac{(p_{\text{Triangle}})^2 \sqrt {3}} {36} $$
 
-\medbreak
+\newpage
 
-Il existe bien d'autres relations, elles seront détaillés par la suite
-(on va d'ailleurs surtout travailler sur les triangles rectangles par la suite).
-
-\subsubsection{Théorème de Thalès}
+\subsubsection{Théorème de \textsc{Thalès}}
 
 Prenons trois droites $(AB)$, $(BC)$ et $(CA)$.
 Ces droites se croisent en formant un triangle.
@@ -995,7 +996,7 @@ c'est-à-dire qu'en agrandissant ou en réduisant le premier,
 on peut retrouver le second. Ainsi deux triangles semblables
 partagent les mêmes mesurent d'angles.
 
-Le Théorème de Thalès traduit mathématiquement cette relation.
+Le Théorème de \textsc{Thalès} traduit mathématiquement cette relation.
 Il énonce que le facteur d'agrandissement ou de réduction est le même
 pour tous les côtés.
 Ainsi, on en déduit que : $$\frac{DE}{AB} = \frac{DC}{BC} = \frac{EC}{AC}$$
@@ -1066,7 +1067,7 @@ $$\frac{AE}{EC} = \frac{{\text{Aire}}(DEA)}{{\text{Aire}}(DEC)}
 
 \newpage
 
-\subsubsection{Théorème de Pythagore}
+\subsubsection{Théorème de \textsc{Pythagore}}
 
 Ce théorème énonce que dans un \textit{triangle rectangle},
 la somme des longueurs mises aux carrées des cathètes (les côtés adjacents à l'angle droit),
@@ -1080,7 +1081,7 @@ de l'hypoténuse $c$. En utilisant ces notations, on obtient :
 \end{center}
 
 Cette formule nous permet, si l'on connaît la longueur de deux côtés du triangle rectangle,
-d'obtenir la longueur du troisième côté. Pour cela il faut remanier un peu le théorème de Pythagore :
+d'obtenir la longueur du troisième côté. Pour cela il faut remanier un peu le théorème de \textsc{Pythagore} :
 
 \begin{center}
 	\begin{tabular}{ccccc}
@@ -1202,70 +1203,43 @@ Et donc : $c^2 = a^2 + b^2$
 	}
 \end{center}
 
-% \includegraphics[width=3cm]{Image/Pythagore/Figure_hypothenuse_zhoubi_suanjing.jpg} & 
-% \textit{Illustration tirée de l'édition du}                                         &
-% \textit{Zhoubi Suanjing de \textsc{Bao Huanzhi} de 1213}                            & & & \\
+\subsubsection{Théorème d'\textsc{Al-Kashi}}
 
+Le théorème d'\textsc{Al-Kashi} est une généralisation du théorème de \textsc{Pythagore}.
 
-
-
-%\paragraph*{Démonstration n°2 : Selon Euclide, livre I}
-
-%\textit{Présentée par Euclide, vers 300 av. J.-C.}
-
-
-
-
-
-
-% La démonstration présentée par Euclide dans le livre I des Éléments\footnote{
-% 	Les Éléments sont un traité de mathématiques écrit par le mathématicien grec Euclide, 
-% 	considéré comme la référence dans ce domaine pendant plus de 2000 ans.
-
-% 	Rendez-vous à la page n°\pageref*{euclide_element} pour en savoir plus sur ce traité. 
-% } 
-% s’appuie sur les précédentes propositions, en particulier la proposition 4 — en termes modernes deux triangles ayant un angle de même mesure entre deux côtés de mêmes longueurs sont isométriques, et la proposition 41 du livre I sur aire d'un triangle :
-
-%     « Si un parallélogramme et un triangle ont une même base, et sont entre mêmes parallèles ; le parallélogramme sera [d’aire] double du triangle. »
-
-% Sur les côtés d’un triangle ABC rectangle en A, sont construits extérieurement des carrés BCED, ABFG et ACIH. La hauteur de ABC issue de A coupe le côté opposé [BC] en J et le segment [DE] en K.
-
-% Il s’agit de démontrer que l’aire du carré BCED est égale à la somme des aires des carrés ABFG et ACIH.
-
-% Les triangles BCF et ABD ont même angle en B (c’est-à-dire l’angle du triangle ABC augmenté d’un angle droit) et par construction, BF = AB et BC = BD. Donc les triangles BCF et ABD ont même aire. Or d’après la proposition 41, l’aire du triangle BCF vaut la moitié de celle du carré ABFG et l’aire du triangle ABD vaut la moitié de celle du rectangle BDKJ. Donc le carré ABFG et le rectangle BDKJ ont même aire.
-
-% De même, les triangles BCI et ACE ont même angle en C avec les égalités AC = CI et BC = CE donc ils ont même aire, donc d’après la proposition 41, le carré ACIH a même aire que le rectangle CEKJ.
-
-% Finalement, le carré BCED se décompose en deux rectangles BDKJ et CEKJ, dont les aires sont celles de ABFG et ACIH respectivement, ce qui termine la démonstration.
-
-% Pappus d'Alexandrie donne une démonstration de son théorème sur les aires, pour un triangle quelconque sur les côtés duquel sont construits des parallélogrammes, qui fournit en la particularisant au triangle rectangle sur les côtés duquel sont construits des carrés, une démonstration du théorème de Pythagore alternative à celle d'Euclide, qui utilise des parallélogrammes plutôt que des triangles, et qui pourrait s'insérer au même endroit de l'exposé euclidien55. 
-
-% \smallbreak
-
-
-
-% \paragraph*{Démonstration n°3 : Construction de carrés}
-
-% \textit{Conçue par Maurice Laisnez, en 1876.}
-
-%[Pythagorean Theorem and its many proofs](https://www.cut-the-knot.org/pythagoras/)
-
-%[Deux minutes pour... le théorème de Pythagore](https://youtu.be/9Oa6TRY3H1g)
-
-%[Le théorème du produit des cathètes](https://youtu.be/SFSEpFbz6YM)
-
-%[Théorème](https://fr.wikipedia.org/wiki/Théorème)
-
-%[Théorème de Pythagore](https://fr.wikipedia.org/wiki/Théorème_de_Pythagore#/media/Fichier:Pythagorean_proof.svg)
-
-\paragraph*{Théorème d'\textsc{Al-Kashi}}
-
-\phantom{text}
-
-Le théorème d'\textsc{Al-Kashi} est une généralisation du théorème de Pythagore.
 Il permet de calculer la longueur d'un côté d'un \textit{triangle quelconque},
-si l'on connaît les longueurs des deux autres côtés et l'angle qu'ils forment.
+si l'on connaît les longueurs des deux autres côtés et \textbf{l'angle former entre-eux}.
+Malheureusement, ce théorème ne s'applique que dans le cas énoncé plus haut\footnote{
+	Pour en savoir plus sur ce théorème et sur les autres formules utilisables dans les triangles,
+	rendez-vous en Annexe, à la page n°\pageref*{al_kashi_autre_formule}. 
+}.
 
+Ce théorème utilise le \textit{cosinus},
+une fonction trigonométrique, 
+étant définie dans la Section 2, celle traitant de trigonométrie. 
+
+\medbreak
+
+Prenons un triangle quelconque, les longueurs de ses côtés sont $a$, $b$ et $c$ et 
+les angles opposés à ces côtés sont respectivement $\alpha$, $\beta$ et $\gamma$ : 
+
+\begin{center}
+	\makebox[\textwidth][c]{
+		\includegraphics[width=6cm]{Image/Pythagore/Triangle Al-Kashi.png} 
+	}
+\end{center}
+
+Grâce au théorème d'\textsc{Al-Kashi}, on peut établir les relations suivantes :
+
+\begin{center}
+	\begin{tabular}{ccccc}
+		$a^2 = b^2 + c^2 - 2bc \cos(\alpha)$ &
+		\phantom{text}                       &
+		$b^2 = a^2 + c^2 - 2ac \cos(\beta)$  &
+		\phantom{text}                       &
+		$c^2 = a^2 + b^2 - 2ab \cos(\gamma)$ \\
+	\end{tabular}
+\end{center}
 
 
 
@@ -1514,6 +1488,10 @@ $$\mathcal{A}_{\text{Carré}} = c^{2}$$
 
 % -------------------------------------------------------------
 
+\section{Les solides}
+
+% -------------------------------------------------------------
+
 \section{Annexe}
 
 \subsection*{Géométrie non euclidienne} \label{geo_non_euclidienne}
@@ -1652,6 +1630,8 @@ alors aucun de leurs angles ne mesurent la même valeur.
 \subsection*{Démonstration de la relation Aire-Périmètre dans un Triangle} \label{relation_aire_perim_triangle}
 
 \subsection*{Les Éléments d'Euclide} \label{euclide_element}
+
+\subsection*{Autres formules utilisables dans les triangles} \label{al_kashi_autre_formule}
 
 \subsection*{Formule de Brahmagupta} \label{formule_de_Brahmagupta}
 
