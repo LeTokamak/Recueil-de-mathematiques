@@ -115,6 +115,10 @@ footskip=1cm
 \parindent=1cm
 
 \usepackage[bottom]{footmisc}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{footnote}
+\makesavenoteenv{tabular}
 
 
 
@@ -152,62 +156,48 @@ footskip=1cm
 
 	\section{Premier pas en Trigonométrie}
 
-		La Trigonométrie est, comme son nom l'indique, une discipline mathématique qui a comme objectif de “mesurer” les triangles.
+		La Trigonométrie est, comme son nom l'indique, une discipline mathématique qui a comme objectif de "mesurer" les triangles.
 
-		Plus clairement, son but est de pouvoir déduire l'ensemble des informations disponibles dans un triangle à partir du minimum d'information sur ce triangle.
-		Comme vu précédemment, un triangle est un polygone à 3 côtés, et la somme des 3 angles d'un triangle vaut 180°, $\pi$ rad ou 200 gr.
+		Plus clairement, son but est de pouvoir déduire l'ensemble des informations disponibles dans un 
+		triangle à partir du minimum d'information sur ce triangle.
+		Comme vu dans la Section 2, un triangle est un polygone à 3 côtés, 
+		et la somme des 3 angles d'un triangle vaut 180°, $\pi$ rad ou 200 gr.
 
-		En général, en Trigonométrie, on se focalise dans un premier sur les triangles rectangles, puis on généralise les théorèmes que nous avons démontré à tous les triangles.
-
-		\subsection{Théorème de Pythagore}
-
-			Dans un triangle rectangles, la somme des longueurs mises aux carrées des côtés adjacent à l'angle droit, est égal au carrée de la longueur de l'hypoténuse.
-
-			Reformulons mathématiquement pour être plus claire, on nomme les longueurs des cathètes $a$ et $b$ et celle de l'hypoténuse $c$, on obtient : $$a^2 + b^2 = c^2 $$
-
-			Cette formule nous permet, si l'on connaît la longueur de deux côtés du triangle rectangle, d'obtenir la longueur du troisième côté. Pour cela il faut remanier un peu le théorème de Pythagore :
-
-			- $a = \sqrt{c^2 - b^2}$
-			- $b = \sqrt{c^2 - a^2}$
-			- $c = \sqrt{a^2 + b^2}$
-
-			Ce théorème est l'un des plus élémentaires et incontournable du monde des mathématiques, c'est pour cela qu'il en existe plusieurs centaines de démonstrations différentes, je ne m'attarderais ici que sur deux d'entres elles :
-
-			\subsubsection{Démonstration n°1 : *Par soustraction d'aires*}
-
-				Conçue par Maurice Laisnez, en 1876.
-
-				[Pythagorean Theorem and its many proofs](https://www.cut-the-knot.org/pythagoras/)
-
-				[Deux minutes pour... le théorème de Pythagore](https://youtu.be/9Oa6TRY3H1g)
-
-				[Le théorème du produit des cathètes](https://youtu.be/SFSEpFbz6YM)
-
-				[Théorème](https://fr.wikipedia.org/wiki/Théorème)
-
-				%[Théorème de Pythagore](https://fr.wikipedia.org/wiki/Théorème_de_Pythagore#/media/Fichier:Pythagorean_proof.svg)
-
-			\subsubsection{Généralisation : Théorème d'*Al-kashi*}
+		En général, en Trigonométrie, on se focalise principalement sur les \textit{triangles rectangles}, 
+		puis on généralise les théorèmes que nous avons démontré à tous les triangles.
 
 		\subsection{Construction d'un triangle}
 	
-			Dans un triangle, tous les côtés sont liés entre eux, 
-			et pour définir n'importe quel triangle, 
-			il suffit d'avoir la longueur des 3 côtés du polygone.
-			C'est une caractéristique unique aux triangles, 
-			qui ne s'applique par exemple pas aux carrés, car en l'écrasant, 
-			ses côtés ne changent pas de longueur, 
-			mais les angles formés par ceux-ci changent. 
-			A partir d'un losange, il est possible de créer un carré, 
-			en fonction des angles choisis entre les côtés.
+			Les triangles ont une particularité les différenciant des autres polygones :
 
-			Mais revenons à nos triangles ! 
-			Pour tracer un triangle à l'aide de trois longueurs, 
+			\textbf{En connaissant la longueur de 3 côtés d'un triangle, il est possible de parfaitement construire ce triangle.}
+
+			Dans les autres polygones, cette condition n'est pas suffisante pour le construire\footnote{
+				Par exemple, si l'on prend un quadrilatère donné, 
+				où l'on a fixé la longueur de 4 côtés,
+				il est possible de "l'écraser" afin d'obtenir un autre
+				quadrilatère ayant les mêmes longueurs de côtés.
+				En revanche, les angles formés par les côtés de ce quadrilatère 
+				ne seront pas les mêmes que ceux du quadrilatère de départ.
+				
+				Ainsi, à partir d'un losange, il est possible de créer un carré, 
+				en fonction des angles choisis entre les côtés.
+
+				Pour la même raison, 
+				les polygones ayant plus de côtés ne sont pas constructibles
+				en connaissant uniquement les longueurs de leurs côtés.
+			}.
+
+			\medbreak
+
+			Pour tracer un triangle à l'aide de \textit{trois longueurs}, 
 			il faut tracer un segment mesurant une des trois longueurs choisies, 
 			puis tracer deux cercle ayant comme centre les extrémités du segment 
 			et comme rayons les deux autres longueurs voulues pour le triangle. 
 			Les cercles se croisent en deux points, 
 			avec lesquelles ont peut construire deux triangles symétriques.
+
+			\medbreak
 
 			Mais l'on peut aussi remplacer un des cercles ou les deux 
 			cercles par une ou des demi-droites, 
@@ -215,31 +205,103 @@ footskip=1cm
 			Cette demi-droite et le cercle ou ces deux demi-droites 
 			vont se croiser en un point, le troisième sommet du triangle.
 
+			Voici un tableau récapitulatif des différentes possibilités de construction d'un triangle, 
+			en fonction du nombre d'informations connues sur celui-ci :
+
+			\begin{center}
+					\renewcommand{\arraystretch}{1.25}
+					\begin{tabular}{|c|c|c|c|c|}
+						\hline
+									           & \textbf{Aucune longueur}         & \textbf{1 longueur}              & \textbf{2 longueurs}             & \textbf{3 longueurs}             \\
+						\hline
+						\textbf{Aucun angle}   & \textcolor{Red}{Inconstructible} & \textcolor{Red}{Inconstructible} & \textcolor{Red}{Inconstructible} & \textcolor{Green}{Constructible} \\
+						\hline
+						\textbf{1 angle}       & \textcolor{Red}{Inconstructible} & \textcolor{Red}{Inconstructible} & \textcolor{Green}{Constructible} & \textcolor{Green}{Constructible} \\
+						\hline
+						\textbf{2 ou 3 angles}\footnote[2]{
+							En connaissant deux angles d'un triangle, 
+							il est possible de déduire le troisième, 
+							car la somme des trois angles d'un triangle 
+							correspond à un angle plat.
+											} & Triangles semblables\footnote[3]{
+											Avec deux ou trois angles, 
+											il n'est pas possible de construire un triangle en particulier,
+											mais seulement une collection de triangles semblables entre-eux.
+										}& \textcolor{Green}{Constructible} & \textcolor{Green}{Constructible} & \textcolor{Green}{Constructible} \\
+						\hline
+					\end{tabular}
+			\end{center}
+
 			Nous pouvons en conclure qu'un triangle en particulier, 
 			est traçable à l'aide d'une longueur et de deux autres mesures 
 			(des angles ou des longueurs).
 
-			De plus, si deux triangles ont deux de leurs angles commun alors, 
-			ces deux triangles sont semblables, 
-			c'est-à-dire que l'un en l'agrandissement ou la réduction de l'autre.
-			Cette ressemblance entre deux triangles implique 
-			que les rapports entre deux longueurs sera toujours le même 
-			(si un côté est 2 fois plus grand qu'un autre, 
-			si le triangle est rétréci ou agrandi, 
-			le rapport entre les deux côtés restera le même).
+			\medbreak
+
+			Cette propriété unique aux triangles, 
+			nous sera très utile par la suite.
+
+\newpage
+		
 		\subsection{Fonctions trigonométriques}
 
 		\subsubsection{Principe des fonctions trigonométriques}
 
-			Prenons un triangle rectangle, dont (par définition) nous connaissons un des angles, son angle droit (qui vaut 90°, $\frac{\pi}{2}$ rad ou 100 gr). Prenons un autre de ces angles, que nous appellerons $\alpha$. Notre triangle a donc un angle droit et cet angle $\alpha$, on peut ainsi en déduire la taille du troisième angle, car dans un triangle, la somme des trois angles vaut 180° ($\pi$ rad ou 200 gr).
+			Prenons un triangle rectangle, 
+			dont (par définition) nous connaissons un des angles, 
+			son angle droit (qui vaut 90°, $\frac{\pi}{2}$ rad ou 100 gr).
 
-			Notre dernier angle (que nous nommerons $\beta^\circ$) vaut donc en degré : % $\beta = 180° - (90° + \alpha) = 90° - \alpha$
+			Prenons un autre de ces angles, que nous appellerons $\alpha$. 
+			
+			Nous connaissons ainsi deux angle, l'angle droit et l'angle $\alpha$.
+			Comme nous savons que la somme des trois angles du triangle vaut un angle plat,
+			nous pouvons déduire la mesure du dernier angle.
+			Notre troisième angle (que nous nommerons $\beta$) vaut en degré : $\beta = 180^\circ - (90^\circ + \alpha) = 90^\circ - \alpha$
 
-			On connais donc la valeur des trois angles du triangle, ainsi, tous les triangles constructibles seront tous semblables. Comme dit précédemment, tous ces triangles sont similaires, a un agrandissement ou une réduction près.
+			\medbreak
 
-			Cela signifie que les rapports des longueurs entre les côtés ne dépend que des angles du triangle, et comme ceux-ci sont soit fixé à l'avance (l'angle droit) ou dépendent de l'angle $\alpha$. 
+			Maintenant, nous avons obtenues les mesures des trois angles du triangle.
+			Comme vu plus précédemment dans le tableau,
+			avec uniquement 3 angles, il est possible de construire une collection de triangles tous semblables entre-eux.
 
-			On en conclue donc que les rapports entre tous les côtés d'un triangle rectangle dépendent uniquement de l'angle $\alpha$.
+			Afin d'être plus clair, nommons les côtés de notre triangle $a$, $b$ et $c$, en fonction de leur taille.
+			Le côté $a$ sera le plus court, le côté intermédiaire sera le $b$ et le plus long sera le $c$.
+
+			Prenons deux de ces triangles rectangles, le triangle 1 et le triangle 2. 
+			Leurs côtés mesures $a_1$, $b_1$, $c_1$ et $a_2$, $b_2$, $c_2$.
+
+			\medbreak
+
+			Comme ces triangles sont semblables, 
+			leurs côtés sont proportionnels entre-eux,
+			ce qui signifie que $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$.
+
+			Cette propriété implique que, les rapports entre les côtés dans un triangle 
+			vont être égaux à ceux des mêmes côtés dans un autre triangle semblable au premier.
+
+			Mathématiquement, cela signifie que, 
+			pour les côtés $a$ et $b$ de deux triangles semblables, 
+			on a $\frac{a_1}{b_1} = \frac{a_2}{b_2}$.
+
+			Démontrons cette propriété :
+			$\frac{a_1}{a_2} = \frac{b_1}{b_2}$
+			$\Longleftrightarrow a_1 \times b_2 = a_2 \times b_1$
+			$\Longleftrightarrow \frac{a_1 \times b_2}{b_1} = a_2$
+			$\Longleftrightarrow \frac{a_1}{b_1} = \frac{a_2}{b_2}$
+
+			\medbreak
+
+			Cela signifie que les \textbf{rapports entre les longueurs} des côtés dans triangle, ne dépend que des mesures des angles.
+
+			De plus, comme nous sommes dans un triangle rectangle,
+			tous les angles du triangle sont soit fixé à l'avance (l'angle droit), 
+			ou ne dépendent que de la mesure de l'angle $\alpha$. 
+
+			\medbreak
+
+			Et enfin, 
+			nous pouvons en conclure que les rapports entre tous les côtés d'un triangle rectangle,
+			ne dépendent que de la mesure de l'angle $\alpha$.
 
 		\subsubsection{Définition concrète des fonctions trigonométriques}
 
