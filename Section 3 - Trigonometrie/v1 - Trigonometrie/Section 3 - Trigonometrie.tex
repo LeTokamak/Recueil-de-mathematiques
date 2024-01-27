@@ -236,16 +236,27 @@ footskip=1cm
 			est traçable à l'aide d'une longueur et de deux autres mesures 
 			(des angles ou des longueurs).
 
+			\begin{center}
+				\makebox[\textwidth][c]{
+					\begin{tabular}{cc}
+						\includegraphics[width=7cm]{Image/Triangle/Triangle_construction_3_longueurs.png}         &
+						\includegraphics[width=7cm]{Image/Triangle/Triangle_construction_1_longueur_2_angles.png} \\
+
+						\textit{Triangle construit avec 3 longueurs} & \textit{Triangle construit avec 1 longueur et 2 angles} \\
+					\end{tabular}
+				}
+			\end{center}
+
+			Cette propriété unique aux triangles, nous sera très utile par la suite.
+
 			\medbreak
 
-			Cette propriété unique aux triangles, 
-			nous sera très utile par la suite.
 
 \newpage
 		
 		\subsection{Fonctions trigonométriques}
 
-		\subsubsection{Principe des fonctions trigonométriques}
+		\subsubsection{Relation entre les longueurs des côtés d'un triangle rectangle}
 
 			Prenons un triangle rectangle, 
 			dont (par définition) nous connaissons un des angles, 
@@ -262,22 +273,23 @@ footskip=1cm
 
 			Maintenant, nous avons obtenues les mesures des trois angles du triangle.
 			Comme vu plus précédemment dans le tableau,
-			avec uniquement 3 angles, il est possible de construire une collection de triangles tous semblables entre-eux.
+			avec uniquement 3 angles, il est possible de construire une collection de \textbf{triangles tous semblables entre-eux}.
 
 			Afin d'être plus clair, nommons les côtés de notre triangle $a$, $b$ et $c$, en fonction de leur taille.
 			Le côté $a$ sera le plus court, le côté intermédiaire sera le $b$ et le plus long sera le $c$.
 
-			Prenons deux de ces triangles rectangles, le triangle 1 et le triangle 2. 
-			Leurs côtés mesures $a_1$, $b_1$, $c_1$ et $a_2$, $b_2$, $c_2$.
-
 			\medbreak
 
+			Prenons deux de triangles de cette collection, le triangle 1 et le triangle 2. 
+			Leurs côtés mesures $a_1$, $b_1$, $c_1$ et $a_2$, $b_2$, $c_2$.
 			Comme ces triangles sont semblables, 
 			leurs côtés sont proportionnels entre-eux,
 			ce qui signifie que $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$.
 
 			Cette propriété implique que, les rapports entre les côtés dans un triangle 
 			vont être égaux à ceux des mêmes côtés dans un autre triangle semblable au premier.
+
+			\medbreak
 
 			Mathématiquement, cela signifie que, 
 			pour les côtés $a$ et $b$ de deux triangles semblables, 
@@ -288,6 +300,8 @@ footskip=1cm
 			$\Longleftrightarrow a_1 \times b_2 = a_2 \times b_1$
 			$\Longleftrightarrow \frac{a_1 \times b_2}{b_1} = a_2$
 			$\Longleftrightarrow \frac{a_1}{b_1} = \frac{a_2}{b_2}$
+
+			Les démonstrations des relations entre les autres côtés sont analogues.
 
 			\medbreak
 
@@ -303,26 +317,51 @@ footskip=1cm
 			nous pouvons en conclure que les rapports entre tous les côtés d'un triangle rectangle,
 			ne dépendent que de la mesure de l'angle $\alpha$.
 
-		\subsubsection{Définition concrète des fonctions trigonométriques}
+		\subsubsection{Définition des fonctions trigonométriques élémentaires}
 
-			En revanche, ce rapport entre longueurs n'est pas simplement constant, il est variable. Pour prendre en compte ces variations, et donc pouvoir obtenir une relation véritablement chiffrée, les mathématiciens ont construits un grand arsenal de fonctions trigonométriques, même si beaucoup d'entres-elles sont rarement utiles, pour en savoir plus sur ces fonctions délaissées, rendez-vous en Annexe.
+			Comme montré plus tôt, les rapports en chaque côté d'un triangle rectangle, 
+			ne dépendent que de l'angle $\alpha$ (défini comme étant un autre angle que l'angle droit).
+			
+			En revanche, ce rapport entre longueurs n'est pas simplement constant, 
+			il varie de manière complexe en fonction de l'angle $\alpha$.
+			
+			\medbreak
 
-			Les fonctions trigonométriques les plus utiles sont : le **sinus**, le **cosinus** et la **tangente**.
+			Pour prendre en compte ces variations, et donc pouvoir obtenir une relation chiffrée, 
+			les mathématiciens ont construits un grand arsenal de fonctions trigonométriques\footnote{
+				Une grande partie des fonctions trigonométriques créées sont rarement utiles, 
+				pour en savoir plus sur ces fonctions délaissées, rendez-vous en Annexe, à la page \pageref{fonction_trigo_chelous}.
+			}. 
+			
 
-			Dans ces relations, on utilise : 
+			{\noindent Les fonctions trigonométriques les plus utiles sont : }
+			
+			\begin{itemize}
+				\item [•] La fonction \emph{sinus}, notée $\sin$.
+				\item [•] La fonction \emph{cosinus}, notée $\cos$.
+				\item [•] La fonction \emph{tangente}, notée $\tan$.
+			\end{itemize}
 
-			- L'angle $\alpha$, définit précédemment.
-			- La cathète opposée à l'angle $\alpha$ (noté $O$ et généralement appelée “côté opposé”).
-			- La cathète adjacente à l'angle $\alpha$ (noté $A$ et généralement appelée “côté adjacent”).
-			- L'hypoténuse du triangle (noté $H$).
+			{\noindent Dans ces relations, on utilise : }
+			
+			\begin{itemize}
+				\item [•] L'angle $\alpha$, définit précédemment.
+				\item [•] La cathète opposée à l'angle $\alpha$ (noté $O$ et généralement appelée "côté opposé").
+				\item [•] La cathète adjacente à l'angle $\alpha$ (noté $A$ et généralement appelée "côté adjacent").
+				\item [•] L'hypoténuse du triangle (noté $H$).
+			\end{itemize}
 
-			Voici les relations en questions, qui sont les définitions respectives de la fonction cosinus, sinus et tangente :
+\newpage
 
-			- $\sin(\alpha) = \frac{\text{Cathète Opposée}}{\text{Hypoténuse}} = \frac{\text{O}}{\text{H}} \Longrightarrow \text{S = O / H} $
-			- $\cos(\alpha) = \frac{\text{Cathète Adjacente}}{\text{Hypoténuse}} = \frac{\text{A}}{\text{H}} \Longrightarrow \text{C = A / H} $
-			- $\tan(\alpha) = \frac{\text{Cathète Opposée}}{\text{Cathète Adjacente}} = \frac{\text{O}}{\text{A}} \Longrightarrow \text{T = O / A} $
+			{\noindent Voici les relations en questions, qui sont les définitions respectives de la fonction sinus, cosinus et tangente : }
+			
+			\begin{itemize}
+				\item [•] $\sin(\alpha) = \frac{\text{Cathète Opposée}}{\text{Hypoténuse}} = \frac{\text{O}}{\text{H}} \Longrightarrow \text{S = O / H} $
+				\item [•] $\cos(\alpha) = \frac{\text{Cathète Adjacente}}{\text{Hypoténuse}} = \frac{\text{A}}{\text{H}} \Longrightarrow \text{C = A / H} $
+				\item [•] $\tan(\alpha) = \frac{\text{Cathète Opposée}}{\text{Cathète Adjacente}} = \frac{\text{O}}{\text{A}} \Longrightarrow \text{T = O / A} $
+			\end{itemize}
 
-			Un bon moyen mnémotechnique est l'expression “Casse-toi !” (CAH || SOH || TOA)
+			Un bon moyen mnémotechnique pour retenir ces définitions, est l'expression "\textit{Casse-toi !}" (CAH || SOH || TOA)
 
 			A l'aide de ces relations, il est possible de connaître toutes les longueurs de tous les côtés d'un triangle rectangle à l'aide uniquement d'un angle et d'une longueur d'un des côtés : 
 
@@ -454,6 +493,34 @@ footskip=1cm
 	\section{Annexe}
 
 		\subsection*{Fonctions trigonométriques chelous} \label{fonction_trigo_chelous}
+
+		Fonctions trigonométriques chelous selon Github copilot :
+
+		\begin{itemize}
+				\item [•] La fonction sinus, notée $\sin$.
+				\item [•] La fonction cosinus, notée $\cos$.
+				\item [•] La fonction tangente, notée $\tan$.
+				\item [•] La fonction cotangente, notée $\cot$.
+				\item [•] La fonction sécante, notée $\sec$.
+				\item [•] La fonction cosécante, notée $\csc$.
+				\item [•] La fonction exsecante, notée $\text{exsec}$.
+				\item [•] La fonction excosécante, notée $\text{excsc}$.
+				\item [•] La fonction versine, notée $\text{vers}$.
+				\item [•] La fonction coversine, notée $\text{covers}$.
+				\item [•] La fonction haversine, notée $\text{havers}$.
+				\item [•] La fonction hacoversine, notée $\text{hacovers}$.
+				\item [•] La fonction exverse, notée $\text{exvers}$.
+				\item [•] La fonction excovers, notée $\text{excovers}$.
+				\item [•] La fonction vercosine, notée $\text{vercos}$.
+				\item [•] La fonction coverscosine, notée $\text{coverscos}$.
+				\item [•] La fonction havercosine, notée $\text{havercos}$.
+				\item [•] La fonction hacoverscosine, notée $\text{hacoverscos}$.
+				\item [•] La fonction exvercosine, notée $\text{exvercos}$.
+				\item [•] La fonction excoverscosine, notée $\text{excoverscos}$.
+				\item [•] La fonction exsecant, notée $\text{exsec}$.
+				\item [•] La fonction excosecant, notée $\text{excsc}$.
+				\item [•] La fonction exsecant, notée $\text{exsec}$.
+			\end{itemize}
 
 
 
