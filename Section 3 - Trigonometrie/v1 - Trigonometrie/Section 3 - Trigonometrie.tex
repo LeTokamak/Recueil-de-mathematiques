@@ -356,18 +356,18 @@ footskip=1cm
 
 \newpage
 
-			{\noindent Voici les relations en questions, qui sont les définitions respectives de la fonction sinus, cosinus et tangente : }
+			Voici les relations en questions, qui sont les définitions respectives de la fonction sinus, cosinus et tangente :
 			
 			\begin{center}
 				
-				\renewcommand{\arraystretch}{1.75}
+				\renewcommand{\arraystretch}{2}
 				\begin{tabular}{|c|ccc|}
 					\hline
-					\textbf{Fonction} & \textbf{Définition}                                                      & \multicolumn{2}{c|}{\textbf{Résumé}} \\
+					\textbf{Fonction} & \textbf{Définition}                                                                 & \multicolumn{2}{c|}{\textbf{Résumé}} \\
 					\hline
-					\textbf{Sinus}    & $\sin(\alpha) =$ {\large $\frac{\text{Cathète Opposée}}{\text{Hypoténuse}}$       } & $\sin(\alpha) = \frac{\text{O}}{\text{H}} \Longrightarrow \text{S = O / H} $ & \textit{SOH} \\
-					\textbf{Cosinus}  & $\cos(\alpha) =$ {\large $\frac{\text{Cathète Adjacente}}{\text{Hypoténuse}}$     } & $\cos(\alpha) = \frac{\text{A}}{\text{H}} \Longrightarrow \text{C = A / H} $ & \textit{CAH} \\
-					\textbf{Tangente} & $\tan(\alpha) =$ {\large $\frac{\text{Cathète Opposée}}{\text{Cathète Adjacente}}$} & $\tan(\alpha) = \frac{\text{O}}{\text{A}} \Longrightarrow \text{T = O / A} $ & \textit{TOA} \\
+					\textbf{Sinus}    & $\sin(\alpha) =$ {\Large $\frac{\text{Cathète Opposée}}{\text{Hypoténuse}}$       } & $\sin(\alpha) = \frac{\text{O}}{\text{H}} \Longrightarrow \text{S = O / H} $ & \textit{SOH} \\
+					\textbf{Cosinus}  & $\cos(\alpha) =$ {\Large $\frac{\text{Cathète Adjacente}}{\text{Hypoténuse}}$     } & $\cos(\alpha) = \frac{\text{A}}{\text{H}} \Longrightarrow \text{C = A / H} $ & \textit{CAH} \\
+					\textbf{Tangente} & $\tan(\alpha) =$ {\Large $\frac{\text{Cathète Opposée}}{\text{Cathète Adjacente}}$} & $\tan(\alpha) = \frac{\text{O}}{\text{A}} \Longrightarrow \text{T = O / A} $ & \textit{TOA} \\
 					\hline
 				\end{tabular}
 			\end{center}
@@ -385,21 +385,58 @@ footskip=1cm
 			tous les côtés d'un triangle rectangle à l'aide uniquement 
 			de la mesure d'un de ses angles et d'une longueur d'un des côtés.
 
-			Exemple :
+			
+			{ \noindent
+				\makebox[\textwidth][c]{
+					\renewcommand{\arraystretch}{1.75}
+					\begin{tabular}{lc|c|c|cc}
+						\multicolumn{5}{l}{Exemple :} & \multirow{3}{*}{\includegraphics[width=3.1cm]{Image/Triangle/Triangle_sinus_cosinus.png}} \\
+						
+						\phantom{Exempl} & \textit{CAH} & $\text{C = A / H}$ & $\cos(35^\circ) = \frac{6}{h}$ & $h = \frac{6}{\cos(35^\circ)} \approx 7,32 $ & \\
+						                    & \textit{TOA} & $\text{T = O / A}$ & $\tan(35^\circ) = \frac{x}{6}$ & $x = 6 \times \tan(35^\circ) \approx 4,20 $ &\\
+					\end{tabular}
+				}
+			}
+
+			\bigbreak
+			\bigbreak
+			\bigbreak
+			\bigbreak
+			\bigbreak
+			\bigbreak
+
 
 
 		\subsubsection{Lien entre ces trois fonctions}
 
-			De plus, en réutilisant la définition de la tangente, il est possible d'établir un lien entre ces fonctions !
+			De plus,
+			il est possible d'établir un lien entre ces trois fonctions :
+			{ \LARGE $$ \tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)} $$}
 
-			En retravaillant les définitions des fonctions sinus et cosinus, on obtient ces relations :
+			\medbreak
+			\medbreak
 
-			- $\text{Cathète Opposée} = \sin(\alpha) \times \text{Hypoténuse}$
-			- $\text{Cathète Adjacente} = \cos(\alpha) \times \text{Hypoténuse}$
+			Pour démontrer cette relation, 
+			on peut utiliser la définition de la tangente, 
+			puis remplacer les longueurs des côtés à l'aide 
+			des définitions des fonctions sinus et cosinus :
 
-			Puis, à l'aide de la définition de la fonction tangente, on établie notre relation :
+			\medbreak
 
-			$\tan(\alpha) = \frac{\text{Cathète Opposée}}{\text{Cathète Adjacente}} = \frac{\sin(\alpha) \times \text{Hypoténuse}}{\cos(\alpha) \times \text{Hypoténuse}} \Longrightarrow \tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)}$
+			\begin{itemize}
+				\item [ ] $\text{Cathète Opposée}   = \sin(\alpha) \times \text{Hypoténuse}$
+				\item [ ] $\text{Cathète Adjacente} = \cos(\alpha) \times \text{Hypoténuse}$
+			\end{itemize}
+
+			\bigbreak
+
+			\begin{Large}
+			\begin{itemize}
+				\item [ ] $\tan(\alpha) = \frac{\text{Cathète Opposée}}{\text{Cathète Adjacente}} = \frac{\sin(\alpha) \times \text{Hypoténuse}}{\cos(\alpha) \times \text{Hypoténuse}} = \frac{\sin(\alpha)}{\cos(\alpha)}$
+			\end{itemize}
+			\end{Large}
+
+\newpage
 
 	\section{Cercle trigonométrique et radian}
 
