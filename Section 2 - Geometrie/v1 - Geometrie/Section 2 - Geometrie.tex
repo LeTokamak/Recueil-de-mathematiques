@@ -131,6 +131,7 @@ footskip=1cm
 \parindent=1cm
 
 \usepackage[bottom]{footmisc}
+\usepackage[dvipsnames]{xcolor}
 
 \begin{document}
 
@@ -323,6 +324,28 @@ par la multitude de diviseur dont ce dernier dispose. En radian, $2\pi$ correspo
 d'un cercle de rayon unitaire, ce qui est (en résumé) très cohérent mathématiquement. En grade,
 un angle droit mesure 100, nombre étant facilement manipulable.
 
+\subsubsection*{Conversion d'une unité à une autre}
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|c|c||c|c|}
+		\hline
+		\textbf{Conversion} & \textbf{Formule} & \textbf{Constante} & \textbf{$\log_{10}(\text{Constante})$} \\
+		\hline
+		\textcolor{Red}{$x$ degré} $\Rightarrow$ \textcolor{Blue}{$y$ radian} & $y = x \times \frac{2 \pi}{360} = x \times \frac{\pi}{180}$ & $\frac{\pi}{180} \approx \numprint{0,017 453}$ & $-\numprint{1.758122632}$\\
+		\textcolor{Blue}{$x$ radian} $\Rightarrow$ \textcolor{Red}{$y$ degré} & $y = x \times \frac{360}{2 \pi} = x \times \frac{180}{\pi}$ & $\frac{180}{\pi} \approx \numprint{57,295 78}$ & $+\numprint{1.758122632}$\\
+		\hline
+		\textcolor{Red}{$x$ degré} $\Rightarrow$ \textcolor{Green}{$y$ grade} & $y = x \times \frac{400}{360} = x \times \frac{10}{9}$ & $\frac{10}{9} = 1,111...$ & $+\numprint{0.045757490}$\\
+		\textcolor{Green}{$x$ grade} $\Rightarrow$ \textcolor{Red}{$y$ degré} & $y = x \times \frac{360}{400} = x \times 0,9$ & $0,9$ & $-\numprint{0.045757491}$ \\
+		\textcolor{Blue}{$x$ radian} $\Rightarrow$ \textcolor{Green}{$y$ grade} & $y = x \times \frac{400}{2 \pi} = x \times \frac{200}{\pi}$ & $\frac{200}{\pi} \approx \numprint{63,661 98}$ & $+\numprint{1.803880123}$ \\
+		\textcolor{Green}{$x$ grade} $\Rightarrow$ \textcolor{Blue}{$y$ radian} & $y = x \times \frac{2 \pi}{400} = x \times \frac{\pi}{200}$ & $\frac{\pi}{200} \approx \numprint{0,0157 08}$ & $-\numprint{1.803 880 123}$\\
+		\hline
+	\end{tabular}
+\end{center}
+Valeurs approchées et Logarithmes des constantes : …
+
+\newpage
+
 \subsubsection*{Propriétés}
 
 \paragraph*{Angles complémentaires}
@@ -337,7 +360,6 @@ Deux angles sont \emph{supplémentaires} si une fois réunis, ils forment ensemb
 
 Deux angles sont \emph{explémentaires} si une fois réunis, ils forment ensemble un \textit{angle plein}.
 
-
 \subsubsection*{Bissectrice}
 
 La \emph{bissectrice} d'un angle est une droite séparant un angle en deux secteurs d'angle égaux.
@@ -345,7 +367,7 @@ La \emph{bissectrice} d'un angle est une droite séparant un angle en deux secte
 Pour savoir comment tracer une bissectrice, rendez-vous page n°\pageref{tracer_mediatrice_bissectrice}.
 
 
-\newpage
+
 
 \subsubsection*{Notation d'un angle}
 
