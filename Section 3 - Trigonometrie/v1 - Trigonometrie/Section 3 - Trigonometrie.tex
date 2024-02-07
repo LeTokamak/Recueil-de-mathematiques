@@ -389,17 +389,17 @@ footskip=1cm
 			de la mesure d'un de ses angles et d'une longueur d'un des côtés.
 
 			
-			\noindent {
-				\makebox[\textwidth][c]{
-					\renewcommand{\arraystretch}{1.75}
-					\begin{tabular}{lc|c|c|cc}
-						\multicolumn{5}{l}{Exemple :} & \multirow{3}{*}{\includegraphics[width=3.1cm]{Image/Triangle/Triangle_sinus_cosinus.png}} \\
-						
-						\phantom{Exempl} & \textit{CAH} & $\text{C = A / H}$ & $\cos(35^\circ) = \frac{6}{h}$ & $h = \frac{6}{\cos(35^\circ)} \approx 7,32 $ & \\
-						                    & \textit{TOA} & $\text{T = O / A}$ & $\tan(35^\circ) = \frac{x}{6}$ & $x = 6 \times \tan(35^\circ) \approx 4,20 $ &\\
-					\end{tabular}
-				}
-			}
+			
+			\begin{center}
+				\renewcommand{\arraystretch}{1.75}
+				\begin{tabular}{lc|c|c|cc}
+					\multicolumn{5}{l}{Exemple :} & \multirow{3}{*}{\includegraphics[height=2cm]{Image/Triangle/Triangle_sinus_cosinus.png}} \\
+					
+					\phantom{Exemple} & \textit{CAH} & $\text{C = A / H}$ & $\cos(35^\circ) = \frac{6}{h}$ & $h = \frac{6}{\cos(35^\circ)} \approx 7,32 $ & \\
+										& \textit{TOA} & $\text{T = O / A}$ & $\tan(35^\circ) = \frac{x}{6}$ & $x = 6 \times \tan(35^\circ) \approx 4,20 $ &\\
+				\end{tabular}
+			\end{center}
+			
 
 			\bigbreak
 			\bigbreak
@@ -410,7 +410,7 @@ footskip=1cm
 
 
 
-		\subsubsection{Lien entre ces trois fonctions}
+		\subsubsection{Lien entre ces trois fonctions} \label{lien_fct_trigo}
 
 			De plus,
 			il est possible d'établir un lien entre ces trois fonctions :
@@ -545,14 +545,20 @@ footskip=1cm
 			Appelons cet angle $\theta$, $O$ le centre du cercle, et $M$ le point d'intersection du rayon terminant l'angle avec le cercle.
 			Il est possible de construire un triangle rectangle $OMX_M$ ayant pour hypoténuse le rayon du cercle.
 
+			\begin{center}
+				\includegraphics[width=8cm]{Image/Cercle Trigo/Cercle_trigo_lien_avec_fct_trigo.png}
+			\end{center}
+
 			Ainsi, à l'aide des définitions des fonctions sinus et cosinus,
 			il facile de calculer les longueurs des côtés de ce triangle :
 
-			\begin{itemize}
-				\item [•] $\text{Cathète Adjacente} = \cos(\theta) \times \text{Hypoténuse}$ $\Longrightarrow$ Longueur de $[OX_M]$ = $\cos(\theta) \times 1$
-				\item [•] $\text{Cathète Opposée  } = \sin(\theta) \times \text{Hypoténuse}$ $\Longrightarrow$ Longueur de $[X_MM]$ = $\sin(\theta) \times 1$
-			\end{itemize}
+			\begin{tabular}{ll}
+				$\text{Cathète Adjacente} = \cos(\theta) \times \text{Hypoténuse}$ & $\Longrightarrow$ Longueur de $[OX_M]$ = $\cos(\theta) \times 1$\\
+				$\text{Cathète Opposée} = \sin(\theta) \times \text{Hypoténuse}$   & $\Longrightarrow$ Longueur de $[MX_M]$ = $\sin(\theta) \times 1$\\
+			\end{tabular}
 			
+			\medbreak
+
 			De plus, il est possible de tracer un second triangle rectangle $OMY_M$ ayant pour hypoténuse le rayon du cercle.
 			Les longueurs des côtés de ce nouveau triangle sont les mêmes que celles du triangle $OMX_M$.
 
@@ -560,16 +566,34 @@ footskip=1cm
 			les coordonnées du point $M$ sont $(\cos(\theta), \sin(\theta))$.
 			Réciproquement, pour chaque point du cercle,
 			il est possible d'obtenir le sinus et le cosinus de l'angle correspondant,
-			en projetant ce point sur l'axe des abscisses et sur celui des ordonnées.
+			en projetant ce point sur l'axe des abscisses et sur celui des ordonnées.\footnote{
+				J'ai trouvé un moyen mnémotechnique pour retenir quel axe est celui où l'on retrouve le sinus de l'angle.
 
-			J'ai trouvé un moyen mnémotechnique pour retenir quel axe est celui où l'on retrouve le sinus de l'angle. 
-			L'abréviation de sinus c'est sin, ce qui correspond au début du mot “singe”, 
-			les singes montent dans les arbres, alors l'axe des sinus est l'axe verticale de notre repère.
+				L'abréviation de sinus c'est sin, ce qui correspond au début du mot “singe”, 
+				les singes montent dans les arbres, alors l'axe des sinus est l'axe verticale de notre repère.
+			}
 
-			---TO DO--- : Ajouter une image pour illustrer ce point.
+			De plus, on peut aussi retrouver graphiquement la tangente :
+			\begin{itemize}
+				\item [•] Prenez la droite tangente (géométriquement) au cercle, étant perpendiculaire à l'axe des abscisse positives (elle passe ainsi par $A$).
+				\item [•] Prolongez le rayon terminant l'angle $\theta$. Cette demi-droite coupe la tangente géométrique en un point $I_M$.
+				\item [•] À l'aide du théorème de \textsc{Thalès}, on peut aisément prouver que la longueur de $[AI_M] = \tan(\theta)$.
+			\end{itemize}
 
-			De plus, on peut aussi retrouver graphiquement la tangente, 
-			pour un angle $\theta$, c'est la longueur du segment perpendiculaire à la droite (OA) tangente (géométrique) au cercle trigonométrique qui intercepte l'axe des abscisses.
+			\subsubsection*{Démonstration}
+			
+			Nous savons que $OA = 1$, que $OX_M = \cos(\theta)$ et que $X_MM = \sin(\theta)$.
+			De plus, nous pouvons remarquer que les triangles $OMX_M$ et $OI_MA$ sont semblables, car ils sont équiangles.
+
+			Grâce à cette propriété, nous pouvons utiliser le théorèmes de \textsc{Thalès}, nous indiquant que $\frac{OX_M}{OA} = \frac{X_MM}{AI_M}$.
+			En réarrangeant cette équation, on obtient : 
+				$${AI_M} = \frac{X_MM \times OA}{OX_M} = \frac{\sin(\theta) \times 1}{\cos(\theta)} = \frac{\sin(\theta)}{\cos(\theta)}$$
+
+			Et comme présenté précédemment(à la page n°\pageref{lien_fct_trigo}), 
+			il existe un lien entre les trois fonctions trigonométriques élémentaires, 
+			à l'aide de ce lien, on démontre enfin que : 
+				$${AI_M} = \tan(\theta)$$
+
 
 		\subsection{Arithmétique modulaire}
 
