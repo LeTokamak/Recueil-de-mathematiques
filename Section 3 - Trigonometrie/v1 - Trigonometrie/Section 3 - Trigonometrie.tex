@@ -89,6 +89,7 @@ footskip=1cm
 \usepackage{mathtools}
 \usepackage{rotating}
 \usepackage{multirow}
+\usepackage{multicol}
 
 %\usepackage[mathletters]{ucs}
 
@@ -452,8 +453,6 @@ footskip=1cm
 			en mathématique, en particulier en Trigonométrie,
 			où l'on préfère utiliser le radian.
 
-			\medbreak
-
 			Pour en savoir plus sur les définitions des unités d'angle,
 			rendez-vous dans la Section 2, dans la partie consacrée aux Angles.
 
@@ -472,7 +471,6 @@ footskip=1cm
 					C'est à dire que, mis à part la \textit{beauté mathématique} 
 					de la définition du radian par rapport au degré, 
 					pourquoi cette unité est a préféré à une autre ?
-
 					Cette préférence provient de certaines propriétés mathématiques 
 					qui ne sont vrai que si l'unité d'angle est le radian.
 					En particulier, lorsque l'on dérive ou intègre une 
@@ -484,7 +482,6 @@ footskip=1cm
 					position où seule la mesure en radians d'un angle a un sens.
 				} en mathématique, en particulier en Trigonométrie.
 
-
 				Cependant, le périmètre d'un cercle étant égal à $2 \pi$, 
 				on retrouve la constante $\pi$ un peu partout 
 				dans les mesures d'angles usuels. 
@@ -494,8 +491,6 @@ footskip=1cm
 				mathématiquement meilleure que le degré, 
 				ne s'est pas imposée au plus grand nombre 
 				comme remplaçante de cette vielle unité.
-
-				\medbreak
 
 				Et c'est pour cette raison que,
 				par défaut, c'est cette unité qui sera 
@@ -508,40 +503,73 @@ footskip=1cm
 			bien comprendre leur lien avec 
 			les fonctions trigonométriques, 
 			on utilise généralement le \emph{cercle trigonométrique}. 
-
 			Ce cercle est centré autour de l'origine 
-			du repère et à un rayon égal à 1, 
-			ce cercle est représenté ci-dessous. 
+			du repère et à un rayon égal à 1 :
 
-			\begin{center}
-				\includegraphics[width=7cm]{Image/Cercle Trigo/Cercle_trigo_sens_trigo.PNG}
-			\end{center}
+			\begin{multicols}{2}
 
-			Un angle représenté sur ce cercle est “orienté”, c'est-à-dire qu'il commence et qu'il termine aux extrémités le définissant.
+				\begin{center}
+					\includegraphics[width=7cm]{Image/Cercle Trigo/Cercle_trigo_sens_trigo.PNG}
+				\end{center}
 
-			L'axe de départ de tous les angles représentables sur le cercle est l'axe des abscisses (plus précisément, l'axe des abscisses positives). L'angle est mesuré entre deux demi-droites, celui des abscisses positives et une autre servant à terminer l'angle, ces deux demi-droites partent de l'origine du repère.
+				Les angles représentés sur ce cercle sont \emph{orientés},
+				c'est-à-dire qu'ils démarrent à partir d'une ligne et qu'il se terminent sur une autre ligne.
+				
+				Leur orientation est indiqué par la flèche en haut à droite du cercle, 
+				ce sens, inverse au sens dans lequel tournent les aiguilles d'une montre, 
+				est appelé \emph{sens trigonométrique}\footnote{
+					Le sens trigonométrique est une convention,
+					qui a été choisie car elle est correspond au sens de rotation
+					de la Terre autour de son axe de rotation,
+					si l'on observe la Terre en se centrant sur le pôle Nord.
 
-			L'orientation des angles correspond au sens indiqué par la flèche en haut à droite du cercle, ce sens, inverse au sens horaire (celui dans lequel tournent les aiguilles d'une montre), est appelé sens trigonométrique (ou sans antihoraire).
+					Ce choix à été fait car ce sens de rotation était étudié, 
+					en particulier en Europe, dans l'hémisphère Nord.
+				} (ou sens antihoraire).
+				Comme ces angles sont orientés, il peuvent être \textbf{positifs} ou \textbf{négatifs}.
+				Ainsi l'angle vert est positif et le rouge est négatif. 
 
-			Cette orientation donne un signe aux angles, ainsi les angles $\alpha$ et $\beta$ sont des angles positif et les angles $\gamma$ et $\theta$ sont négatifs. En tournant autour du cercle, on retrouve ainsi n'importe quelle angle possible. 
+				Tous les angles représentables sur le cercle partent de l'axe des abscisses positives,
+				représenté en rouge.
+				Ainsi, les angles sont mesurés en partant de cette ligne de départ
+				et en finissant sur un rayon du cercle.
+
+				Et donc, en tournant autour du cercle, on retrouve ainsi n'importe quelle angle possible. 
+
+			\end{multicols}
 
 		\subsection{Lien avec les fonctions trigonométriques}
 
-			Sur le cercle trigonométrique, il est possible de retrouver simplement le sinus et le cosinus d'un angle représenté sur le cercle. Appelons cet angle $\theta$. En effet, en projetant le point A (celui étant à l'intersection entre le cercle et la demi-droite terminant l'angle étudié) sur l'axe des abscisses, alors on forme le point $X_A$, et à l'aide des calculs vus précédemment, on trouve que la longueur du segment [O$X_A$] est égal à $\cos(\theta)$. En effet, le triangle OA$X_A$ est un triangle rectangle, il est donc possible d'utiliser la formule définissant le cosinus, soit :
+			Sur le cercle trigonométrique, 
+			il est possible de retrouver simplement le sinus et le cosinus d'un angle représenté sur le cercle. 
+			Appelons cet angle $\theta$, $O$ le centre du cercle, et $M$ le point d'intersection du rayon terminant l'angle avec le cercle.
+			Il est possible de construire un triangle rectangle $OMX_M$ ayant pour hypoténuse le rayon du cercle.
 
-			$\cos(\theta) = \frac{\text{Cathète Adjacente}}{\text{Hypoténuse}} = \frac{\text{A}}{\text{H}}$
+			Ainsi, à l'aide des définitions des fonctions sinus et cosinus,
+			il facile de calculer les longueurs des côtés de ce triangle :
 
-			Dans notre cas, on a donc :
+			\begin{itemize}
+				\item [•] $\text{Cathète Adjacente} = \cos(\theta) \times \text{Hypoténuse}$ $\Longrightarrow$ Longueur de $[OX_M]$ = $\cos(\theta) \times 1$
+				\item [•] $\text{Cathète Opposée  } = \sin(\theta) \times \text{Hypoténuse}$ $\Longrightarrow$ Longueur de $[X_MM]$ = $\sin(\theta) \times 1$
+			\end{itemize}
+			
+			De plus, il est possible de tracer un second triangle rectangle $OMY_M$ ayant pour hypoténuse le rayon du cercle.
+			Les longueurs des côtés de ce nouveau triangle sont les mêmes que celles du triangle $OMX_M$.
 
-			$\cos(\theta) = \frac{\text{O}X_A}{\text{OA}} = \frac{\text{O}X_A}{1}$
+			Ainsi on peut en conclure que,
+			les coordonnées du point $M$ sont $(\cos(\theta), \sin(\theta))$.
+			Réciproquement, pour chaque point du cercle,
+			il est possible d'obtenir le sinus et le cosinus de l'angle correspondant,
+			en projetant ce point sur l'axe des abscisses et sur celui des ordonnées.
 
-			Ainsi $\text{O}X_A = \cos(\theta)$
+			J'ai trouvé un moyen mnémotechnique pour retenir quel axe est celui où l'on retrouve le sinus de l'angle. 
+			L'abréviation de sinus c'est sin, ce qui correspond au début du mot “singe”, 
+			les singes montent dans les arbres, alors l'axe des sinus est l'axe verticale de notre repère.
 
-			Il est également possible de projeter le point A sur l'axe des ordonnées, pour former le point $Y_A$. Et de manière analogue, on démontre aisément que $\text{O}Y_A = \sin(\theta)$.
+			---TO DO--- : Ajouter une image pour illustrer ce point.
 
-			J'ai trouvé un moyen mnémotechnique pour retenir quel axe est celui où l'on retrouve le sinus de l'angle. L'abréviation de sinus c'est sin, ce qui correspond au début du mot “singe”, les singes montent dans les arbres, alors l'axe des sinus est l'axe verticale de notre repère.
-
-			De plus, on peut aussi retrouver graphiquement la tangente, pour un angle $\theta$, c'est la longueur du segment perpendiculaire à la droite (OA) tangente (géométrique) au cercle trigonométrique qui intercepte l'axe des abscisses.
+			De plus, on peut aussi retrouver graphiquement la tangente, 
+			pour un angle $\theta$, c'est la longueur du segment perpendiculaire à la droite (OA) tangente (géométrique) au cercle trigonométrique qui intercepte l'axe des abscisses.
 
 		\subsection{Arithmétique modulaire}
 
