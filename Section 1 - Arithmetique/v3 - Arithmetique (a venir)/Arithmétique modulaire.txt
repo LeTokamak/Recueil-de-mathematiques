@@ -1,0 +1,8 @@
+\subsection{Arithmétique modulaire}
+
+			L'arithmétique modulaire est une branche de l'arithmétique 
+			étudiant le reste dans la division euclidienne d'un nombre, 
+			en fonction d'un autre, qu'on appellera module. 
+
+			L'etude se fait uniquement sur les restes de cette division 
+			euclidienne, ainsi les valeurs étudiées pouvant 
