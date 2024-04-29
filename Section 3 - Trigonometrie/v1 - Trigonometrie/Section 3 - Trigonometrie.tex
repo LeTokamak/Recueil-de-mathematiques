@@ -215,12 +215,12 @@ footskip=1cm
 						\hline
 						\textbf{1 angle}       & \textcolor{Red}{Inconstructible} & \textcolor{Red}{Inconstructible} & \textcolor{Green}{Constructible} & \textcolor{Green}{Constructible} \\
 						\hline
-						\textbf{2 ou 3 angles}\footnote[2]{
+						\textbf{2 ou 3 angles}\footnote{
 							En connaissant deux angles d'un triangle, 
 							il est possible de déduire le troisième, 
 							car la somme des trois angles d'un triangle 
 							correspond à un angle plat.
-											} & Triangles semblables\footnote[3]{
+											} & Triangles semblables\footnote{
 											Avec deux ou trois angles, 
 											il n'est pas possible de construire un triangle en particulier,
 											mais seulement une collection de triangles semblables entre-eux.
@@ -734,17 +734,45 @@ footskip=1cm
 			D'autres angles ont des valeurs de sinus et cosinus exactes,
 			certaines de ces valeurs sont présentés en Annexe, à la page \pageref{valeur_remarquable_trigo}.
 
-\newpage
-
 		\subsection{Étude de fonction}
-
-			\subsubsection{Représentation graphique}
-				Graph (0,5p)
+			\subsubsection{Définition de ces fonctions}
+				\paragraph*{Définition}
+					La fonction sinus associe à tout réel $x$, le réel $\sin(x)$.
+					
+					est définie sur $\mathbb{R}$, et à chaque réel $x$, elle associe le réel $\sin(x)$.
+					De même, la fonction cosinus est définie sur $\mathbb{R}$, et à chaque réel $x$, elle associe le réel $\cos(x)$.
+					Enfin, la fonction tangente est définie sur $\mathbb{R}$, et à chaque réel $x$, elle associe le réel $\tan(x)$.
+				\paragraph*{Formules}
+					La fonction sinus est définie par la formule $\sin(x) = \frac{O}{H}$, la fonction cosinus est définie par la formule $\cos(x) = \frac{A}{H}$ et la fonction tangente est définie par la formule $\tan(x) = \frac{O}{A}$.
+				\paragraph*{Domaine de définition}
+					Le domaine de définition de ces fonctions est $\mathbb{R}$.
 
 			\subsubsection{Propriétés de ces fonctions}
+				
+				\paragraph*{Propriétés simples}
+					\subparagraph*{Périodicité}
+						Les fonctions sinus, cosinus et tangente sont $2\pi$-périodiques.
+						C'est à dire que, tout les $2\pi$ radians, ces fonctions se répètent.
+						Ou exprimé plus rigoureusement, pour tout réel $x$, on a $\sin(x) = \sin(x + 2\pi)$, $\cos(x) = \cos(x + 2\pi)$ et $\tan(x) = \tan(x + 2\pi)$.
+					\subparagraph*{Parité}
+						La fonction sinus est impaire, la fonction cosinus est paire\footnote{
+							Une fonction $f$ est impaire, si $\forall x \in \mathbb{R}, f(x) = -f(x)$.
+							Une fonction $f$ est paire, si $\forall x \in \mathbb{R}, f(x) = f(-x)$.}.
+					
 				Propriétés simples (parité, périodicité, etc.) (0,5p) => Démo en Annexe
 				Propriétés plus complexes (1p) => Démo en Annexe (Lien vers formules trigonométriques)
 				Variation, Dérivé (1p)
+
+\newpage
+		\subsubsection{Représentation graphique}
+			\vspace*{-0.25cm}
+			\begin{center}
+				\makebox[\textwidth][c]{
+					\includegraphics[height=24cm]{Graphs fonctions/sinus_cosinus_modifie.png}
+				}
+			\end{center}
+
+			
 
 			
 
