@@ -215,12 +215,12 @@ footskip=1cm
 						\hline
 						\textbf{1 angle}       & \textcolor{Red}{Inconstructible} & \textcolor{Red}{Inconstructible} & \textcolor{Green}{Constructible} & \textcolor{Green}{Constructible} \\
 						\hline
-						\textbf{2 ou 3 angles}\footnote[2]{
+						\textbf{2 ou 3 angles}\footnote{
 							En connaissant deux angles d'un triangle, 
 							il est possible de déduire le troisième, 
 							car la somme des trois angles d'un triangle 
 							correspond à un angle plat.
-											} & Triangles semblables\footnote[3]{
+											} & Triangles semblables\footnote{
 											Avec deux ou trois angles, 
 											il n'est pas possible de construire un triangle en particulier,
 											mais seulement une collection de triangles semblables entre-eux.
@@ -545,6 +545,10 @@ footskip=1cm
 				\includegraphics[width=8cm]{Image/Cercle Trigo/Cercle_trigo_lien_avec_fct_trigo.png}
 			\end{center}
 
+			\vspace{-0.5cm}
+			
+			\subsubsection{Retrouver le sinus et le cosinus de $\theta$}
+
 			Ainsi, à l'aide des définitions des fonctions sinus et cosinus,
 			il facile de calculer les longueurs des côtés de ce triangle :
 
@@ -559,7 +563,7 @@ footskip=1cm
 			Les longueurs des côtés de ce nouveau triangle sont les mêmes que celles du triangle $OMX_M$.
 
 			Ainsi on peut en conclure que,
-			les coordonnées du point $M$ sont $(\cos(\theta), \sin(\theta))$.
+			les coordonnées cartésiennes du point $M$ sont $(\cos(\theta), \sin(\theta))$.
 			Réciproquement, pour chaque point du cercle,
 			il est possible d'obtenir le sinus et le cosinus de l'angle correspondant,
 			en projetant ce point sur l'axe des abscisses et sur celui des ordonnées.\footnote{
@@ -569,16 +573,17 @@ footskip=1cm
 				les singes montent dans les arbres, par conséquent l'axe des sinus est l'axe verticale de notre repère.
 			}
 
+			\subsubsection{Retrouver la tangente de $\theta$}
 			De plus, on peut aussi retrouver graphiquement la tangente :
 			\begin{itemize}
-				\item [•] Prenez la droite tangente (géométriquement) au cercle, étant perpendiculaire à l'axe des abscisse positives (elle passe ainsi par $A$).
+				\item [•] Prenez la droite tangente (géométriquement) au cercle, étant perpendiculaire à l'axe des abscisse positives et passant par $A$.
 				\item [•] Prolongez le rayon terminant l'angle $\theta$. Cette demi-droite coupe la tangente géométrique en un point $I_M$.
-				\item [•] À l'aide du théorème de \textsc{Thalès}, on peut aisément prouver que la longueur de $[AI_M] = \tan(\theta)$.
+				\item [•] La longueur de $[AI_M] = \tan(\theta)$.
 			\end{itemize}
 
-			\subsubsection*{Démonstration}
-			
-			Nous savons que $OA = 1$, que $OX_M = \cos(\theta)$ et que $X_MM = \sin(\theta)$.
+			\vspace{-0.25cm}
+
+			\paragraph*{Démonstration :} Nous savons que $OA = 1$, que $OX_M = \cos(\theta)$ et que $X_MM = \sin(\theta)$.
 			De plus, nous pouvons remarquer que les triangles $OMX_M$ et $OI_MA$ sont semblables, car ils sont équiangles.
 
 			Grâce à cette propriété, nous pouvons utiliser le théorèmes de \textsc{Thalès}, nous indiquant que $\frac{OX_M}{OA} = \frac{X_MM}{AI_M}$.
@@ -624,7 +629,7 @@ footskip=1cm
 			on dira que la mesure principale de $-\pi$ rad est $\pi$ rad.
 			
 			Ainsi, pour un angle $\theta$ donné,
-			sa mesure principale sera comprise dans l'intervale $]-\pi, \pi]$.
+			sa mesure principale est définie comme étant comprise dans l'intervale $]-\pi, \pi]$.
 
 \newpage
 
@@ -636,7 +641,7 @@ footskip=1cm
 
 		\subsection{Valeurs remarquables}
 
-			\subsubsection*{Valeurs de sinus et cosinus}
+			Voici un tableau regroupant les valeurs remarquables des fonctions sinus, cosinus et tangente :
 
 				\begin{center}
 					\renewcommand{\arraystretch}{1.75}
@@ -645,37 +650,69 @@ footskip=1cm
 						Angle $\theta$ & $0$ & {\large $\frac{\pi}{6}$} & {\large $\frac{\pi}{4}$} & {\large $\frac{\pi}{3}$} & {\large $\frac{\pi}{2}$} & {\large $\frac{2\pi}{3}$} & {\large $\frac{3\pi}{4}$} & {\large $\frac{5\pi}{6}$} & $\pi$\\
 						\hline
 						\hline
-						$\sin(\theta)$ & $0$ & \textcolor{Red}{{\large $\frac{1}{2}$}} & \textcolor{Green}{{\large $\frac{\sqrt{2}}{2}$}} & \textcolor{Blue}{{\large $\frac{\sqrt{3}}{2}$}} & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ \\
+						$\sin(\theta)$ & $0$ & {\large $\frac{1}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{\sqrt{3}}{2}$} & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ \\
 						\hline
-						$\cos(\theta)$ & $1$ & \textcolor{Blue}{{\large $\frac{\sqrt{3}}{2}$}} & \textcolor{Green}{{\large $\frac{\sqrt{2}}{2}$}} & \textcolor{Red}{{\large $\frac{1}{2}$}} & $0$ & {\large $-\frac{1}{2}$} & {\large $-\frac{\sqrt{2}}{2}$} & {\large $-\frac{\sqrt{3}}{2}$} & $-1$ \\
+						$\cos(\theta)$ & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ & {\large $-\frac{1}{2}$} & {\large $-\frac{\sqrt{2}}{2}$} & {\large $-\frac{\sqrt{3}}{2}$} & $-1$ \\
 						\hline
 						$\tan(\theta)$ & $0$ & {\large $\frac{\sqrt{3}}{3}$} & $1$ & $\sqrt{3}$ & $\infty$ & $-\sqrt{3}$ & $-1$ & $-\frac{\sqrt{3}}{3}$ & $0$ \\
 						\hline
 					\end{tabular}
 				\end{center}
+			\begin{center}
+				\renewcommand{\arraystretch}{1.75}
+				\begin{tabular}{|l||c||c|c|c||c||c|c|c||c|}
+					\hline
+					Angle $\theta$ & $0$ & {\large $\frac{\pi}{6}$} & {\large $\frac{\pi}{4}$} & {\large $\frac{\pi}{3}$} & {\large $\frac{\pi}{2}$} & {\large $\frac{2\pi}{3}$} & {\large $\frac{3\pi}{4}$} & {\large $\frac{5\pi}{6}$} & $\pi$\\
+					\hline
+					\hline
+					$\sin(\theta)$ & $0$ & \textcolor{Red}{{\large $\frac{1}{2}$}} & \textcolor{Green}{{\large $\frac{\sqrt{2}}{2}$}} & \textcolor{Blue}{{\large $\frac{\sqrt{3}}{2}$}} & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ \\
+					\hline
+					$\cos(\theta)$ & $1$ & \textcolor{Blue}{{\large $\frac{\sqrt{3}}{2}$}} & \textcolor{Green}{{\large $\frac{\sqrt{2}}{2}$}} & \textcolor{Red}{{\large $\frac{1}{2}$}} & $0$ & {\large $-\frac{1}{2}$} & {\large $-\frac{\sqrt{2}}{2}$} & {\large $-\frac{\sqrt{3}}{2}$} & $-1$ \\
+					\hline
+					$\tan(\theta)$ & $0$ & {\large $\frac{\sqrt{3}}{3}$} & $1$ & $\sqrt{3}$ & $\infty$ & $-\sqrt{3}$ & $-1$ & $-\frac{\sqrt{3}}{3}$ & $0$ \\
+					\hline
+				\end{tabular}
+			\end{center}
+
+			Comme ces fonctions sont $2\pi$-périodiques,
+			les valeurs remarquables de ces fonctions se répètent tous les $2\pi$ radians.
+
+			C'est pourquoi, dans ce tableau, 
+			les valeurs remarquables sont données pour les angles compris entre $0$ et $\pi$ radians.
+
+			
 
 			Il est possible de retrouver facilement ces valeurs 
 			à l'aide du cercle trigonométrique, en se souvenant du
 			schéma suivant :
 			
-			\begin{center}
-				\includegraphics[width=8cm]{Image/Cercle Trigo/cercle_trigo_valeur_remarquable.PNG}
-			\end{center}
-			
-			\paragraph*{Comment tracer ce schéma}
+			\begin{multicols}{2}
 
-			Ce schéma représente une portion du cercle trigonométrique,
-			dont les points ont une abscisse et une ordonnée positive.
+				\begin{center}
+					\includegraphics[height=7.8cm]{Image/Cercle Trigo/cercle_trigo_valeur_remarquable.PNG}
+				\end{center}
 
-			Pour tracer les 6 segments nous indiquant les valeurs de sinus et cosinus,
-			des angles de $\frac{\pi}{6}$, $\frac{\pi}{4}$ et $\frac{\pi}{3}$,
-			il faut tracer dans un premier les deux segments à l'abscisse et l'ordonnée égale à $\frac{1}{2}$.
+				Ce schéma représente une portion du cercle trigonométrique,
+				dont les points ont une abscisse et une ordonnée positive.
+				C'est la portion la plus utile du cercle trigonométrique.
 
-			Ces deux premiers segments croisent le cercle en deux points,
-			le premier point est celui de l'angle $\frac{\pi}{6}$,
-			et le second est celui de l'angle $\frac{\pi}{3}$.
-			Maintenant que nous avons ces deux points,
-			il est possible de tracer les deux segments à l'abscisse et l'ordonnée égale à $\frac{\sqrt{3}}{2}$.
+				\paragraph*{Comment tracer ce schéma}
+
+				Pour tracer les 6 segments nous indiquant les valeurs de sinus et cosinus,
+				des angles de $\frac{\pi}{6}$, $\frac{\pi}{4}$ et $\frac{\pi}{3}$,
+				il faut tracer dans un premier les deux segments à l'abscisse et l'ordonnée égale à $\frac{1}{2}$.
+
+				Ces deux premiers segments croisent le cercle en deux points,
+				le premier point est celui de l'angle $\frac{\pi}{6}$,
+				et le second est celui de l'angle $\frac{\pi}{3}$.
+				Maintenant que nous avons ces deux points,
+				il est possible de tracer les deux segments à l'abscisse et l'ordonnée égale à $\frac{\sqrt{3}}{2}$.
+
+				\phantom{dhdgdj}
+
+				\phantom{dhdgdj}
+
+			\end{multicols}
 
 			Pour obtenir les deux derniers segments, 
 			nous allons d'abords tracer le rayon passant par le point de d'intersection
@@ -697,17 +734,56 @@ footskip=1cm
 			D'autres angles ont des valeurs de sinus et cosinus exactes,
 			certaines de ces valeurs sont présentés en Annexe, à la page \pageref{valeur_remarquable_trigo}.
 
-		\subsection{Propriétés de ces fonctions}
+		\subsection{Étude de fonction}
+			\subsubsection{Définition de ces fonctions}
+				\paragraph*{Définition}
+					La fonction sinus associe à tout réel $x$, le réel $\sin(x)$.
+					
+					est définie sur $\mathbb{R}$, et à chaque réel $x$, elle associe le réel $\sin(x)$.
+					De même, la fonction cosinus est définie sur $\mathbb{R}$, et à chaque réel $x$, elle associe le réel $\cos(x)$.
+					Enfin, la fonction tangente est définie sur $\mathbb{R}$, et à chaque réel $x$, elle associe le réel $\tan(x)$.
+				\paragraph*{Formules}
+					La fonction sinus est définie par la formule $\sin(x) = \frac{O}{H}$, la fonction cosinus est définie par la formule $\cos(x) = \frac{A}{H}$ et la fonction tangente est définie par la formule $\tan(x) = \frac{O}{A}$.
+				\paragraph*{Domaine de définition}
+					Le domaine de définition de ces fonctions est $\mathbb{R}$.
 
-		\subsection{Représentation graphique}
+			\subsubsection{Propriétés de ces fonctions}
+				
+				\paragraph*{Propriétés simples}
+					\subparagraph*{Périodicité}
+						Les fonctions sinus, cosinus et tangente sont $2\pi$-périodiques.
+						C'est à dire que, tout les $2\pi$ radians, ces fonctions se répètent.
+						Ou exprimé plus rigoureusement, pour tout réel $x$, on a $\sin(x) = \sin(x + 2\pi)$, $\cos(x) = \cos(x + 2\pi)$ et $\tan(x) = \tan(x + 2\pi)$.
+					\subparagraph*{Parité}
+						La fonction sinus est impaire, la fonction cosinus est paire\footnote{
+							Une fonction $f$ est impaire, si $\forall x \in \mathbb{R}, f(x) = -f(x)$.
+							Une fonction $f$ est paire, si $\forall x \in \mathbb{R}, f(x) = f(-x)$.}.
+					
+				Propriétés simples (parité, périodicité, etc.) (0,5p) => Démo en Annexe
+				Propriétés plus complexes (1p) => Démo en Annexe (Lien vers formules trigonométriques)
+				Variation, Dérivé (1p)
 
-		\subsection{Étude de fonction (Variation, …)}
+\newpage
+		\subsubsection{Représentation graphique}
+			\vspace*{-0.25cm}
+			\begin{center}
+				\makebox[\textwidth][c]{
+					\includegraphics[height=24cm]{Graphs fonctions/sinus_cosinus_modifie.png}
+				}
+			\end{center}
+
+			
+
+			
 
 	\section{Fonctions inverses arcsin / arccos / arctan}
 
-		\subsection{Propriétés de ces fonctions}
+			Définition (0,5p)
 
 		\subsection{Représentation graphique}
+			Graph (0,5p)
+
+		\subsection{Propriétés de ces fonctions}
 
 	\section{Formules trigonométriques}
 
