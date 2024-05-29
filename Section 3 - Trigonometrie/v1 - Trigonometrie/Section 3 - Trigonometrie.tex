@@ -90,6 +90,7 @@ footskip=1cm
 \usepackage{rotating}
 \usepackage{multirow}
 \usepackage{multicol}
+\usepackage{Tkz-Tab}
 
 %\usepackage[mathletters]{ucs}
 
@@ -737,31 +738,72 @@ footskip=1cm
 		\subsection{Étude de fonction}
 			\subsubsection{Définition de ces fonctions}
 				\paragraph*{Définition}
-					La fonction sinus associe à tout réel $x$, le réel $\sin(x)$.
+					\phantom{r}
+
+					Les fonction sinus et cosinus associe à tout réel $x$, le réel $\sin(x)$ et $\cos(x)$.
+					La fonction tangente associe à la majorité des réels $x$, le réel $\tan(x)$.
 					
-					est définie sur $\mathbb{R}$, et à chaque réel $x$, elle associe le réel $\sin(x)$.
-					De même, la fonction cosinus est définie sur $\mathbb{R}$, et à chaque réel $x$, elle associe le réel $\cos(x)$.
-					Enfin, la fonction tangente est définie sur $\mathbb{R}$, et à chaque réel $x$, elle associe le réel $\tan(x)$.
-				\paragraph*{Formules}
-					La fonction sinus est définie par la formule $\sin(x) = \frac{O}{H}$, la fonction cosinus est définie par la formule $\cos(x) = \frac{A}{H}$ et la fonction tangente est définie par la formule $\tan(x) = \frac{O}{A}$.
-				\paragraph*{Domaine de définition}
-					Le domaine de définition de ces fonctions est $\mathbb{R}$.
+					Dans notre cas, $x$ est un angle orienté suivant la convention du cercle trigonométrique, présenté plus tôt.
+
+				\paragraph*{Domaine de définition et ensemble d'arrivée}
+					\phantom{r}
+
+					Pour les fonctions sinus et cosinus :
+					\begin{itemize}
+						\item [•] Leur domaine de définition est $\mathbb{R}$.
+						\item [•] Leur ensemble d'arrivée est l'intervalle $[-1~;~1]$.
+					\end{itemize}
+
+					\vspace{2mm}
+
+					Pour la fonction tangente :
+					\begin{itemize}
+						\item [•] Son domaine de définition est $\mathbb{R} \setminus \{\left. k\pi+\frac{\pi}{2} ~ \right| ~ k \in \mathbb{Z}\}$.
+						\item [•] Son ensemble d'arrivée est $\mathbb{R}$.
+					\end{itemize}
 
 			\subsubsection{Propriétés de ces fonctions}
-				
-				\paragraph*{Propriétés simples}
-					\subparagraph*{Périodicité}
-						Les fonctions sinus, cosinus et tangente sont $2\pi$-périodiques.
-						C'est à dire que, tout les $2\pi$ radians, ces fonctions se répètent.
-						Ou exprimé plus rigoureusement, pour tout réel $x$, on a $\sin(x) = \sin(x + 2\pi)$, $\cos(x) = \cos(x + 2\pi)$ et $\tan(x) = \tan(x + 2\pi)$.
-					\subparagraph*{Parité}
-						La fonction sinus est impaire, la fonction cosinus est paire\footnote{
-							Une fonction $f$ est impaire, si $\forall x \in \mathbb{R}, f(x) = -f(x)$.
-							Une fonction $f$ est paire, si $\forall x \in \mathbb{R}, f(x) = f(-x)$.}.
+				\paragraph*{Périodicité}
+					\phantom{r}
+
+					Les fonctions sinus, cosinus et tangente sont $2\pi$-périodiques.
+					C'est à dire que, tout les $2\pi$ radians, ces fonctions se répètent.
 					
-				Propriétés simples (parité, périodicité, etc.) (0,5p) => Démo en Annexe
-				Propriétés plus complexes (1p) => Démo en Annexe (Lien vers formules trigonométriques)
-				Variation, Dérivé (1p)
+					Ainsi : $\forall x \in \mathbb{R}$, $\sin(x) = \sin(x + 2\pi)$, $\cos(x) = \cos(x + 2\pi)$ et $\tan(x) = \tan(x + 2\pi)$
+				\paragraph*{Parité}
+					\phantom{r}
+
+					La fonction sinus est impaire, la fonction cosinus est paire\footnote{
+						Une fonction $f$ est impaire, si $\forall x \in \mathbb{R}, f(x) = -f(x)$.
+						Une fonction $f$ est paire, si $\forall x \in \mathbb{R}, f(x) = f(-x)$.}.
+					
+					La fonction tangente est impaire sur l'intervale $\left] -\frac{\pi}{2}~;~\frac{\pi}{2} \right[$, 
+					elle n'est en revanche ni paire, ni impaire sur $\mathbb{R}$.
+
+				\paragraph*{Variation sur $\left] -\pi ~;~ \pi \right]$}
+					\phantom{r}
+					
+					Comme ces trois fonctions sont $2\pi$-périodiques,
+					nous pouvons nous intéresser uniquement à leur variation sur l'intervale $\left] -\pi ~;~ \pi \right]$ :
+
+					\vspace{3mm}
+					\noindent{
+					\begin{tikzpicture}
+						\tkzTabInit{$x$ / 0.75 , $\sin(x)$ / 1.25, $\cos(x)$ / 1.25, $\tan(x)$ / 1.25}{$-\pi$, $-\frac{\pi}{2}$, $0$, $\frac{\pi}{2}$, $\pi$}
+						\tkzTabVar{+/ $0$, -/ $-1$, R/, +/ $1$, -/ $0$}
+						\tkzTabIma{2}{4}{3}{$0$}
+						\tkzTabVar{-/ $-1$, R/, +/ $1$, R/, -/ $-1$}
+						\tkzTabIma{1}{3}{2}{$0$}
+						\tkzTabIma{3}{5}{4}{$0$}
+						\tkzTabVar{-/$0$, +D-/ $+\infty$ / $-\infty$, R/,+D-/ $+\infty$ / $-\infty$, +/$0$}
+						\tkzTabIma{2}{4}{3}{$0$}
+					\end{tikzpicture}
+					}
+					
+					La fonction sinus est croissante sur l'intervale $\left[ -\frac{\pi}{2}~;~\frac{\pi}{2} \right]$,
+					et décroissante sur l'intervale $\left[ \frac{\pi}{2}~;~\frac{3\pi}{2} \right]$.
+					
+				
 
 \newpage
 		\subsubsection{Représentation graphique}
@@ -772,7 +814,9 @@ footskip=1cm
 				}
 			\end{center}
 
-			
+			Propriétés simples (parité, périodicité, etc.) (0,5p) => Démo en Annexe
+				Propriétés plus complexes (1p) => Démo en Annexe (Lien vers formules trigonométriques)
+				Variation, Dérivé (1p)
 
 			
 
