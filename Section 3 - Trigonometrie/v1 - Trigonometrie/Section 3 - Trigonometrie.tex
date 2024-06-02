@@ -644,21 +644,6 @@ footskip=1cm
 
 			Voici un tableau regroupant les valeurs remarquables des fonctions sinus, cosinus et tangente :
 
-				\begin{center}
-					\renewcommand{\arraystretch}{1.75}
-					\begin{tabular}{|l||c||c|c|c||c||c|c|c||c|}
-						\hline
-						Angle $\theta$ & $0$ & {\large $\frac{\pi}{6}$} & {\large $\frac{\pi}{4}$} & {\large $\frac{\pi}{3}$} & {\large $\frac{\pi}{2}$} & {\large $\frac{2\pi}{3}$} & {\large $\frac{3\pi}{4}$} & {\large $\frac{5\pi}{6}$} & $\pi$\\
-						\hline
-						\hline
-						$\sin(\theta)$ & $0$ & {\large $\frac{1}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{\sqrt{3}}{2}$} & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ \\
-						\hline
-						$\cos(\theta)$ & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ & {\large $-\frac{1}{2}$} & {\large $-\frac{\sqrt{2}}{2}$} & {\large $-\frac{\sqrt{3}}{2}$} & $-1$ \\
-						\hline
-						$\tan(\theta)$ & $0$ & {\large $\frac{\sqrt{3}}{3}$} & $1$ & $\sqrt{3}$ & $\infty$ & $-\sqrt{3}$ & $-1$ & $-\frac{\sqrt{3}}{3}$ & $0$ \\
-						\hline
-					\end{tabular}
-				\end{center}
 			\begin{center}
 				\renewcommand{\arraystretch}{1.75}
 				\begin{tabular}{|l||c||c|c|c||c||c|c|c||c|}
@@ -666,22 +651,21 @@ footskip=1cm
 					Angle $\theta$ & $0$ & {\large $\frac{\pi}{6}$} & {\large $\frac{\pi}{4}$} & {\large $\frac{\pi}{3}$} & {\large $\frac{\pi}{2}$} & {\large $\frac{2\pi}{3}$} & {\large $\frac{3\pi}{4}$} & {\large $\frac{5\pi}{6}$} & $\pi$\\
 					\hline
 					\hline
-					$\sin(\theta)$ & $0$ & \textcolor{Red}{{\large $\frac{1}{2}$}} & \textcolor{Green}{{\large $\frac{\sqrt{2}}{2}$}} & \textcolor{Blue}{{\large $\frac{\sqrt{3}}{2}$}} & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ \\
+					$\sin(\theta)$ & $0$ & {\large $\frac{1}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{\sqrt{3}}{2}$} & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ \\
 					\hline
-					$\cos(\theta)$ & $1$ & \textcolor{Blue}{{\large $\frac{\sqrt{3}}{2}$}} & \textcolor{Green}{{\large $\frac{\sqrt{2}}{2}$}} & \textcolor{Red}{{\large $\frac{1}{2}$}} & $0$ & {\large $-\frac{1}{2}$} & {\large $-\frac{\sqrt{2}}{2}$} & {\large $-\frac{\sqrt{3}}{2}$} & $-1$ \\
+					$\cos(\theta)$ & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ & {\large $-\frac{1}{2}$} & {\large $-\frac{\sqrt{2}}{2}$} & {\large $-\frac{\sqrt{3}}{2}$} & $-1$ \\
 					\hline
-					$\tan(\theta)$ & $0$ & {\large $\frac{\sqrt{3}}{3}$} & $1$ & $\sqrt{3}$ & $\infty$ & $-\sqrt{3}$ & $-1$ & $-\frac{\sqrt{3}}{3}$ & $0$ \\
+					$\tan(\theta)$ & $0$ & {\large $\frac{\sqrt{3}}{3}$} & $1$ & $\sqrt{3}$ & \textcolor{Red}{\LARGE {$\times$}} & $-\sqrt{3}$ & $-1$ & $-\frac{\sqrt{3}}{3}$ & $0$ \\
 					\hline
 				\end{tabular}
 			\end{center}
 
 			Comme ces fonctions sont $2\pi$-périodiques,
 			les valeurs remarquables de ces fonctions se répètent tous les $2\pi$ radians.
-
 			C'est pourquoi, dans ce tableau, 
 			les valeurs remarquables sont données pour les angles compris entre $0$ et $\pi$ radians.
 
-			
+			\vfill
 
 			Il est possible de retrouver facilement ces valeurs 
 			à l'aide du cercle trigonométrique, en se souvenant du
@@ -724,15 +708,13 @@ footskip=1cm
 			tracer les deux derniers segments.
 			
 			\paragraph*{Angles ayant des valeurs de sinus et cosinus exactes}
-
-			Il existe d'autres angles ayant des valeurs de sinus et cosinus exactes,
-			les valeurs d'angles dans le tableau ci-dessus sont les valeurs les plus utiles.
+			\phantom{r}
 
 			On peut remarquer que les angles opposés à ceux du tableau ont aussi 
 			des valeurs de sinus et cosinus exactes.
 			Leur cosinus restera le même, mais leur sinus sera négatif. 
 			
-			D'autres angles ont des valeurs de sinus et cosinus exactes,
+			Il existe d'autres angles ayant des valeurs de sinus, de cosinus et de tangente exactes,
 			certaines de ces valeurs sont présentés en Annexe, à la page \pageref{valeur_remarquable_trigo}.
 
 		\subsection{Étude de fonction}
@@ -741,9 +723,10 @@ footskip=1cm
 					\phantom{r}
 
 					Les fonction sinus et cosinus associe à tout réel $x$, le réel $\sin(x)$ et $\cos(x)$.
-					La fonction tangente associe à la majorité des réels $x$, le réel $\tan(x)$.
+					La fonction tangente associe à la majorité des réels $x$, le réel $\tan(x)$.				
 					
 					Dans notre cas, $x$ est un angle orienté suivant la convention du cercle trigonométrique, présenté plus tôt.
+					De plus, nous considérons que $x$ est exprimé en \emph{radians}.
 
 				\paragraph*{Domaine de définition et ensemble d'arrivée}
 					\phantom{r}
@@ -780,7 +763,7 @@ footskip=1cm
 					La fonction tangente est impaire sur l'intervale $\left] -\frac{\pi}{2}~;~\frac{\pi}{2} \right[$, 
 					elle n'est en revanche ni paire, ni impaire sur $\mathbb{R}$.
 
-				\paragraph*{Variation sur $\left] -\pi ~;~ \pi \right]$}
+				\paragraph*{Variation sur $\left] -\pi ~;~ \pi\right]$}
 					\phantom{r}
 					
 					Comme ces trois fonctions sont $2\pi$-périodiques,
@@ -799,9 +782,24 @@ footskip=1cm
 						\tkzTabIma{2}{4}{3}{$0$}
 					\end{tikzpicture}
 					}
-					
-					La fonction sinus est croissante sur l'intervale $\left[ -\frac{\pi}{2}~;~\frac{\pi}{2} \right]$,
-					et décroissante sur l'intervale $\left[ \frac{\pi}{2}~;~\frac{3\pi}{2} \right]$.
+
+				\vspace{-5mm}
+				
+				\paragraph*{Dérivée}
+					\phantom{r}
+
+					\begin{tabular}{lclcl}
+						$\sin'(u(x))$ & $=$ & $\phantom{-}u'(x) \times \cos(u(x))$ & & \phantom{\large{$\frac{u'(x)}{\cos^2(u(x))}$}}\\
+						$\cos'(u(x))$ & $=$ & $-u'(x) \times \sin(u(x))$ && \phantom{\large{$\frac{u'(x)}{\cos^2(u(x))}$}}\\
+						$\tan'(u(x))$ & $=$ & $\phantom{-}u'(x) \times (1 + \tan^2(u(x)))$ & $ = $ & \large{$\frac{u'(x)}{\cos^2(u(x))}$} \\
+					\end{tabular}
+
+					\vfill
+					\vspace{5mm}
+
+				\noindent{\textit{Démonstration de ces propriétés en Annexe, à la page \pageref{demo_propriete_trigo_1}.}}
+
+				
 					
 				
 
@@ -818,6 +816,16 @@ footskip=1cm
 				Propriétés plus complexes (1p) => Démo en Annexe (Lien vers formules trigonométriques)
 				Variation, Dérivé (1p)
 
+				\paragraph*{Autres propriétés}
+					\phantom{r}
+
+					\begin{itemize}
+						\item [•] $\sin^2(x) + \cos^2(x) = 1$.
+						\item [•] $\tan(x) = \frac{\sin(x)}{\cos(x)}$.
+						\item [•] $\cos(2x) = \cos^2(x) - \sin^2(x)$.
+						\item [•] $\sin(2x) = 2\sin(x) \times \cos(x)$.
+						\item [•] $\tan(2x) = \frac{2\tan(x)}{1 - \tan^2(x)}$.
+					\end{itemize}
 			
 
 	\section{Fonctions inverses arcsin / arccos / arctan}
@@ -868,6 +876,8 @@ footskip=1cm
 			\end{itemize}
 
 		\subsection*{Valeurs de sinus et cosinus exactes} \label{valeur_remarquable_trigo}
+
+		\subsection*{Démonstration des propriétés des fonctions trigonométrique élémentaires} \label{demo_propriete_trigo_1}
 
 
 
