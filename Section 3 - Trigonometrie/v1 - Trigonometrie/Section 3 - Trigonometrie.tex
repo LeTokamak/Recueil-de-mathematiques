@@ -819,24 +819,11 @@ footskip=1cm
 				}
 			\end{center}
 
-			Propriétés simples (parité, périodicité, etc.) (0,5p) => Démo en Annexe
-				Propriétés plus complexes (1p) => Démo en Annexe (Lien vers formules trigonométriques)
-				Variation, Dérivé (1p)
+\newpage
 
-				\paragraph*{Autres propriétés}
-					\phantom{r}
+	\section{Fonctions trigonométriques inverses}
 
-					\begin{itemize}
-						\item [•] $\sin^2(x) + \cos^2(x) = 1$.
-						\item [•] $\tan(x) = \frac{\sin(x)}{\cos(x)}$.
-						\item [•] $\cos(2x) = \cos^2(x) - \sin^2(x)$.
-						\item [•] $\sin(2x) = 2\sin(x) \times \cos(x)$.
-						\item [•] $\tan(2x) = \frac{2\tan(x)}{1 - \tan^2(x)}$.
-					\end{itemize}
-			
-
-	\section{Fonctions inverses arcsin / arccos / arctan}
-
+	$\arcsin$ / $\arccos$ / $\arctan$
 			Définition (0,5p)
 
 		\subsection{Représentation graphique}
@@ -844,9 +831,91 @@ footskip=1cm
 
 		\subsection{Propriétés de ces fonctions}
 
+\newpage
+
 	\section{Formules trigonométriques}
 
 		normalesup.org/~dconduche/prepas/PT/cours/ChapitreFicheTrigo.pdf)
+
+		\subsection*{Définition}
+		$e^{ix} = \cos x + i \sin x$
+
+		$\cos(x) = \frac{e^{ix} + e^{-ix}}{2} \quad \text{et} \quad \sin(x) = \frac{e^{ix} - e^{-ix}}{2i} \quad \text{et} \quad \tan(x) = \frac{\sin(x)}{\cos(x)}$
+
+$\cos^2(a) + \sin^2(a) = 1 \quad \text{(On est sur le cercle de rayon 1, d'équation } x^2 + y^2 = 1)$
+
+$\cos(a + b) = \cos(a) \cos(b) - \sin(a) \sin(b)$
+
+$\sin(a + b) = \cos(a) \sin(b) + \sin(a) \cos(b)$
+
+En développant $e^{i(a+b)} = e^{ia} e^{ib}$, puis en identifiant partie réelle et partie imaginaire :
+
+$\tan(a + b) = \frac{\tan(a) + \tan(b)}{1 - \tan(a) \tan(b)}$
+
+En combinant les deux formules précédentes :
+
+$\cos(2a) = \cos^2(a) - \sin^2(a) = 2 \cos^2(a) - 1 = 1 - 2 \sin^2(a) = \frac{1 - \tan^2(a)}{1 + \tan^2(a)}$
+
+$\sin(2a) = 2 \sin(a) \cos(a) = \frac{2 \tan(a)}{1 + \tan^2(a)}$
+
+$\tan(2a) = \frac{2 \tan(a)}{1 - \tan^2(a)}$
+
+$2 \cos(a) \cos(b) = \cos(a + b) + \cos(a - b)$
+
+$2 \sin(a) \sin(b) = -\cos(a + b) + \cos(a - b)$
+
+$2 \sin(a) \cos(b) = \sin(a + b) + \sin(a - b)$
+
+$\cos(a) \cos(b) = \Re \left(e^{ia} \cos(b)\right) = \Re \left(e^{ia} \frac{e^{ib} + e^{-ib}}{2}\right) \quad \text{puis la linéarité de la partie réelle, etc.}$
+
+$\cos(p) + \cos(q) = 2 \cos \left(\frac{p + q}{2}\right) \cos \left(\frac{p - q}{2}\right)$
+
+$-\cos(p) + \cos(q) = 2 \sin \left(\frac{p + q}{2}\right) \sin \left(\frac{p - q}{2}\right)$
+
+$\sin(p) + \sin(q) = 2 \sin \left(\frac{p + q}{2}\right) \cos \left(\frac{p - q}{2}\right)$
+
+Les mêmes que les précédentes, mais dans l'autre sens, avec $p = a + b$ et $q = a - b$.
+
+\section*{Formulaire Trigonométrie Hyperbolique}
+
+En trigonométrie hyperbolique, on suit la même démarche, souvent seuls quelques signes changent devant les $sh$.
+
+$e^x = \cosh x + \sinh x$
+
+$\cosh(x) = \frac{e^x + e^{-x}}{2} \quad \text{et} \quad \sinh(x) = \frac{e^x - e^{-x}}{2}$
+
+$\cosh^2(a) - \sinh^2(a) = 1$
+
+$\cosh(a + b) = \cosh(a) \cosh(b) + \sinh(a) \sinh(b)$
+
+$\sinh(a + b) = \cosh(a) \sinh(b) + \sinh(a) \cosh(b)$
+
+$\tanh(a + b) = \frac{\tanh(a) + \tanh(b)}{1 + \tanh(a) \tanh(b)}$
+
+$\cosh(2a) = \cosh^2(a) + \sinh^2(a) = 2 \cosh^2(a) - 1 = 1 + 2 \sinh^2(a) = \frac{1 + \tanh^2(a)}{1 - \tanh^2(a)}$
+
+$\sinh(2a) = 2 \sinh(a) \cosh(a) = \frac{2 \tanh(a)}{1 - \tanh^2(a)}$
+
+$\tanh(2a) = \frac{2 \tanh(a)}{1 + \tanh^2(a)}$
+
+$2 \cosh(a) \cosh(b) = \cosh(a + b) + \cosh(a - b)$
+
+$2 \sinh(a) \sinh(b) = \cosh(a + b) - \cosh(a - b)$
+
+$2 \sinh(a) \cosh(b) = \sinh(a + b) + \sinh(a - b)$
+
+Se retrouvent à partir des formules de $\cosh(a+b)$, $\cosh(a-b)$, etc. Ou en prenant les parties paires et impaires, sur le modèle de $\Re$ et $\Im$.
+
+$\cosh(p) + \cosh(q) = 2 \cosh \left(\frac{p + q}{2}\right) \cosh \left(\frac{p - q}{2}\right)$
+
+$\cosh(p) - \cosh(q) = 2 \sinh \left(\frac{p + q}{2}\right) \sinh \left(\frac{p - q}{2}\right)$
+
+$\sinh(p) + \sinh(q) = 2 \sinh \left(\frac{p + q}{2}\right) \cosh \left(\frac{p - q}{2}\right)$
+
+Les mêmes que les précédentes, mais dans l'autre sens, avec $p = a + b$ et $q = a - b$.
+
+\end{document}
+
 
 	\section{Lecture de la table}
 
