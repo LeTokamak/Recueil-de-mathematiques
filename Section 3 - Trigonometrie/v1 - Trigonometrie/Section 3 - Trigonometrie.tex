@@ -91,6 +91,7 @@ footskip=1cm
 \usepackage{multirow}
 \usepackage{multicol}
 \usepackage{Tkz-Tab}
+\usepackage{makecell}
 
 %\usepackage[mathletters]{ucs}
 
@@ -360,7 +361,9 @@ footskip=1cm
 			
 			\begin{center}
 				
-				\renewcommand{\arraystretch}{2}
+				%\renewcommand{\arraystretch}{3ex}
+				\setcellgapes{2.5mm}
+				\makegapedcells
 				\begin{tabular}{|c|ccc|}
 					\hline
 					\textbf{Fonction} & \textbf{Définition}                                                                 & \multicolumn{2}{c|}{\textbf{Résumé}} \\
@@ -390,28 +393,25 @@ footskip=1cm
 			\begin{center}
 				\renewcommand{\arraystretch}{1.75}
 				\begin{tabular}{lc|c|c|cc}
-					\multicolumn{5}{l}{Exemple :} & \multirow{3}{*}{\includegraphics[height=2cm]{Image/Triangle/Triangle_sinus_cosinus.png}} \\
+					\multicolumn{5}{l}{Exemple :} & \multirow{3}{*}{\includegraphics[height=2.5cm]{Image/Triangle/Triangle_sinus_cosinus.png}} \\
 					
-					\phantom{Exemple} & \textit{CAH} & $\text{C = A / H}$ & $\cos(35^\circ) = \frac{6}{h}$ & $h = \frac{6}{\cos(35^\circ)} \approx 7,32 $ & \\
+					\phantom{Exemp} & \textit{CAH} & $\text{C = A / H}$ & $\cos(35^\circ) = \frac{6}{h}$ & $h = \frac{6}{\cos(35^\circ)} \approx 7,32 $ & \\
 										& \textit{TOA} & $\text{T = O / A}$ & $\tan(35^\circ) = \frac{x}{6}$ & $x = 6 \times \tan(35^\circ) \approx 4,20 $ &\\
 				\end{tabular}
 			\end{center}
 			
 
-			\bigbreak
-			\bigbreak
-			\bigbreak
-			\bigbreak
-			\bigbreak
-			\bigbreak
+			\vfill
 
 
 
 		\subsubsection{Lien entre ces trois fonctions} \label{lien_fct_trigo}
 
 			De plus,
-			il est possible d'établir un lien entre ces trois fonctions :
-			{ \LARGE $$ \tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)} $$}
+			il est possible d'établir un lien entre ces trois fonctions\footnote{Cette relation n'est vraie que si le dénominateur n'est pas nul. 
+			
+			Ainsi si $\alpha \equiv \frac{\pi}{2} [\pi] $, c'est à dire si $\exists k \in \mathbb{Z},\alpha = k\pi + \frac{\pi}{2}$, la tangente de cet angle n'est pas définie.} :
+			{ \Large $$ \tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)} $$}
 
 			\medbreak
 			\medbreak
@@ -435,6 +435,8 @@ footskip=1cm
 				\item [ ] $\tan(\alpha) = \frac{\text{Cathète Opposée}}{\text{Cathète Adjacente}} = \frac{\sin(\alpha) \times \text{Hypoténuse}}{\cos(\alpha) \times \text{Hypoténuse}} = \frac{\sin(\alpha)}{\cos(\alpha)}$
 			\end{itemize}
 			\end{Large}
+
+			\vfill
 
 \newpage
 
@@ -467,14 +469,14 @@ footskip=1cm
 					le statut privilégié du radian ne semble pas solidement justifiée.
 					C'est à dire que, mis à part la \textit{beauté mathématique} 
 					de la définition du radian par rapport au degré, 
-					pourquoi cette unité est a préféré à une autre ?
+					pourquoi cette unité est à préférer à une autre ?
+					
 					Cette préférence provient de certaines propriétés mathématiques 
 					qui ne sont vrai que si l'unité d'angle est le radian.
 					En particulier, lorsque l'on dérive ou intègre une 
 					fonction trigonométrique ou encore lorsque 
 					l'on utilise un développement limité de 
 					cette fonction trigonométrique.
-
 					Dans ces cas, l'angle peut se retrouver en facteur, 
 					position où seule la mesure en radians d'un angle a un sens.
 				} en mathématique, en particulier en Trigonométrie.
@@ -506,7 +508,8 @@ footskip=1cm
 			\begin{multicols}{2}
 
 				\begin{center}
-					\includegraphics[width=7cm]{Image/Cercle Trigo/Cercle_trigo_sens_trigo.PNG}
+					\includegraphics[height=7.2cm]{Image/Cercle Trigo/Cercle_trigo_sens_trigo.PNG}
+					\vspace{0.25cm}
 				\end{center}
 
 				Les angles représentés sur ce cercle sont \emph{orientés},
@@ -519,19 +522,17 @@ footskip=1cm
 					qui a été choisie car elle est correspond au sens de rotation
 					de la Terre autour de son axe de rotation,
 					si l'on observe la Terre en se centrant sur le pôle Nord.
-
-					Ce choix à été fait car ce sens de rotation était étudié, 
-					en particulier en Europe, dans l'hémisphère Nord.
+					Ce choix par des astronomes européens, vivant donc dans l'hémisphère nord.
 				} (ou sens antihoraire).
 				Comme ces angles sont orientés, il peuvent être \textbf{positifs} ou \textbf{négatifs}.
-				Ainsi l'angle vert est positif et le rouge est négatif. 
+				On en déduit que l'angle vert est positif et le rouge est négatif. 
 
 				Tous les angles représentables sur le cercle partent de l'axe des abscisses positives,
 				représenté en rouge.
 				Ainsi, les angles sont mesurés en partant de cette ligne de départ
 				et en finissant sur un rayon du cercle.
 
-				Et donc, en tournant autour du cercle, on retrouve ainsi n'importe quelle angle possible. 
+				Et donc, en tournant autour du cercle, on peut retrouver n'importe quelle angle possible. 
 
 			\end{multicols}
 
@@ -539,7 +540,7 @@ footskip=1cm
 
 			Sur le cercle trigonométrique, 
 			il est possible de retrouver simplement le sinus et le cosinus d'un angle représenté sur le cercle. 
-			Appelons cet angle $\theta$, $O$ le centre du cercle, et $M$ le point d'intersection du rayon terminant l'angle avec le cercle.
+			Appelons cet angle $\theta$, $O$ le centre du cercle, et $M$ le point d'intersection entre le rayon terminant l'angle et le cercle.
 			Il est possible de construire un triangle rectangle $OMX_M$ ayant pour hypoténuse le rayon du cercle.
 
 			\begin{center}
@@ -550,7 +551,7 @@ footskip=1cm
 			
 			\subsubsection{Retrouver le sinus et le cosinus de $\theta$}
 
-			Ainsi, à l'aide des définitions des fonctions sinus et cosinus,
+			À l'aide des définitions des fonctions sinus et cosinus,
 			il facile de calculer les longueurs des côtés de ce triangle :
 
 			\begin{tabular}{ll}
@@ -568,9 +569,8 @@ footskip=1cm
 			Réciproquement, pour chaque point du cercle,
 			il est possible d'obtenir le sinus et le cosinus de l'angle correspondant,
 			en projetant ce point sur l'axe des abscisses et sur celui des ordonnées.\footnote{
-				J'ai trouvé un moyen mnémotechnique pour retenir quel axe est celui où l'on retrouve le sinus de l'angle.
-
-				L'abréviation de sinus c'est sin, ce qui correspond au début du mot “singe”, 
+				J'utilise un moyen mnémotechnique pour retenir quel axe est celui où l'on retrouve le sinus de l'angle.
+				L'abréviation de sinus c'est sin, ce qui correspond au début du mot "singe", 
 				les singes montent dans les arbres, par conséquent l'axe des sinus est l'axe verticale de notre repère.
 			}
 
@@ -591,7 +591,7 @@ footskip=1cm
 			En réarrangeant cette équation, on obtient : 
 				$${AI_M} = \frac{X_MM \times OA}{OX_M} = \frac{\sin(\theta) \times 1}{\cos(\theta)} = \frac{\sin(\theta)}{\cos(\theta)}$$
 
-			Et comme présenté précédemment(à la page n°\pageref{lien_fct_trigo}), 
+			Et comme présenté précédemment (à la page n°\pageref{lien_fct_trigo}), 
 			il existe un lien entre les trois fonctions trigonométriques élémentaires, 
 			à l'aide de ce lien, on démontre enfin que : 
 				$${AI_M} = \tan(\theta)$$
@@ -604,11 +604,11 @@ footskip=1cm
 			il est possible d'obtenir un angle mesurant n'importe quel réel.
 			
 			Ainsi, sur n'importe quel point du cercle,
-			peuvent être représenter plusieurs angles ayant des mesures
+			peut être représenté plusieurs angles ayant des mesures
 			différant d'un certain nombre de tours du cercle.
 
 			Comme un tour complet du cercle correspond à un angle de $2 \pi$ radians,
-			ainsi, pour un angle $\theta$ donné,
+			pour un angle $\theta$ donné,
 			les angles $\theta + 2 \pi \times k$ (avec $k \in \mathbb{Z}$)
 			tombent sur le même point du cercle.
 
@@ -645,7 +645,9 @@ footskip=1cm
 			Voici un tableau regroupant les valeurs remarquables des fonctions sinus, cosinus et tangente :
 
 			\begin{center}
-				\renewcommand{\arraystretch}{1.75}
+				%\renewcommand{\arraystretch}{1.75}
+				\setcellgapes{1.5mm}
+				\makegapedcells
 				\begin{tabular}{|l||c||c|c|c||c||c|c|c||c|}
 					\hline
 					Angle $\theta$ & $0$ & {\large $\frac{\pi}{6}$} & {\large $\frac{\pi}{4}$} & {\large $\frac{\pi}{3}$} & {\large $\frac{\pi}{2}$} & {\large $\frac{2\pi}{3}$} & {\large $\frac{3\pi}{4}$} & {\large $\frac{5\pi}{6}$} & $\pi$\\
@@ -655,7 +657,7 @@ footskip=1cm
 					\hline
 					$\cos(\theta)$ & $1$ & {\large $\frac{\sqrt{3}}{2}$} & {\large $\frac{\sqrt{2}}{2}$} & {\large $\frac{1}{2}$} & $0$ & {\large $-\frac{1}{2}$} & {\large $-\frac{\sqrt{2}}{2}$} & {\large $-\frac{\sqrt{3}}{2}$} & $-1$ \\
 					\hline
-					$\tan(\theta)$ & $0$ & {\large $\frac{\sqrt{3}}{3}$} & $1$ & $\sqrt{3}$ & \textcolor{Red}{\LARGE {$\times$}} & $-\sqrt{3}$ & $-1$ & $-\frac{\sqrt{3}}{3}$ & $0$ \\
+					$\tan(\theta)$ & $0$ & {\large $\frac{\sqrt{3}}{3}$} & $1$ & $\sqrt{3}$ & \textcolor{Red}{\LARGE {$\times$}} & $-\sqrt{3}$ & $-1$ & {\large $-\frac{\sqrt{3}}{3}$ } & $0$ \\
 					\hline
 				\end{tabular}
 			\end{center}
@@ -799,16 +801,21 @@ footskip=1cm
 
 				\noindent{\textit{Démonstration de ces propriétés en Annexe, à la page \pageref{demo_propriete_trigo_1}.}}
 
-				
-					
-				
-
 \newpage
 		\subsubsection{Représentation graphique}
 			\vspace*{-0.25cm}
 			\begin{center}
 				\makebox[\textwidth][c]{
 					\includegraphics[height=24cm]{Graphs fonctions/sinus_cosinus_modifie.png}
+				}
+			\end{center}
+
+\newpage
+
+			\vspace*{-0.25cm}
+			\begin{center}
+				\makebox[\textwidth][c]{
+					\includegraphics[height=23.25cm]{Graphs fonctions/tangente_modifie.png}
 				}
 			\end{center}
 
