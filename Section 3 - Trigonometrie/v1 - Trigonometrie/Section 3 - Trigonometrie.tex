@@ -179,10 +179,10 @@ footskip=1cm
 				En revanche, les angles formés par les côtés de ce quadrilatère 
 				ne seront pas les mêmes que ceux du quadrilatère de départ.
 				
-				Ainsi, à partir d'un losange, il est possible de créer un carré, 
+				~~Ainsi, à partir d'un losange, il est possible de créer un carré, 
 				en fonction des angles choisis entre les côtés.
 
-				Pour la même raison, 
+				~~~Pour la même raison, 
 				les polygones ayant plus de côtés ne sont pas constructibles
 				en connaissant uniquement les longueurs de leurs côtés.
 			}.
@@ -410,7 +410,7 @@ footskip=1cm
 			De plus,
 			il est possible d'établir un lien entre ces trois fonctions\footnote{Cette relation n'est vraie que si le dénominateur n'est pas nul. 
 			
-			Ainsi si $\alpha \equiv \frac{\pi}{2} [\pi] $, c'est à dire si $\exists k \in \mathbb{Z},\alpha = k\pi + \frac{\pi}{2}$, la tangente de cet angle n'est pas définie.} :
+			~~Ainsi si $\alpha \equiv \frac{\pi}{2} [\pi] $, c'est à dire si $\exists k \in \mathbb{Z},\alpha = k\pi + \frac{\pi}{2}$, la tangente de cet angle n'est pas définie.} :
 			{ \Large $$ \tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)} $$}
 
 			\medbreak
@@ -471,7 +471,7 @@ footskip=1cm
 					de la définition du radian par rapport au degré, 
 					pourquoi cette unité est à préférer à une autre ?
 					
-					Cette préférence provient de certaines propriétés mathématiques 
+					~~Cette préférence provient de certaines propriétés mathématiques 
 					qui ne sont vrai que si l'unité d'angle est le radian.
 					En particulier, lorsque l'on dérive ou intègre une 
 					fonction trigonométrique ou encore lorsque 
@@ -822,6 +822,80 @@ footskip=1cm
 \newpage
 
 	\section{Fonctions trigonométriques inverses}
+		
+		\subsection{Définition}
+
+			Les fonctions trigonométriques inverses sont les fonctions réciproques des fonctions trigonométriques.
+			Ce sont les fonctions \emph{arcsinus}, \emph{arccosinus} et \emph{arctangente}. Elles sont notées $\arcsin$, $\arccos$ et $\arctan$.
+
+			Elle nous permettent de retrouver quel angle correspond a une certaine valeur de sinus, de cosinus ou de tangente.
+
+			Ce sont des fonctions réciproques, comme pour la fonction racine carrée et la fonction carrée.
+			Ainsi, pour tout $x$ dans leur ensemble d'arrivée, on a : $f^{-1}(f(x)) = x$.
+			C'est pour cela que ces fonctions sont parfois notées $\sin^{-1}$, $\cos^{-1}$ et $\tan^{-1}$.
+
+			Mais comme pour la fonction carré, la réciproque n'est vrai que dans certaines conditions\footnote{$\forall x \in \mathbb{R}^{+}, x = \sqrt{x^2} = \sqrt{x}^2$.
+			
+			~~Mais dans $\mathbb{R}$ : $\forall x \in \mathbb{R}, \sqrt{x^2} = |x|$ et $\sqrt{x}^2$ n'est pas toujours définie (car $\forall x \in \mathbb{R}^-, \sqrt{x}$ n'est pas définie)}.*
+			Dans le cas des fonctions trigonométriques, ces fonctions étant périodiques,
+			nous devons sélectionner un intervalle de définition, qui servira d'ensemble d'arrivée de chacune de ces fonctions.
+			
+
+			\subsubsection*{Domaine de définition et ensemble d'arrivée}
+
+				\begin{center}
+					\setcellgapes{1.5mm}
+					\makegapedcells
+					\begin{tabular}{|c|c|c|}
+						\hline
+						\textbf{Fonction} & \textbf{Domaine de définition} & \textbf{Ensemble d'arrivée} \\
+						\hline
+						$\arcsin$ & $[-1~;~1]$ & $[-\frac{\pi}{2}~;~\frac{\pi}{2}]$ \\
+						\hline
+						$\arccos$ & $[-1~;~1]$ & $[0~;~\pi]$\\
+						\hline
+						$\arctan$ & $\mathbb{R}$ & $\left]-\frac{\pi}{2}~;~\frac{\pi}{2}\right[$\\
+						\hline
+					\end{tabular}
+				\end{center}
+				
+						
+
+				
+
+					Pour les fonctions arcsinus et arccosinus :
+					\begin{itemize}
+						\item [•] Leur domaine de définition est $\mathbb{R}$.
+						\item [•] Leur ensemble d'arrivée est l'intervalle $[-1~;~1]$.
+					\end{itemize}
+
+					\vspace{2mm}
+
+					Pour la fonction tangente :
+					\begin{itemize}
+						\item [•] Son domaine de définition est $\mathbb{R} \setminus \{\left. k\pi+\frac{\pi}{2} ~ \right| ~ k \in \mathbb{Z}\}$.
+						\item [•] Son ensemble d'arrivée est $\mathbb{R}$.
+					\end{itemize}
+
+				\begin{itemize}
+					\item [•] La fonction $\arcsin$ est définie sur l'intervale $[-1~;~1]$ et à pour ensemble d'arrivée $[-\frac{\pi}{2}~;~\frac{\pi}{2}]$.
+					\item [•] La fonction $\arccos$ est définie sur l'intervale $[-1~;~1]$ et à pour ensemble d'arrivée $[0~;~\pi]$.
+					\item [•] La fonction $\arctan$ est définie sur $\mathbb{R}$ et à pour ensemble d'arrivée $\left]-\frac{\pi}{2}~;~\frac{\pi}{2}\right[$.
+				\end{itemize}
+
+			\paragraph*{Propriétés}
+				\phantom{r}
+
+				\begin{itemize}
+					\item [•] Les fonctions $\arcsin$ et $\arccos$ sont impaires, la fonction $\arctan$ est impaire sur $\mathbb{R}$.
+					\item [•] Les fonctions $\arcsin$ et $\arccos$ sont croissantes, la fonction $\arctan$ est croissante sur $\mathbb{R}$.
+					\item [•] Les fonctions $\arcsin$ et $\arccos$ sont dérivables sur $]-1~;~1[$, la fonction $\arctan$ est dérivable sur $\mathbb{R}$.
+				\end{itemize}
+
+		%\subsection{Représentation graphique}
+		%	\begin{center}
+		%		\makebox[\textwidth][c]{
+		%			\includegraphics[height=23.25cm]{Graphs fonctions/arcsin_arccos_modifie.png
 
 	$\arcsin$ / $\arccos$ / $\arctan$
 			Définition (0,5p)
