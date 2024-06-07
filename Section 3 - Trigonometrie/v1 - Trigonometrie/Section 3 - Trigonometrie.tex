@@ -829,6 +829,15 @@ footskip=1cm
 			Ce sont les fonctions \emph{arcsinus}, \emph{arccosinus} et \emph{arctangente}. Elles sont notées $\arcsin$, $\arccos$ et $\arctan$.
 
 			Elle nous permettent de retrouver quel angle correspond a une certaine valeur de sinus, de cosinus ou de tangente.
+			Ou encore, elles nous permettent de retrouver la longueur de l'\textit{arc} du cercle trigonométrique\footnote{
+				Pour rappel, la longueur d'un arc de cercle délimité par un angle $\theta$, est égale à $\theta$, si :
+				\begin{itemize}
+					\item [•] Le rayon du cercle est égal à 1, ce qui est le cas dans le cercle trigonométrique.
+					\item [•] L'angle est exprimé en radians, par définition de cette unité.
+				\end{itemize}
+			} donnant ce sinus ce cosinus ou cette tangente. C'est pour cette raison que  l'on retrouve le préfixe \textit{arc} dans leur nom.
+
+			\subsubsection*{Fonctions réciproques}
 
 			Ce sont des fonctions réciproques, comme pour la fonction racine carrée et la fonction carrée.
 			Ainsi, pour tout $x$ dans leur ensemble d'arrivée, on a : $f^{-1}(f(x)) = x$.
@@ -836,7 +845,7 @@ footskip=1cm
 
 			Mais comme pour la fonction carré, la réciproque n'est vrai que dans certaines conditions\footnote{$\forall x \in \mathbb{R}^{+}, x = \sqrt{x^2} = \sqrt{x}^2$.
 			
-			~~Mais dans $\mathbb{R}$ : $\forall x \in \mathbb{R}, \sqrt{x^2} = |x|$ et $\sqrt{x}^2$ n'est pas toujours définie (car $\forall x \in \mathbb{R}^-, \sqrt{x}$ n'est pas définie)}.*
+			~~Mais dans $\mathbb{R}$ : $\forall x \in \mathbb{R}, \sqrt{x^2} = |x|$ et $\sqrt{x}^2$ n'est pas toujours définie (car $\forall x \in \mathbb{R}^-, \sqrt{x}$ n'est pas définie)}.
 			Dans le cas des fonctions trigonométriques, ces fonctions étant périodiques,
 			nous devons sélectionner un intervalle de définition, qui servira d'ensemble d'arrivée de chacune de ces fonctions.
 			
@@ -858,9 +867,26 @@ footskip=1cm
 						\hline
 					\end{tabular}
 				\end{center}
-				
-			\paragraph*{Propriétés}
-				\phantom{r}
+			
+			\subsubsection*{Variation sur leur domaine de définition respectif}
+
+				\begin{center}
+					\begin{tikzpicture}
+						\tkzTabInit{$x$ / 0.75 , $\arcsin(x)$ / 1.25 , $\arccos(x)$ / 1.25}{$-1$, $0$, $1$}
+						\tkzTabVar{-/ $-\frac{\pi}{2}$, R/, +/ $+\frac{\pi}{2}$}
+						\tkzTabIma{1}{3}{2}{$0$}
+						\tkzTabVar{+/ $\pi$, R/, -/ $0$}
+						\tkzTabIma{1}{3}{2}{$\frac{\pi}{2}$}
+					\end{tikzpicture}
+					\vspace{1cm}
+					\begin{tikzpicture}
+						\tkzTabInit{$x$ / 0.75 , $\arctan(x)$ / 1.25}{$-\infty$, $0$, $+\infty$}
+						\tkzTabVar{-/ $-\frac{\pi}{2}$,R/, +/ $+\frac{\pi}{2}$}
+						\tkzTabIma{1}{3}{2}{$0$}
+					\end{tikzpicture}
+				\end{center}
+			
+			\subsubsection*{Propriétés}
 
 				\begin{itemize}
 					\item [•] Les fonctions $\arcsin$ et $\arccos$ sont impaires, la fonction $\arctan$ est impaire sur $\mathbb{R}$.
