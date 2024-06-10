@@ -942,20 +942,23 @@ footskip=1cm
 			\end{tabular}
 			
 		\subsection*{Formules d'addition}
-
+			{\setcellgapes{1.5mm}
+			\makegapedcells
 			\begin{tabular}{lll|c}
 				\large{$\sin(a + b)$} & \large{$=$} & $\cos(a) \sin(b) + \sin(a) \cos(b)$ & En développant $e^{i(a+b)} = e^{ia} e^{ib}$, puis en \\
 				\large{$\cos(a + b)$} & \large{$=$} & $\cos(a) \cos(b) - \sin(a) \sin(b)$ & identifiant partie réelle et partie imaginaire.\\
 				\hline
 				\large{$\tan(a + b)$} & \large{$=$} & \Large{$\frac{\tan(a) + \tan(b)}{1 - \tan(a) \tan(b)}$} & \large{$\tan(a + b) = \frac{\sin(a+b)}{\cos(a+b)} = \dots$}\\
-			\end{tabular}
+			\end{tabular}}
 
 		\subsection*{Formules de duplication}
+			{\setcellgapes{1.5mm}
+			\makegapedcells
 			\begin{tabular}{lllll}
 				\large{$\sin(2a)$} & \large{$= 2 \sin(a) \cos(a)$}     &&& \large{$= \frac{2 \tan(a)}{1 + \tan^2(a)}$} \\
 				\large{$\cos(2a)$} & \large{$= \cos^2(a) - \sin^2(a)$} & \large{$= 2 \cos^2(a) - 1$} & \large{$= 1 - 2 \sin^2(a)$} & \large{$= \frac{1 - \tan^2(a)}{1 + \tan^2(a)}$}\\
 				\large{$\tan(2a)$} &&&& \large{$= \frac{2 \tan(a)}{1 - \tan^2(a)}$}  \\
-			\end{tabular}
+			\end{tabular}}
 
 		\subsection*{Formules de réduction des carrés}
 			\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
@@ -968,18 +971,22 @@ footskip=1cm
 			\end{tabular}
 
 		\subsection*{Formules de linéarisation}
+			{\setcellgapes{1.5mm}
+			\makegapedcells
 			\begin{tabular}{lcl|c}
 				\large{$2 \sin(a) \sin(b)$} & \large{$=$} & \large{$\cos(a - b) - \cos(a + b)$} & Schéma de démonstration : \\
 				\large{$2 \cos(a) \cos(b)$} & \large{$=$} & \large{$\cos(a - b) + \cos(a + b)$} & \large{$\cos(a) \cos(b) = \Re \left(e^{ia} \cos(b)\right)$}\\
 				\large{$2 \sin(a) \cos(b)$} & \large{$=$} & \large{$\sin(a - b) + \sin(a + b)$} & \Large{$= \Re \left(e^{ia} \frac{e^{ib} + e^{-ib}}{2}\right) = \dots$}\\
-			\end{tabular}
+			\end{tabular}}
 		
 		\subsection*{Transformation de sommes en produits}
+			{\setcellgapes{1.5mm}
+			\makegapedcells
 			\begin{tabular}{lll}
-				\large{$\phantom{-} \cos(p) + \cos(q)$} & \large{$=$} & \large{$2 \cos \left(\frac{p + q}{2}\right) \cos \left(\frac{p - q}{2}\right)$} \\
-				\large{$-\cos(p) + \cos(q)$} & \large{$=$} & \large{$2 \sin \left(\frac{p + q}{2}\right) \sin \left(\frac{p - q}{2}\right)$} \\
-				\large{$\phantom{-} \sin(p) + \sin(q)$} & \large{$=$} & \large{$2 \sin \left(\frac{p + q}{2}\right) \cos \left(\frac{p - q}{2}\right)$} \\
-			\end{tabular}
+				\large{$\phantom{-} \cos(p) + \cos(q)$} & \large{$=$} & \Large{$2 \cos \left(\frac{p + q}{2}\right) \cos \left(\frac{p - q}{2}\right)$} \\
+				\large{$-\cos(p) + \cos(q)$} & \large{$=$} & \Large{$2 \sin \left(\frac{p + q}{2}\right) \sin \left(\frac{p - q}{2}\right)$} \\
+				\large{$\phantom{-} \sin(p) + \sin(q)$} & \large{$=$} & \Large{$2 \sin \left(\frac{p + q}{2}\right) \cos \left(\frac{p - q}{2}\right)$} \\
+			\end{tabular}}
 
 \newpage
 
