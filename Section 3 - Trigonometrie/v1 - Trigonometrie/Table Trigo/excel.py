@@ -14,7 +14,7 @@ blanc        = "00FFFFFF" #FFFFFF
 
 fond_entete  = "00222222" #222222
 fond_degre   = "00666666" #666666
-fond_rad     = "00AAAAAA" #AAAAAA
+fond_rad     = "00DDDDDD" #AAAAAA #"00AAAAAA" 
 fond_colonne = "00DDDDDD" #DDDDDD
 fond_blanc   = "00FFFFFF" #FFFFFF
 
@@ -118,7 +118,8 @@ def commentaire ( texte           = "",
     return commentaire
 
 def redimensionnement_colonne_auto_optimal(feuille):
-    
+    """
+    LibreOffice : 1,57 cm = 8"""
     dims = {}
     for row in feuille.rows :
         for cell in row :

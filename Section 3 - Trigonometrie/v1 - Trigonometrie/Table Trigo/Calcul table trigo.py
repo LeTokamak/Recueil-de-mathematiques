@@ -102,6 +102,7 @@ def MiseEnPage(nb, nbChiffre, nbDecimal, Espace = True, affichageSigne = False, 
         strNbFinal = "- " + strNbFinal
     
     strNbFinal = strNbFinal.replace(" .", ".")
+    strNbFinal = strNbFinal.replace(".", ",")
     
     return strNbFinal
         
@@ -223,17 +224,17 @@ deno = 2
 nbChiffre = 1
 nbDecimal = 9
 
-COLONNE_DEGRE = 1
-COLONNE_RADIAN = 2
+COLONNE_DEGRE      = 1
+COLONNE_RADIAN     = 2
 COLONNE_FRACTION_1 = 3
 COLONNE_FRACTION_2 = 4
 COLONNE_FRACTION_3 = 5
-COLONNE_SIN = 6
-COLONNE_COS = 7
-COLONNE_TAN = 8
-COLONNE_LOG_SIN = 9
-COLONNE_LOG_COS = 10
-COLONNE_LOG_TAN = 11
+COLONNE_SIN        = 6
+COLONNE_COS        = 7
+COLONNE_TAN        = 8
+COLONNE_LOG_SIN    = 9
+COLONNE_LOG_COS    = 10
+COLONNE_LOG_TAN    = 11
 
 Intro = ["Degré", "Rad", None, None, None, "sin (x)", "cos (x)", "tan (x)", "log |sin (x)|", "log |cos (x)|", "log |tan (x)|"]
 
@@ -250,20 +251,28 @@ for e in Intro :
 
 ws.merge_cells(start_row=1, start_column=COLONNE_RADIAN, end_row=1, end_column=COLONNE_FRACTION_3)
 
-for a in range(nPrem, nDern):
+angles = range(nPrem, nDern)
+
+angles = [-1800, -1750, -1700, -1650, -1600, -1550, -1500, -1450, -1400, -1350, -1300, -1250, -1200, -1150, -1100, -1050, -1000, -950, -900, -850, -800, -750, -700, -650, -600, -550, -500, -450, -400, -350, -300, -250, -200, -150, -100, -50, 0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800] 
+
+for a in angles:
     
     angleDeg = a/10
     angleRad = angleDeg * m.pi/180
     strFract,nomi,deno,x,y = Simplification(a, 1800)
 
+    i = angles.index(a)
+    
     numLigne = 2 + a % 50 + 51*(a // 50)
+    numLigne = 2 + i % 50 + 51*(i // 50)
     
     # Angle en degré
     cellule = ws.cell(row = numLigne, column = COLONNE_DEGRE)
     if str(angleDeg)[-2:] == ".0":
         cellule.value = "  "+str(angleDeg)[:-2]
     else :
-        cellule.value = "  "+str(angleDeg)
+        cellule.value = "  "+str(angleDeg).replace(".", ",")
+        
     cellule.alignment = fExc.alignement(alignement_horizontal="l", alignement_vertical="c")
     cellule.fill = fExc.couleur_fond(fExc.fond_degre)
     cellule.font = fExc.police(couleur=fExc.blanc, est_en_gras=True)
@@ -273,7 +282,8 @@ for a in range(nPrem, nDern):
     cellule.value = MiseEnPage(angleRad,1,9, affichageSigne = True)
     cellule.alignment = fExc.alignement(alignement_horizontal="c", alignement_vertical="c")
     cellule.fill = fExc.couleur_fond(fExc.fond_rad)
-    cellule.border = fExc.bordure(style="dashed", couleur=fExc.blanc, a_droite=True)
+    cellule.border = fExc.bordure(style="dashed", couleur=fExc.noir, a_droite=True)
+    cellule.font = fExc.police(est_en_gras=True)
     
     # Fraction
     if "/" in strFract :
@@ -281,23 +291,30 @@ for a in range(nPrem, nDern):
         cellule.value = strFract.split(" / ")[0]
         cellule.alignment = fExc.alignement(alignement_horizontal="r", alignement_vertical="c")
         cellule.fill = fExc.couleur_fond(fExc.fond_rad)
+        cellule.font = fExc.police(est_en_gras=True)
         
         cellule = ws.cell(row = numLigne, column = COLONNE_FRACTION_2)
         cellule.value = "/"
         cellule.alignment = fExc.alignement(alignement_horizontal="c", alignement_vertical="c")
         cellule.fill = fExc.couleur_fond(fExc.fond_rad)
+        cellule.font = fExc.police(est_en_gras=True)
         
         cellule = ws.cell(row = numLigne, column = COLONNE_FRACTION_3)
         cellule.value = strFract.split(" / ")[1]
         cellule.alignment = fExc.alignement(alignement_horizontal="l", alignement_vertical="c")
         cellule.fill = fExc.couleur_fond(fExc.fond_rad)
+        cellule.font = fExc.police(est_en_gras=True)
+        cellule.border = fExc.bordure(style="medium", couleur=fExc.noir, a_droite=True)
     else :
         cellule = ws.cell(row = numLigne, column = COLONNE_FRACTION_1)
         cellule.value = strFract
         cellule.alignment = fExc.alignement(alignement_horizontal="c", alignement_vertical="c")
         cellule.fill = fExc.couleur_fond(fExc.fond_rad)
+        cellule.font = fExc.police(est_en_gras=True)
+        cellule.border = fExc.bordure(style="medium", couleur=fExc.noir, a_droite=True)
         
         ws.merge_cells(start_row=numLigne, start_column=COLONNE_FRACTION_1, end_row=numLigne, end_column=COLONNE_FRACTION_3)
+        
         
     # sin(x)
     cellule = ws.cell(row = numLigne, column = COLONNE_SIN)
@@ -336,7 +353,7 @@ for a in range(nPrem, nDern):
     cellule.alignment = fExc.alignement(alignement_horizontal="c", alignement_vertical="c")
     cellule.fill = fExc.couleur_fond(fExc.fond_blanc)
     
-    if (a + 1) % 50 == 0:
+    if (i + 1) % 50 == 0:
         
         for e in Intro :
             cellule = ws.cell(row = numLigne + 1, column = Intro.index(e) + 1)
@@ -347,5 +364,17 @@ for a in range(nPrem, nDern):
             
         ws.merge_cells(start_row=numLigne + 1, start_column=COLONNE_RADIAN, end_row=numLigne + 1, end_column=COLONNE_FRACTION_3)
 
-fExc.redimensionnement_colonne_auto_optimal(ws)
+#fExc.redimensionnement_colonne_auto_optimal(ws)
+ws.column_dimensions["A"].width = 1.45 * (22/4.31)
+ws.column_dimensions["B"].width = 2.76 * (22/4.31)
+ws.column_dimensions["C"].width = 1.41 * (22/4.31)
+ws.column_dimensions["D"].width = 0.27 * (22/4.31)
+ws.column_dimensions["E"].width = 1.12 * (22/4.31)
+
+ws.column_dimensions["F"].width = 2.90 * (22/4.31)
+ws.column_dimensions["G"].width = 2.90 * (22/4.31)
+ws.column_dimensions["H"].width = 3.50 * (22/4.31)
+ws.column_dimensions["I"].width = 2.90 * (22/4.31)
+ws.column_dimensions["J"].width = 2.90 * (22/4.31)
+ws.column_dimensions["K"].width = 2.90 * (22/4.31)
 wb.save(f"Section 3 - Trigonometrie/v1 - Trigonometrie/Table Trigo/sample_{str(datetime.now()).replace(':', '_')}.xlsx")
