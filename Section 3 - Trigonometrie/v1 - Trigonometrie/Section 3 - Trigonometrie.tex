@@ -730,12 +730,12 @@ footskip=1cm
 					Dans notre cas, $x$ est un angle orienté suivant la convention du cercle trigonométrique, présenté plus tôt.
 					De plus, nous considérons que $x$ est exprimé en \emph{radians}.
 
-				\paragraph*{Domaine de définition et ensemble d'arrivée}
+				\paragraph*{Ensemble de définition et d'arrivée}
 					\phantom{r}
 
 					Pour les fonctions sinus et cosinus :
 					\begin{itemize}
-						\item [•] Leur domaine de définition est $\mathbb{R}$.
+						\item [•] Leur ensemble de définition est $\mathbb{R}$.
 						\item [•] Leur ensemble d'arrivée est l'intervalle $[-1~;~1]$.
 					\end{itemize}
 
@@ -743,7 +743,7 @@ footskip=1cm
 
 					Pour la fonction tangente :
 					\begin{itemize}
-						\item [•] Son domaine de définition est $\mathbb{R} \setminus \{\left. k\pi+\frac{\pi}{2} ~ \right| ~ k \in \mathbb{Z}\}$.
+						\item [•] Son ensemble de définition est $\mathbb{R} \setminus \{\left. k\pi+\frac{\pi}{2} ~ \right| ~ k \in \mathbb{Z}\}$.
 						\item [•] Son ensemble d'arrivée est $\mathbb{R}$.
 					\end{itemize}
 
@@ -856,14 +856,14 @@ footskip=1cm
 			
 			\vspace*{-0.25cm}
 
-			\subsubsection*{Domaine de définition et ensemble d'arrivée}
+			\subsubsection*{Ensemble de définition et d'arrivée}
 
 				\begin{center}
 					\setcellgapes{1.5mm}
 					\makegapedcells
 					\begin{tabular}{|c|c|c|}
 						\hline
-						\textbf{Fonction} & \textbf{Domaine de définition} & \textbf{Ensemble d'arrivée} \\
+						\textbf{Fonction} & \textbf{Ensemble de définition} & \textbf{Ensemble d'arrivée} \\
 						\hline
 						$\arcsin$ & $[-1~;~1]$ & $[-\frac{\pi}{2}~;~\frac{\pi}{2}]$ \\
 						\hline
@@ -876,7 +876,7 @@ footskip=1cm
 			
 			\vspace*{-0.25cm}
 
-			\subsubsection*{Variation sur leur domaine de définition respectif}
+			\subsubsection*{Variation sur leur ensemble de définition respectif}
 
 				\begin{center}
 					\begin{tikzpicture}
@@ -991,6 +991,89 @@ footskip=1cm
 \newpage
 
 	\section{Lecture de la table}
+
+	La table donne, pour les angles compris entre $\numprint{0}^\circ$ et $\numprint{179.9}^\circ$, avec un pas de $\numprint{0.1}^\circ$, 
+	son sinus, cosinus et sa tangente avec $9$ décimales de précision, 
+	et les logarithmes décimaux des \emph{valeurs absolues}\footnote{Il n'est pas possible d'obtenir le logarithme d'un nombre négative. Si vous utilisez ces logarithmes, n'oubliez de prendre en compte le signe du nombre !} 
+	des sinus, cosinus et la tangente de l'angle.
+	Sa précision est très élevée, en pratique les 3 premières décimales peuvent souvent suffire.
+
+	Une autre table allant de $\numprint{-180}^\circ$ et $\numprint{180}^\circ$, avec un pas de $\numprint{5}^\circ$,
+	est aussi disponible.
+
+	Dans la table, on retrouve l'angle en degré et en radian. Dans le reste de cette partie, nous utiliserons le degré,
+	car cette unité est plus facilement manipulable.
+
+		\subsection{Cas des angles négatifs}
+			
+			Comme la première table ne va que de $\numprint{0}^\circ$ à $\numprint{179.9}^\circ$ (de $0$ à $\pi$ radians),
+			il est nécessaire de connaître les propriétés des fonctions trigonométriques pour retrouver des angles négatifs.
+
+			\vspace{4 mm}
+
+			{ \parindent=0cm Pour cela, nous allons utiliser la parité des fonctions trigonométriques :}
+
+			\vspace{1 mm}
+
+			\begin{tabular}{ll}
+				Le sinus est une fonction \emph{impaire}, donc & $\sin(x) = -\sin(-x)$\\
+				Le cosinus est une fonction \emph{paire}, donc & $\cos(x) = \phantom{-}\cos(-x)$\\
+				La tangente est une fonction \emph{impaire}, donc & $\tan(x) = -\tan(-x)$\\
+			\end{tabular}
+
+			\vspace{4 mm}
+
+			{ \parindent=0cm Ainsi par exemple, pour obtenir les valeurs de sinus, cosinus et tangente pour un angle de $\numprint{-37}^\circ$ :}
+
+			\vspace{1 mm}
+
+			\begin{tabular}{ccccccc}
+				$\sin(-37^\circ)$&$=$&$-\sin(-1 \times (-37^\circ))$& $=$ & $-\sin(37^\circ)$           & $=$ & $-\numprint{0.601815023}$\\
+				$\cos(-37^\circ)$&$=$&$\phantom{-}\cos(-1 \times (-37^\circ))$ & $=$ & $\phantom{-}\cos(37^\circ)$ & $=$ & $\phantom{-}\numprint{0.798635510}$\\
+				$\tan(-37^\circ)$&$=$&$-\tan(-1 \times (-37^\circ))$& $=$ & $-\tan(37^\circ)$           & $=$ & $-\numprint{0.753554050}$\\
+			\end{tabular}
+
+		\subsection{Utilisation inversée de la table}
+
+			La table peut aussi être utilisée pour retrouver l'angle correspondant à une certaine valeur de sinus, cosinus ou tangente.
+			C'est-à-dire, rechercher la valeur renvoyée par les fonctions trigonométriques réciproques (arcsinus, arccosinus et arctangente).
+
+			\vspace{2 mm}
+
+			La simple recherche de l'angle dans la table, donnant une certaine valeur,
+			une fois cet angle passé par une des fonctions trigonométriques, ne donne pas forcément \emph{un} angle en résultat.
+			Dans certains cas, aucun ou plusieurs angles peuvent correspondre à la valeur recherchée, 
+			alors que les fonctions réciproques associe à chaque valeur de leur ensemble de définition, un \emph{unique angle}.
+
+			\vspace{3 mm}
+
+			{\parindent = 0mm Détaillons les différents cas possibles :}
+
+				\vspace{-4 mm}
+
+				\subparagraph*{Fonction arcsinus}
+					\textit{Ensemble de définition : $[-1;1]$} ~~~~	\textit{Ensemble d'arrivée : $\left[-\frac{\pi}{2};\frac{\pi}{2}\right]$}
+
+					\vspace{2 mm}
+
+					{\parindent = 0cm Soit $x \in [-1;1]$, on cherche l'angle $\theta = \arcsin(x)$ ; il faut donc que $\sin(\theta) = x$, 
+					avec $\theta \in \left[-\frac{\pi}{2}~;~\frac{\pi}{2}\right]$.}
+
+					
+					\begin{itemize}
+						\item [•] \emph{Cas~n°1:} Si $x = 1$, alors $\theta = \arcsin(1) = \frac{\pi}{2}$.
+						\vspace{2 mm}
+						\item [•] \emph{Cas~n°2:} Si $x \in ~ ]0;1[$, alors il existe deux angles, $\theta_1 \in \left]0;\frac{\pi}{2}\right[$ et $\theta_2 \in \left]\frac{\pi}{2};\pi\right[$ dans la table tel que $\sin(\theta_1) = \sin(\theta_2) = x$, mais seul \emph{$\theta_1 = \arcsin(x)$}.
+						\vspace{2 mm}
+						\item [•] \emph{Cas~n°3:} Si $x = 0$, alors $\theta = \arcsin(0) = 0$.
+						\vspace{2 mm}
+						\item [•] \emph{Cas~n°4:} Si $x \in [-1;0[$, alors il n'y a aucun angle $\theta$ dans la table tel que $\theta = \arcsin(x)$. Cependant, on peut retrouver $\arcsin(x)$ en utilisant la parité de la fonction arcsinus. En effet $\arcsin(x) = -\arcsin(-x)$, et comme $-x$ est positif, on peut réutiliser la solution des cas n°1 et n°2.
+					\end{itemize}
+
+				\subparagraph*{Fonction arccosinus}
+					\textit{Ensemble de définition : $[-1;1]$} ~~~~	\textit{Ensemble d'arrivée : $[0;\pi]$}
+
+
 
 \newpage
 
