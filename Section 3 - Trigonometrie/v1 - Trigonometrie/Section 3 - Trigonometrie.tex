@@ -137,7 +137,7 @@ footskip=1cm
 			\large	 Clément \sc{Campana}  \\ 
 			\smallskip
 		
-			\normalfont Février 2024 \\
+			\normalfont Juillet 2024 \\
 		
 		\end{center}
 		
@@ -410,7 +410,7 @@ footskip=1cm
 			De plus,
 			il est possible d'établir un lien entre ces trois fonctions\footnote{Cette relation n'est vraie que si le dénominateur n'est pas nul. 
 			
-			~~Ainsi si $\alpha \equiv \frac{\pi}{2} [\pi] $, c'est à dire si $\exists k \in \mathbb{Z},\alpha = k\pi + \frac{\pi}{2}$, la tangente de cet angle n'est pas définie.} :
+			~~Ainsi si $\alpha \equiv \frac{\pi}{2} [\pi] $, c'est à dire si $\exists k \in \mathbb{Z},\alpha = k\pi + \frac{\pi}{2}$, alors la tangente de cet angle n'est pas définie.} :
 			{ \Large $$ \tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)} $$}
 
 			\medbreak
@@ -1049,31 +1049,71 @@ footskip=1cm
 
 			{\parindent = 0mm Détaillons les différents cas possibles :}
 
-				\vspace{-4 mm}
+				\vspace{-3 mm}
 
 				\subparagraph*{Fonction arcsinus}
-					\textit{Ensemble de définition : $[-1;1]$} ~~~~	\textit{Ensemble d'arrivée : $\left[-\frac{\pi}{2};\frac{\pi}{2}\right]$}
+					\textit{Ensemble de définition}: $[-1;1]$ ~~~~	\textit{Ensemble d'arrivée} : $\left[-\frac{\pi}{2};\frac{\pi}{2}\right]$
 
 					\vspace{2 mm}
 
 					{\parindent = 0cm Soit $x \in [-1;1]$, on cherche l'angle $\theta = \arcsin(x)$ ; il faut donc que $\sin(\theta) = x$, 
-					avec $\theta \in \left[-\frac{\pi}{2}~;~\frac{\pi}{2}\right]$.}
+					avec $\theta \in \left[-\frac{\pi}{2};\frac{\pi}{2}\right]$.}
 
+					\vspace{2 mm}
 					
 					\begin{itemize}
 						\item [•] \emph{Cas~n°1:} Si $x = 1$, alors $\theta = \arcsin(1) = \frac{\pi}{2}$.
 						\vspace{2 mm}
-						\item [•] \emph{Cas~n°2:} Si $x \in ~ ]0;1[$, alors il existe deux angles, $\theta_1 \in \left]0;\frac{\pi}{2}\right[$ et $\theta_2 \in \left]\frac{\pi}{2};\pi\right[$ dans la table tel que $\sin(\theta_1) = \sin(\theta_2) = x$, mais seul \emph{$\theta_1 = \arcsin(x)$}.
+						\item [•] \emph{Cas~n°2:} Si $x \in ~ ]0;1[$, alors $\exists! \theta_1 \in \left]0;\frac{\pi}{2}\right[$ et $\exists! \theta_2 \in \left]\frac{\pi}{2};\pi\right[$ dans la table tel que $\sin(\theta_1) = \sin(\theta_2) = x$, mais seul \emph{$\theta_1 = \arcsin(x)$}.
 						\vspace{2 mm}
 						\item [•] \emph{Cas~n°3:} Si $x = 0$, alors $\theta = \arcsin(0) = 0$.
 						\vspace{2 mm}
 						\item [•] \emph{Cas~n°4:} Si $x \in [-1;0[$, alors il n'y a aucun angle $\theta$ dans la table tel que $\theta = \arcsin(x)$. Cependant, on peut retrouver $\arcsin(x)$ en utilisant la parité de la fonction arcsinus. En effet $\arcsin(x) = -\arcsin(-x)$, et comme $-x$ est positif, on peut réutiliser la solution des cas n°1 et n°2.
 					\end{itemize}
 
+				\vspace{-2 mm}
+
 				\subparagraph*{Fonction arccosinus}
-					\textit{Ensemble de définition : $[-1;1]$} ~~~~	\textit{Ensemble d'arrivée : $[0;\pi]$}
+					\textit{Ensemble de définition} : $[-1;1]$ ~~~~	\textit{Ensemble d'arrivée} : $\left[0;\pi\right]$
+
+					\vspace{2 mm}
+
+					La table est définie sur l'intervalle $\left[0;\pi\right[$, donc $\forall x \in \left]-1;1\right]$, 
+					on retrouve dans la table un angle $\theta$ tel que $\theta = \arccos(x)$.
+
+					Seul le cas où $x = -1$ n'est pas dans la table, $\arccos(-1) = \pi$.
 
 
+				\subparagraph*{Fonction arctangente}
+					\textit{Ensemble de définition} : $\mathbb{R}$ ~~~~	\textit{Ensemble d'arrivée} : $\left]-\frac{\pi}{2};\frac{\pi}{2}\right[$
+
+					\vspace{2 mm}
+
+					{\parindent = 0cm Soit $x \in \mathbb{R}$, on cherche l'angle $\theta = \arctan(x)$ ; il faut donc que $\tan(\theta) = x$, 
+					avec $\theta \in \left]-\frac{\pi}{2}~;~\frac{\pi}{2}\right[$.}
+
+					\vspace{2 mm}
+
+					\begin{itemize}
+						\item [•] \emph{Cas~n°1:} Si $x \in \mathbb{R}^+$, alors $\exists! \theta \in \left]0;\frac{\pi}{2}\right[$ dans la table tel que $\theta = \arctan(x)$.
+						\vspace{2 mm}
+						\item [•] \emph{Cas~n°2:} Si $x = 0$, alors $\theta = \arctan(0) = 0$.
+						\vspace{2 mm}
+						\item [•] \emph{Cas~n°3:} Si $x \in \mathbb{R}^-$, alors $\exists! \alpha \in \left]\frac{\pi}{2};\pi\right[, x = \tan(\alpha)$, ainsi par périodicité de la fonction tangente $\theta = \alpha - \pi$.
+					\end{itemize}
+
+					\vspace{2 mm}
+
+					\emph{Remarque :} Lorsque $|x| > 10$, la précision de la table pour la fonction tangente est plus faible. 
+					Il peut alors être intéressant de passer par une approximation linéaire.
+		
+		\subsection{Approximation linéaire}
+
+			\subsubsection{Principe}
+
+				L'approximation linéaire consiste à approximer une fonction par une droite, 
+				afin de simplifier les calculs. Cette méthode est souvent utilisée pour les fonctions trigonométriques,
+				et est particulièrement efficace pour les angles proches de $0$.
 
 \newpage
 
