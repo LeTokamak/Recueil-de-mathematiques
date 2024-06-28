@@ -1109,11 +1109,26 @@ footskip=1cm
 		
 		\subsection{Approximation linéaire}
 
-			\subsubsection{Principe}
+			Comme pour les la table logarithmique présentée dans la première section,
+			il est possible d'approximer les valeurs de sinus, cosinus et tangente,
+			d'un angle se trouvant entre deux angles de la table.
 
-				L'approximation linéaire consiste à approximer une fonction par une droite, 
-				afin de simplifier les calculs. Cette méthode est souvent utilisée pour les fonctions trigonométriques,
-				et est particulièrement efficace pour les angles proches de $0$.
+			Ce calcul peut être fait via une approximation linéaire,
+			où l'on considère que la fonction est linéaire entre deux points de la table.
+
+			Cette approximation est très bonne car la résolution de la table est très fine,
+			et les fonctions trigonométriques varient doucemement\footnote{Si l'on ne tient pas des parties où la courbe de la tangente est proche de ses asymptotes.}.
+
+			La formule d'approximation linéaire est la suivante :
+
+			\begin{tabular}{ll}
+				\large{$f(x) \approx f(a) + f'(a) \times (x - a)$} & \large{avec $f'(a)$ la dérivée de $f$ en $a$.}\\
+			
+			\end{tabular}
+			
+			L'approximation linéaire consiste à approximer une fonction par une droite, 
+			afin de simplifier les calculs. Cette méthode est souvent utilisée pour les fonctions trigonométriques,
+			et est particulièrement efficace pour les angles proches de $0$.
 
 \newpage
 

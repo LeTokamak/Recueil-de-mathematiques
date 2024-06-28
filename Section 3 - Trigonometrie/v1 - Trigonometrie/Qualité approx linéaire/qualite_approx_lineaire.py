@@ -9,14 +9,13 @@ rapport_mdeg_rad = np.pi / 1800
 nPrem = 0
 nDern = 1800
 x_table = range(nPrem, nDern)
-x_complet = np.linspace(0, 1800, 1_000_000)
-x_complet = np.linspace(0.5, 1799.5, 1800)
-
+#x_complet = np.linspace(0, 1800, 1_000_000)
+x_complet = np.linspace(0.1, 1799.9, 17999)
+#x_complet = np.linspace(0.1, 899.9, 8999)
+x_complet = np.array([round(x,2) for x in x_complet if x % 1 != 0])
 print(x_complet)
 
-nbDigitsTable = 4
-
-def approx(x_table, fct, x):
+def approx(x_table, fct, x, nbDigitsTable):
     """
     Approximation linéaire de fct(x) à partir de x_table
     """
@@ -27,14 +26,16 @@ def approx(x_table, fct, x):
         x_inf = x_table[x_table <= x].max()
         x_sup = x_table[x_table >= x].min()
         
-        y_inf = round(fct(rapport_mdeg_rad*x_inf),nbDigitsTable)
-        y_sup = round(fct(rapport_mdeg_rad*x_sup),nbDigitsTable)
+        y_inf = round(fct(rapport_mdeg_rad*x_inf), nbDigitsTable)
+        y_sup = round(fct(rapport_mdeg_rad*x_sup), nbDigitsTable)
 
         #print(fct(rapport_mdeg_rad*x_sup), y_sup)
         # Coefficients de la droite passant par les deux points
         nomi_a = (y_sup - y_inf)
         deno_a = (rapport_mdeg_rad*x_sup - rapport_mdeg_rad*x_inf)
         
+        if deno_a == 0:
+            return fct(rapport_mdeg_rad*x)
         #print(x, x_inf, x_sup)
         
         a = nomi_a / deno_a 
@@ -45,35 +46,38 @@ def approx(x_table, fct, x):
         return fct(rapport_mdeg_rad*x)
     
 
-def ecart_absolu_approx(x_table, fct, x):
+def ecart_absolu_approx(x_table, fct, x, nbDigitsTable):
     """
     Écart absolu entre fct(x) et son approximation linéaire à partir de x_table
     """
-    return fct(rapport_mdeg_rad*x) - approx(x_table, fct, x)
+    return fct(rapport_mdeg_rad*x) - approx(x_table, fct, x, nbDigitsTable)
 
-def ecart_relatif_approx(x_table, fct, x):
+def ecart_relatif_approx(x_table, fct, x, nbDigitsTable):
     """
     Écart relatif entre fct(x) et son approximation linéaire à partir de x_table
     """
-    return ecart_absolu_approx(x_table, fct, x) / fct(rapport_mdeg_rad*x)
+    if fct(rapport_mdeg_rad*x) == 0:
+        return 0
+    else :
+        return ecart_absolu_approx(x_table, fct, x, nbDigitsTable) / fct(rapport_mdeg_rad*x)
 
-def calcul_approximation(x_complet, fct):
+def calcul_approximation(x_complet, fct, nbDigitsTable):
     """
     Calcul de l'approximation linéaire de fct(x) à partir de x_table
     """
-    return [approx(x_table, fct, x) for x in x_complet]
+    return [approx(x_table, fct, x, nbDigitsTable) for x in x_complet]
 
-def calcul_ecart_absolu(x_complet, fct):
+def calcul_ecart_absolu(x_complet, fct, nbDigitsTable):
     """
     Calcul de l'écart absolu entre fct(x) et son approximation linéaire à partir de x_table
     """
-    return [ecart_absolu_approx(x_table, fct, x) for x in x_complet]
+    return [ecart_absolu_approx(x_table, fct, x, nbDigitsTable) for x in x_complet]
 
-def calcul_ecart_relatif(x_complet, fct):
+def calcul_ecart_relatif(x_complet, fct, nbDigitsTable):
     """
     Calcul de l'écart relatif entre fct(x) et son approximation linéaire à partir de x_table
     """
-    return [ecart_relatif_approx(x_table, fct, x) for x in x_complet]
+    return [abs(ecart_relatif_approx(x_table, fct, x, nbDigitsTable)) for x in x_complet]
 
 def tracer_approx(fct, label, color,
                   y_lim_1, y_lim_2,
@@ -94,12 +98,14 @@ def tracer_approx(fct, label, color,
     #ax_normal.hlines(0, x_lim_1, x_lim_2, color="black", alpha=0.75, lw=1.5)
     #ax_normal.vlines(0, y_lim_1, y_lim_2, color="black", alpha=0.75, lw=1.5)
     
-    ax_normal.plot(entree, calcul_ecart_absolu(entree, fct), linestyle = "", marker = ".",color = color, label=label)
+    #ax_normal.plot(entree, calcul_ecart_relatif(entree, fct, 3), linestyle = "", marker = ".", label="3 décimales")
+    #ax_normal.plot(entree, calcul_ecart_relatif(entree, fct, 6), linestyle = "", marker = ".", label="6 décimales")
+    ax_normal.plot(entree*rapport_mdeg_rad, calcul_ecart_relatif(entree, fct, 6), linestyle = "", marker = ".", label="9 décimales")
     ax_normal.legend()
     
     ax_normal.set_xlim(x_lim_1, x_lim_2)
     #ax_trigo.set_ylim(y_lim_1, y_lim_2)
-    #ax_normal.set_ylim(y_lim_1, y_lim_2)
+    ax_normal.set_ylim(y_lim_1, y_lim_2)
     
     #ax_trigo.set_xticks(liste_ticks_x, label_ticks_x)
     #ax_trigo.set_yticks(liste_ticks_y, label_ticks_y)
@@ -112,9 +118,9 @@ def tracer_approx(fct, label, color,
     # Enregistrer le graphique
     fig.savefig(f'Section 3 - Trigonometrie/v1 - Trigonometrie/Qualité approx linéaire/{nom}.png', dpi=300, bbox_inches='tight')
 
-tracer_approx(np.sin, r'$\sin(\theta)$', 'blue',
-              -0.005, 0.005,
-              0,1800,
+tracer_approx(np.tan, r'$\sin(\theta)$', 'blue',
+              -0.000000001, 0.000005,
+              0,1800*rapport_mdeg_rad,
               [], [],
               [], [],
               'Approximation linéaire de la fonction sinus', 'approximation_sin',
