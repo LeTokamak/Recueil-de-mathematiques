@@ -1108,6 +1108,28 @@ footskip=1cm
 					Il peut alors être intéressant de passer par une approximation linéaire.
 		
 		\subsection{Approximation linéaire}
+			
+			Prenons une fonction $f$ et un réel $x$ appartenant à son domaine de définition.
+
+			L'approximation linéaire sert à obtenir une valeur approchée $f(x)$,
+			dans le cas où nous ne connaîtrions pas cette valeur.
+
+			Il existe deux méthodes d'approximation linéaire, l'\emph{interpolation linéaire} et le \emph{développement limité d'ordre 1}.
+
+			\subsubsection{Interpolation linéaire}
+				
+				En utilisant cette approximation, nous supposons que la fonction $f$ évolue linéairement entre deux points de la table.  
+				
+				Avec cette hypothèse et les points $A \left(a~; f(a)\right)$ et $B \left(b~; f(b)\right)$, 
+				qui encadrent $x$ dans la table (avec $a < x < b$), 
+				nous pouvons obtenir une valeur approchée de $f(x)$,
+				en utilisant la formule suivante :
+
+					$$f(x) \approx f(a) + \frac{f(b) - f(a)}{b - a} \times (x - a)$$
+				
+
+				Cette méthode est très efficace pour les valeurs proches de celles de la table, 
+				et permet d'obtenir une approximation très précise.
 
 			Comme pour les la table logarithmique présentée dans la première section,
 			il est possible d'approximer les valeurs de sinus, cosinus et tangente,
