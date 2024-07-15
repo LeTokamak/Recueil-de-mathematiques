@@ -1118,18 +1118,60 @@ footskip=1cm
 
 			\subsubsection{Interpolation linéaire}
 				
-				En utilisant cette approximation, nous supposons que la fonction $f$ évolue linéairement entre deux points de la table.  
+				Lors d'une interpolation linéaire, on suppose que la fonction $f$ évolue linéairement entre deux points connus 
+				(dans notre cas, ce seront ceux listés dans la table).  
 				
-				Avec cette hypothèse et les points $A \left(a~; f(a)\right)$ et $B \left(b~; f(b)\right)$, 
-				qui encadrent $x$ dans la table (avec $a < x < b$), 
+				Avec cette hypothèse et en utilisant les points $A \left(a~; f(a)\right)$ et $B \left(b~; f(b)\right)$, 
+				qui encadrent $x$ dans la table (avec $a < x < b$, $a$ et $b$ étant les plus proches possibles de $x$ dans la table), 
 				nous pouvons obtenir une valeur approchée de $f(x)$,
 				en utilisant la formule suivante :
 
-					$$f(x) \approx f(a) + \frac{f(b) - f(a)}{b - a} \times (x - a)$$
-				
+				\vspace*{-3mm}
 
-				Cette méthode est très efficace pour les valeurs proches de celles de la table, 
-				et permet d'obtenir une approximation très précise.
+					{ \Large $$f(x) \approx f(a) + \frac{f(b) - f(a)}{b - a} \times (x - a)$$}
+
+				Cette formule correspond à l'équation de la droite passant par les points $A$ et $B$. 
+				L'approximation sera donc parfaite si la fonction $f$ est linéaire entre $a$ et $b$.
+				
+			\subsubsection{Développement limité d'ordre 1}
+
+				Le développement limité d'ordre 1 est une autre méthode d'approximation linéaire, 
+				où l'on considère que la fonction $f$ garde la même allure que sa tangente (géométrique) en un point.
+
+				Nous allons utiliser l'équation de la tangente (géométrique) en un point $a$ de la fonction $f$,
+				ce correspond aussi au développement limité d'ordre 1\footnote{Il est possible d'utiliser des développements limités d'ordre supérieur, 
+				pour approximer encore plus précisément la fonction $f$. Pour en savoir plus, 
+				rendez-vous en Annexe, à la page \pageref{developpement_limite}.} de $f$ en $a$ :
+
+				\vspace*{-5mm}
+
+					{ \Large $$f(x) \approx f(a) + f'(a) \times (x - a)$$}
+
+				L'approximation est parfaite lors que $x = a$, et elle se déteriore plus on s'éloigne de $a$.
+				
+				\vspace*{10mm}
+
+				{\noindent Voici les formules dans le cas où $f$ est une fonction trigonométrique :}
+
+				\vspace*{2mm}
+
+				{\large
+				\setcellgapes{2mm}
+				\makegapedcells
+				\begin{tabular}{lllll}
+					$\sin(x)$ & $\approx$ & $\sin(a) + \cos(a) \times (x - a)$ & & \\
+					$\cos(x)$ & $\approx$ & $\cos(a) - \sin(a) \times (x - a)$ & & \\
+					$\tan(x)$ & $\approx$ & $\tan(a) + \frac{1}{\cos^2(a)} \times (x - a)$ & $ = $ & $\tan(a) + \frac{2}{1+\cos(2a)} \times (x - a)$\\
+				\end{tabular}
+				}
+
+\pagebreak
+
+		\subsection*{Comparaison des deux méthodes dans notre cas}
+
+
+			Cette méthode est très efficace pour les valeurs proches de celles de la table, 
+			et permet d'obtenir une approximation très précise.
 
 			Comme pour les la table logarithmique présentée dans la première section,
 			il est possible d'approximer les valeurs de sinus, cosinus et tangente,
@@ -1190,6 +1232,6 @@ footskip=1cm
 
 		\subsection*{Démonstration des propriétés des fonctions trigonométrique élémentaires} \label{demo_propriete_trigo_1}
 
-
+		\subsection*{Développement limité} \label{developpement_limite}
 
 \end{document}
